@@ -71,6 +71,11 @@ The initial dataset contains selected major Constitutional Amendment Acts that a
 
 ---
 
+## Pipline
+<img width="1779" height="5180" alt="pipeline_flowchart" src="https://github.com/user-attachments/assets/f892692d-61c5-47a9-91c3-dc7ad247a925" />
+
+
+
 ## Proposed System
 
 The proposed system follows the pipeline:
@@ -107,3 +112,6 @@ The proposed system follows the pipeline:
                          |
                          v
           Source + Temporal Information
+
+
+
