@@ -1,0 +1,734 @@
+{
+  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "planning_goal": 209,
+  "systems": [
+    "System A — Base LLM",
+    "System B — Static RAG",
+    "System C — Temporal RAG"
+  ],
+  "questions": [
+    {
+      "question_id": "Q001",
+      "question": "What guarantee does Article 14 state?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "14"
+      ],
+      "expected_answer": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q001-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "14. Equality before law.—The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+          "chunk_id": "chunk-6100b381e336b62ecb405068",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 37; indexed chunk chunk-6100b381e336b62ecb405068",
+          "verification_status": "verified",
+          "notes": "Text is from the local primary-source PDF text layer and its static index. Article heading is included in the cited passage; answer quotes operative wording only."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q002",
+      "question": "List the freedoms stated in Article 19(1).",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "19"
+      ],
+      "expected_answer": "Article 19(1) lists citizens' rights to freedom of speech and expression; to assemble peaceably and without arms; to form associations or unions or co-operative societies; to move freely throughout India; to reside and settle in any part of India; and to practise any profession or carry on any occupation, trade or business. The current text prints an omission marker at clause (f).",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q002-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "(1) All citizens shall have the right",
+          "chunk_id": "chunk-d21f8f962357632e557f6731",
+          "version_id": null,
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q002-E2",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "(a) to freedom of speech and expression; (b) to assemble peaceably and without arms; (c) to form associations or unions 2[or co-operative societies]; (d) to move freely throughout the territory of India;",
+          "chunk_id": "chunk-d21f8f962357632e557f6731",
+          "version_id": null,
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q002-E3",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "(e) to reside and settle in any part of the territory of India; 1[and] 2[(f)* * * * *] (g) to practise any profession, or to carry on any occupation, trade or business.",
+          "chunk_id": "chunk-b9871ed7fee6588a145ac1da",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF pp. 40–41; indexed Article 19 chunks listed in gold evidence",
+          "verification_status": "verified",
+          "notes": "The cited excerpts reproduce exact substrings of the indexed passages, including amendment footnote markers. The index stores two em dash glyphs as U+FFFD in surrounding text; those damaged characters are excluded from the excerpts rather than silently normalized. The PDF page image has not been independently visually audited."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q003",
+      "question": "What does Article 21 say about deprivation of life or personal liberty?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "21"
+      ],
+      "expected_answer": "No person shall be deprived of life or personal liberty except according to procedure established by law.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q003-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "21. Protection of life and personal liberty.—No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+          "chunk_id": "chunk-d6191916210d8ec466f42f4e",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 42; indexed chunk chunk-d6191916210d8ec466f42f4e",
+          "verification_status": "verified",
+          "notes": "Current snapshot text only."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q004",
+      "question": "What does Article 21A provide?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "21A"
+      ],
+      "expected_answer": "The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q004-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "21A. Right to education.—The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.",
+          "chunk_id": "chunk-1078db9e04620397c7d1e229",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 42; indexed chunk chunk-1078db9e04620397c7d1e229",
+          "verification_status": "verified",
+          "notes": "Text is current snapshot evidence. This does not make the partially verified historical Article 21A pilot record verified."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q005",
+      "question": "What does the current Article 45 direct the State to endeavour to provide?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "45"
+      ],
+      "expected_answer": "The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q005-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "45. Provision for early childhood care and education to children below the age of six years.—The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.",
+          "chunk_id": "chunk-f1dbc92527e9d297fff1dfca",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 54; printed p. 23; indexed chunk chunk-f1dbc92527e9d297fff1dfca",
+          "verification_status": "verified",
+          "notes": "Current snapshot text only; not represented as a verified temporal version record."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q006",
+      "question": "Does Article 14 phrase its equality guarantee only for citizens, or for any person?",
+      "reference_date": "2026-05-01",
+      "question_category": "constitutional_interpretation",
+      "target_articles": [
+        "14"
+      ],
+      "expected_answer": "The text says 'any person'; it does not limit this phrase to citizens.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q006-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+          "chunk_id": "chunk-6100b381e336b62ecb405068",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 37; Article 14",
+          "verification_status": "verified",
+          "notes": "Textual reading question; does not ask for case-law doctrine."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q007",
+      "question": "According to Article 21's text, is deprivation of life or personal liberty stated without qualification?",
+      "reference_date": "2026-05-01",
+      "question_category": "constitutional_interpretation",
+      "target_articles": [
+        "21"
+      ],
+      "expected_answer": "No. The text states an exception: deprivation may occur only according to procedure established by law.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q007-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+          "chunk_id": "chunk-d6191916210d8ec466f42f4e",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 42; Article 21",
+          "verification_status": "verified",
+          "notes": "Question constrained to the provision's words, not judicial interpretation."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q008",
+      "question": "Which section of the Constitution (Eighty-sixth Amendment) Act, 2002 inserts Article 21A?",
+      "reference_date": "2026-05-01",
+      "question_category": "amendment_related",
+      "target_articles": [
+        "21A"
+      ],
+      "expected_answer": "Section 2 inserts new Article 21A after Article 21.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q008-E1",
+          "source_reference_id": "amendment-86-official",
+          "evidence_text": "Section 2 is titled 'Insertion of new article 21A' and directs that the following article be inserted after Article 21.",
+          "chunk_id": null,
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "act_text",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "amendment-86-official",
+          "source_type": "primary_source",
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "source_path": "raw/amendments/086_Amendment_2002.pdf",
+          "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+          "source_locator": "Section 2, page 1 of the local 2-page PDF",
+          "verification_status": "verified",
+          "notes": "Section text inspected in local extraction and identified official Legislative Department publication. Assent/title date is not used as commencement."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q009",
+      "question": "Which section of the 86th Amendment Act substitutes Article 45?",
+      "reference_date": "2026-05-01",
+      "question_category": "amendment_related",
+      "target_articles": [
+        "45"
+      ],
+      "expected_answer": "Section 3 substitutes a new Article 45 for Article 45.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q009-E1",
+          "source_reference_id": "amendment-86-official",
+          "evidence_text": "Section 3 is titled 'Substitution of new article for article 45' and provides the replacement text.",
+          "chunk_id": null,
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "act_text",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "amendment-86-official",
+          "source_type": "primary_source",
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "source_path": "raw/amendments/086_Amendment_2002.pdf",
+          "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+          "source_locator": "Section 3, page 1 of the local 2-page PDF",
+          "verification_status": "verified",
+          "notes": "Section text inspected; the assent date in the Act title is not its commencement date."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q010",
+      "question": "Under section 1(2) of the 86th Amendment Act, how was its commencement date to be appointed?",
+      "reference_date": "2026-05-01",
+      "question_category": "amendment_related",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": "The Central Government may appoint the date by notification in the Official Gazette.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q010-E1",
+          "source_reference_id": "amendment-86-official",
+          "evidence_text": "Section 1(2): the Act shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.",
+          "chunk_id": null,
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "act_text",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "amendment-86-official",
+          "source_type": "primary_source",
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "source_path": "raw/amendments/086_Amendment_2002.pdf",
+          "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+          "source_locator": "Section 1(2), page 1 of the local PDF",
+          "verification_status": "verified",
+          "notes": "This identifies the mechanism, not the appointed date."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q011",
+      "question": "What date is printed immediately below the title of the Constitution (Eighty-sixth Amendment) Act, 2002?",
+      "reference_date": "2026-05-01",
+      "question_category": "effective_date",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": "12 December 2002 is printed below the Act title. This is the Act's stated date and must not be treated as its commencement date.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q011-E1",
+          "source_reference_id": "amendment-86-official",
+          "evidence_text": "[12th December, 2002.]",
+          "chunk_id": null,
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "act_date_only",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "amendment-86-official",
+          "source_type": "primary_source",
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "source_path": "raw/amendments/086_Amendment_2002.pdf",
+          "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+          "source_locator": "Title page, date printed below Act title",
+          "verification_status": "verified",
+          "notes": "Stored as the Act's printed date; not labelled commencement or Gazette publication date."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q012",
+      "question": "On what date was Gazette notification S.O. 427(E) dated?",
+      "reference_date": "2026-05-01",
+      "question_category": "effective_date",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "notification_date",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "gazette-so427",
+          "source_type": "primary_source",
+          "source_document": "Gazette of India Extraordinary, S.O. 427(E)",
+          "source_path": null,
+          "source_url": "https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "source_locator": "S.O. 427(E); exact PDF page and notification text not archived or checked locally",
+          "verification_status": "partially_verified",
+          "notes": "Official Gazette PDF identified but not yet inspected as a complete primary document for benchmark gold. Leave answer pending until notification date is checked."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q013",
+      "question": "What Gazette issue date is stated for the issue containing S.O. 427(E)?",
+      "reference_date": "2026-05-01",
+      "question_category": "effective_date",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "gazette_publication_date",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "gazette-so427",
+          "source_type": "primary_source",
+          "source_document": "Gazette of India Extraordinary, S.O. 427(E)",
+          "source_path": null,
+          "source_url": "https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "source_locator": "Gazette issue header for S.O. 427(E); exact PDF page and header not checked locally",
+          "verification_status": "partially_verified",
+          "notes": "Official Gazette PDF identified but not yet inspected as a complete primary document for benchmark gold. Leave issue date pending until checked."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q014",
+      "question": "What date did S.O. 427(E) appoint for the provisions of the 86th Amendment Act to come into force?",
+      "reference_date": "2026-05-01",
+      "question_category": "effective_date",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "commencement_date",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "gazette-so427",
+          "source_type": "primary_source",
+          "source_document": "Gazette of India Extraordinary, S.O. 427(E)",
+          "source_path": null,
+          "source_url": "https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "source_locator": "S.O. 427(E) appointed-date clause; exact PDF page and clause not checked locally",
+          "verification_status": "partially_verified",
+          "notes": "Official Gazette PDF identified but not yet inspected as a complete primary document for benchmark gold. Leave commencement date pending until checked."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q015",
+      "question": "Was Article 21A in force on 31 December 2009?",
+      "reference_date": "2009-12-31",
+      "question_category": "historical_version",
+      "target_articles": [
+        "21A"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "historical_version_pending_verification",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "pilot-21a-pre",
+          "source_type": "canonical_pilot",
+          "source_document": "Canonical pilot record 21A_pre_86th",
+          "source_path": "processed/canonical/article_versions_pilot.json",
+          "source_url": null,
+          "source_locator": "record version_id=21A_pre_86th; original 1949 Constitution page not archived or page-checked",
+          "verification_status": "partially_verified",
+          "notes": "Pilot record is not gold evidence. It is excluded because its status is partially_verified."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q016",
+      "question": "What wording of Article 21A applied on 1 January 2011?",
+      "reference_date": "2011-01-01",
+      "question_category": "historical_version",
+      "target_articles": [
+        "21A"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "historical_version_pending_verification",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "pilot-21a-v1",
+          "source_type": "canonical_pilot",
+          "source_document": "Canonical pilot record 21A_v1",
+          "source_path": "processed/canonical/article_versions_pilot.json",
+          "source_url": null,
+          "source_locator": "record version_id=21A_v1; Act section 2 and commencement source require outstanding page-image/archive verification",
+          "verification_status": "partially_verified",
+          "notes": "Pilot record is not gold evidence and cannot support a historical answer until verified."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q017",
+      "question": "What wording did Article 45 have on 31 December 2009?",
+      "reference_date": "2009-12-31",
+      "question_category": "historical_version",
+      "target_articles": [
+        "45"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "historical_version_pending_verification",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "pilot-45-pre",
+          "source_type": "canonical_pilot",
+          "source_document": "Canonical pilot record 45_pre_86th",
+          "source_path": "processed/canonical/article_versions_pilot.json",
+          "source_url": null,
+          "source_locator": "record version_id=45_pre_86th; interval completeness before 2010 requires further source verification",
+          "verification_status": "partially_verified",
+          "notes": "Pilot record is not gold evidence; no expected wording is supplied."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q018",
+      "question": "What wording of Article 45 applied on 1 January 2011?",
+      "reference_date": "2011-01-01",
+      "question_category": "historical_version",
+      "target_articles": [
+        "45"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [],
+      "expected_version_id": null,
+      "expected_temporal_status": "historical_version_pending_verification",
+      "difficulty": "medium",
+      "verification_status": "pending_source_verification",
+      "source_references": [
+        {
+          "reference_id": "pilot-45-v2",
+          "source_type": "canonical_pilot",
+          "source_document": "Canonical pilot record 45_v2",
+          "source_path": "processed/canonical/article_versions_pilot.json",
+          "source_url": null,
+          "source_locator": "record version_id=45_v2; Act/Gazette page-image verification and stable archived sources remain outstanding",
+          "verification_status": "partially_verified",
+          "notes": "Pilot record is not gold evidence and cannot support a historical answer until verified."
+        }
+      ],
+      "evaluation_status": "pending_source_verification"
+    },
+    {
+      "question_id": "Q019",
+      "question": "As stated in the current text, what age ranges are addressed by Articles 21A and 45?",
+      "reference_date": "2026-05-01",
+      "question_category": "multi_article",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": "Article 21A concerns children of the age of six to fourteen years. Article 45 concerns early childhood care and education for all children until they complete the age of six years.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q019-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.",
+          "chunk_id": "chunk-1078db9e04620397c7d1e229",
+          "version_id": null,
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q019-E2",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.",
+          "chunk_id": "chunk-f1dbc92527e9d297fff1dfca",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF pp. 42 and 54; indexed chunks cited in evidence",
+          "verification_status": "verified",
+          "notes": "Compares current snapshot wording; does not use the partially verified historical pilot."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q020",
+      "question": "What wording difference in the beneficiary phrase can be observed between Articles 14 and 21?",
+      "reference_date": "2026-05-01",
+      "question_category": "multi_article",
+      "target_articles": [
+        "14",
+        "21"
+      ],
+      "expected_answer": "Article 14 says 'any person'; Article 21 begins 'No person'. Both use person-based wording in these clauses.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q020-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+          "chunk_id": "chunk-6100b381e336b62ecb405068",
+          "version_id": null,
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q020-E2",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+          "chunk_id": "chunk-d6191916210d8ec466f42f4e",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 37 Article 14 and p. 42 Article 21; indexed chunks cited in evidence",
+          "verification_status": "verified",
+          "notes": "Narrow textual comparison, not a doctrinal comparison."
+        }
+      ],
+      "evaluation_status": "suitable_for_evaluation"
+    }
+  ],
+  "corpus_provenance": {
+    "index_path": "processed/static_rag/index.sqlite3",
+    "corpus_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "corpus_snapshot_source": "SQLite metadata.corpus_snapshot and chunk metadata.corpus_snapshot",
+    "chunk_count": 1123,
+    "embedding_model": "BAAI/bge-small-en-v1.5"
+  }
+}

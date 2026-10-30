@@ -107,3 +107,30 @@ The proposed system follows the pipeline:
                          |
                          v
           Source + Temporal Information
+```
+
+---
+
+## System A: Base LLM
+
+System A sends only the legal question and its reference date to the configured Gemini model. It does not retrieve project documents, access the project corpus, use a vector database, or enable web search/tools. Successful and failed attempts are appended to `results/system_a/runs.jsonl`.
+
+Install the dependencies from the repository root:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Copy `.env.example` to `.env` and set `GEMINI_API_KEY` to the key created in Google AI Studio. The `.env` file is ignored by Git. `GEMINI_MODEL_NAME`, `GENERATION_TEMPERATURE`, and `MAX_OUTPUT_TOKENS` configure generation. The same settings module is intended for Systems B and C.
+
+Run a question:
+
+```powershell
+python -m systems.system_a --question-id Q001 --reference-date 2020-01-01 --question "What does Article 21A provide?"
+```
+
+Run the mocked tests (no API key or network call required):
+
+```powershell
+python -m unittest discover -s tests -v
+```
