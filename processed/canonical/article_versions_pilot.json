@@ -1,0 +1,114 @@
+{
+  "dataset_id": "indian-constitution-article-version-pilot-86th-amendment",
+  "schema_file": "article_version.schema.json",
+  "interval_convention": "Half-open [effective_from, effective_to); a null effective_to means no known end.",
+  "coverage_note": "Pilot covers Articles 21A and 45 across the commencement of the Constitution (Eighty-sixth Amendment) Act, 2002. It does not assert a complete constitutional history outside these intervals.",
+  "records": [
+    {
+      "article_number": "21A",
+      "version_id": "21A_pre_86th",
+      "text": null,
+      "effective_from": "1950-01-26",
+      "effective_to": "2010-04-01",
+      "source_amendment": null,
+      "source_section": null,
+      "source_reference": {
+        "source_document": "The Constitution of India (1949), local scan raw/sources/Constitution_of_India_English_1949.pdf; Parliament Digital Library https://eparlib.sansad.in/handle/123456789/2495437?view_type=browse",
+        "page_or_locator": "PDF p. 29, printed p. 12: Article 21 is followed immediately by Article 22; Article 21A is absent from this original sequence. This establishes the original text, not by itself the entire 1950–2010 interval.",
+        "commencement_evidence": {
+          "source_document": "The Constitution of India (1949), local scan raw/sources/Constitution_of_India_English_1949.pdf",
+          "page_or_locator": "Article 394, PDF p. 250; remaining provisions commence on 26 January 1950.",
+          "effective_date": "1950-01-26"
+        },
+        "end_boundary_evidence": {
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002, section 2, local raw/amendments/086_Amendment_2002.pdf; Gazette of India S.O. 427(E), official India Code PDF https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "page_or_locator": "86th Amendment Act PDF p. 1, section 2 inserts new Article 21A after Article 21. Official Gazette PDF p. 1 (printed folio (1)) text-view identifies the appointed date; page image was not visually inspected and no local PDF hash is available.",
+          "effective_date": "2010-04-01"
+        }
+      },
+      "operation_type": "not_in_force",
+      "verification_status": "partially_verified",
+      "verification_notes": "The null text represents the not-in-force state, not missing wording. The local original Constitution scan was visually checked at PDF p. 29 (printed p. 12), where Article 21 is followed by Article 22; Article 394 at PDF p. 250 supports the 1950-01-26 commencement. The 86th Amendment Act section 2 at local PDF p. 1 inserts new Article 21A, and official India Code PDF text-view evidence identifies 2010-04-01 as the appointed date (PDF p. 1, printed folio (1); not visually inspected locally). A complete check for any earlier Article 21A operation across the full 1950–2010 amendment history is still absent, so continuous evidence coverage is not established and this record remains partially_verified.",
+      "provision_status": "not_in_force"
+    },
+    {
+      "article_number": "21A",
+      "version_id": "21A_v1",
+      "text": "21A. The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.",
+      "effective_from": "2010-04-01",
+      "effective_to": null,
+      "source_amendment": {
+        "amendment_number": 86,
+        "title": "Constitution (Eighty-sixth Amendment) Act, 2002",
+        "act_date": "2002-12-12"
+      },
+      "source_section": "Section 2",
+      "source_reference": {
+        "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002; local primary-source PDF raw/amendments/086_Amendment_2002.pdf; official Legislative Department PDF https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+        "page_or_locator": "Local PDF p. 1, section 2, 'Insertion of new article 21A'; exact operative wording retained, excluding the Act's enclosing quotation marks and terminal amendment punctuation.",
+        "commencement_evidence": {
+          "source_document": "Gazette of India, Extraordinary, No. 591, S.O. 427(E), official India Code PDF https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "page_or_locator": "Notification dated 2010-02-16; Gazette publication 2010-02-19; official PDF p. 1 (printed folio (1)) text-view appoints 2010-04-01. The page image was not visually inspected locally; no local PDF hash is available.",
+          "effective_date": "2010-04-01"
+        }
+      },
+      "operation_type": "inserted",
+      "verification_status": "partially_verified",
+      "verification_notes": "The exact operative wording is supported by section 2 of the local 86th Amendment Act PDF, p. 1, and matches Article 21A in the official consolidated Constitution snapshot dated 2026-05-01, PDF p. 42. Official India Code PDF text-view evidence for S.O. 427(E), PDF p. 1, supports the commencement date 2010-04-01; the page image was not visually inspected locally and no local PDF hash is available. The consolidated snapshot establishes Article 21A's text on its as-of date but does not establish uninterrupted validity for every date since 2010. A complete post-insertion amendment-history check is still absent, so no continuous evidence_coverage is recorded and this record remains partially_verified.",
+      "provision_status": "in_force"
+    },
+    {
+      "article_number": "45",
+      "version_id": "45_pre_86th",
+      "text": "45. The State shall endeavour to provide, within a period of ten years from the commencement of this Constitution, for free and compulsory education for all children until they complete the age of fourteen years.",
+      "effective_from": "1950-01-26",
+      "effective_to": "2010-04-01",
+      "source_amendment": null,
+      "source_section": null,
+      "source_reference": {
+        "source_document": "The Constitution of India, authoritative India Code-hosted consolidated text; https://upload.indiacode.nic.in/showfile?actid=AC_AN_91_1361_00006_00006_1696917644691&filename=constitution_of_india.pdf&type=actfile",
+        "page_or_locator": "Printed page 23, Article 45 and footnote identifying the 86th Amendment substitution; the text before the substitution is shown explicitly.",
+        "commencement_evidence": {
+          "source_document": "The Constitution of India, India Code-hosted consolidated text; https://upload.indiacode.nic.in/showfile?actid=AC_AN_91_1361_00006_00006_1696917644691&filename=constitution_of_india.pdf&type=actfile",
+          "page_or_locator": "Printed page 23, Article 45; the Constitution commenced 26 January 1950.",
+          "effective_date": "1950-01-26"
+        },
+        "end_boundary_evidence": {
+          "source_document": "Gazette of India, S.O. 427(E), dated 16 February 2010; India Code-hosted Gazette PDF https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "page_or_locator": "Notification appointing 1 April 2010 as the date the 86th Amendment Act comes into force.",
+          "effective_date": "2010-04-01"
+        }
+      },
+      "operation_type": "baseline",
+      "verification_status": "partially_verified",
+      "verification_notes": "The pre-amendment wording is taken from the official India Code-hosted Constitution page that explicitly presents the text before substitution. The cited online source has been inspected, but its exact edition/version date and page image have not been archived in this repository; preserve the downloaded official edition and page evidence during data review.",
+      "provision_status": "in_force"
+    },
+    {
+      "article_number": "45",
+      "version_id": "45_v2",
+      "text": "45. The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.",
+      "effective_from": "2010-04-01",
+      "effective_to": null,
+      "source_amendment": {
+        "amendment_number": 86,
+        "title": "Constitution (Eighty-sixth Amendment) Act, 2002",
+        "act_date": "2002-12-12"
+      },
+      "source_section": "Section 3",
+      "source_reference": {
+        "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002; local extracted text processed/amendments_raw/086_Amendment_2002.txt; official Legislative Department PDF https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+        "page_or_locator": "Section 3, 'Substitution of new article for article 45'; quoted wording after the provision heading. Exact legal wording retained.",
+        "commencement_evidence": {
+          "source_document": "Gazette of India, S.O. 427(E), dated 16 February 2010; India Code-hosted Gazette PDF https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+          "page_or_locator": "Notification appointing 1 April 2010 as the date the 86th Amendment Act comes into force.",
+          "effective_date": "2010-04-01"
+        }
+      },
+      "operation_type": "substituted",
+      "verification_status": "partially_verified",
+      "verification_notes": "The replacement wording matches section 3 of the official Legislative Department Act text and the local extracted text. The prior Article 45 wording is independently obtained from the cited India Code-hosted Constitution source. Commencement is supported by Gazette S.O. 427(E). Verify source page images and record stable local copies before setting status to verified.",
+      "provision_status": "in_force"
+    }
+  ]
+}

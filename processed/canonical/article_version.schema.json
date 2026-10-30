@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Indian Constitution Historical Article Version",
+  "type": "object",
+  "required": [
+    "article_number",
+    "version_id",
+    "text",
+    "effective_from",
+    "effective_to",
+    "source_amendment",
+    "source_section",
+    "source_reference",
+    "operation_type",
+    "verification_status",
+    "verification_notes",
+    "provision_status"
+  ],
+  "properties": {
+    "article_number": {"type": "string", "minLength": 1},
+    "version_id": {"type": "string", "minLength": 1},
+    "text": {"type": ["string", "null"]},
+    "effective_from": {"type": "string", "format": "date"},
+    "effective_to": {"type": ["string", "null"], "format": "date"},
+    "source_amendment": {
+      "type": ["object", "null"],
+      "required": ["amendment_number", "title", "act_date"],
+      "properties": {
+        "amendment_number": {"type": "integer"},
+        "title": {"type": "string", "minLength": 1},
+        "act_date": {"type": "string", "format": "date"}
+      },
+      "additionalProperties": false
+    },
+    "source_section": {"type": ["string", "null"]},
+    "source_reference": {
+      "type": "object",
+      "required": ["source_document", "page_or_locator", "commencement_evidence"],
+      "properties": {
+        "source_document": {"type": "string", "minLength": 1},
+        "page_or_locator": {"type": "string", "minLength": 1},
+        "commencement_evidence": {"$ref": "#/$defs/evidence"},
+        "end_boundary_evidence": {"$ref": "#/$defs/evidence"}
+      },
+      "additionalProperties": true
+    },
+    "operation_type": {
+      "enum": ["baseline", "not_in_force", "inserted", "substituted", "amended", "omitted"]
+    },
+    "verification_status": {"enum": ["verified", "partially_verified", "unverified"]},
+    "verification_notes": {"type": "string"},
+    "provision_status": {"enum": ["in_force", "not_in_force", "omitted"]},
+    "evidence_coverage": {
+      "type": "object",
+      "required": ["verified_through", "source_references"],
+      "properties": {
+        "verified_through": {"type": "string", "format": "date"},
+        "source_references": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["source_document", "page_or_locator", "claim"],
+            "properties": {
+              "source_document": {"type": "string", "minLength": 1},
+              "page_or_locator": {"type": "string", "minLength": 1},
+              "claim": {"type": "string", "minLength": 1}
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": ["source_document", "page_or_locator", "effective_date"],
+      "properties": {
+        "source_document": {"type": "string", "minLength": 1},
+        "page_or_locator": {"type": "string", "minLength": 1},
+        "effective_date": {"type": "string", "format": "date"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

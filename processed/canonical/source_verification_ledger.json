@@ -1,0 +1,544 @@
+{
+  "ledger_id": "indian-constitution-source-verification-86th-amendment-pilot",
+  "review_date": "2026-10-30",
+  "scope": {
+    "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+    "articles": [
+      "21A",
+      "45"
+    ],
+    "reasons_for_priority": [
+      "Historical-version questions Q015-Q018 target Articles 21A and 45.",
+      "Amendment questions Q008-Q010 and effective-date questions Q011-Q014 concern the 86th Amendment Act, 2002, and/or Articles 21A and 45."
+    ],
+    "interval_convention": "Half-open [effective_from, effective_to); effective_from is inclusive and effective_to is exclusive. null means no end date has been established in this record; it does not prove perpetual validity.",
+    "status_rule": "verified is allowed only when primary evidence establishes both operative text/state and the full applicable interval. No proposed version in this ledger meets that standard."
+  },
+  "source_documents": [
+    {
+      "source_id": "SRC-ORIGINAL-CONSTITUTION-1949",
+      "filename": "Constitution_of_India_English_1949.pdf",
+      "local_path": "raw/sources/Constitution_of_India_English_1949.pdf",
+      "source_url": "https://eparlib.sansad.in/bitstream/123456789/2495437/1/Constitution_of_India_English_1949.pdf",
+      "catalog_url": "https://eparlib.sansad.in/handle/123456789/2495437?view_type=browse",
+      "document_title": "The Constitution of India (cover title: THE CONSTITUTION OF INDIA)",
+      "document_date_as_catalogued": "1949",
+      "issuing_authority_or_publisher": "The scan itself identifies the Constitution and shows the Constituent Assembly adoption statement. No publisher/imprint or exact publication date is visible on the inspected cover/title pages; catalog metadata identifies the item as 1949.",
+      "publication_or_assent_date": "The Preamble page (PDF p. 18) states adoption on 26 November 1949. This is adoption, not evidence of publication date. The inspected cover (PDF p. 1) has title only; no publication imprint/date was visible.",
+      "commencement_provision": "Article 394, PDF p. 250 (printed p. 233 per contents, not visibly foliated on the Article 394 page): Article 394 and listed provisions came into force at once; remaining provisions came into force on 26 January 1950.",
+      "relevant_locator": "Cover/title: PDF p. 1. Preamble/adoption statement: PDF p. 18. Article 21: PDF p. 29, printed p. 12; Article 22 follows immediately on the same page and no Article 21A appears in the original sequence. Article 45: PDF p. 39, printed p. 22. Article 394: PDF p. 250, printed p. 233 according to the contents locator; folio not visible on the inspected leaf.",
+      "pdf_page_count": 342,
+      "pdf_page_number": {
+        "cover": 1,
+        "preamble": 18,
+        "article_21": 29,
+        "article_45": 39,
+        "article_394": 250
+      },
+      "printed_page_number": {
+        "article_21": 12,
+        "article_45": 22,
+        "article_394": "233 per contents; not visible on inspected leaf"
+      },
+      "text_or_image_status": "Image-only scanned PDF; embedded page images, no extractable text layer. Relevant pages rendered and visually inspected.",
+      "sha256": "9d907654a9f800c0629000b6011e8b112a2d2b7f599a3130c618235b2b38f007",
+      "checksum_status": "SHA-256 computed from local PDF bytes",
+      "inspection_status": "Local PDF title/cover and relevant Article 21, Article 45, and Article 394 page images visually inspected.",
+      "evidentiary_limit": "Article 45 original wording is established as text appearing in this original Constitution scan, but continuity to 1 April 2010 remains unverified pending full intervening amendment-history audit. Article 21A absence is directly observed in the original Article 21/22 sequence, but interval use still depends on commencement evidence and scope/history checks.",
+      "file_size_bytes": 213220509,
+      "technical_pdf_metadata": "Creator/producer Adobe Acrobat 9.0 Image Conversion Plug-in; creation 2017-02-16 and modification 2017-02-20 metadata are scan processing metadata, not legal publication dates.",
+      "page_level_findings": {
+        "cover": "PDF p. 1 reads THE CONSTITUTION OF INDIA; no date/imprint visible.",
+        "preamble": "PDF p. 18 states adoption by the Constituent Assembly on 26 November 1949.",
+        "article_21": "PDF p. 29, printed p. 12; Article 21 is followed directly by Article 22. Article 21A is absent from this original Article sequence.",
+        "article_45_text": "45. The State shall endeavour to provide, within a period of ten years from the commencement of this Constitution, for free and compulsory education for all children until they complete the age of fourteen years.",
+        "article_45_locator": "PDF p. 39, printed p. 22.",
+        "article_394_text": "394. This article and articles 5, 6, 7, 8, 9, 60, 324, 366, 367, 379, 380, 388, 391, 392 and 393 shall come into force at once, and the remaining provisions of this Constitution shall come into force on the twenty-sixth day of January, 1950, which day is referred to in this Constitution as the commencement of this Constitution.",
+        "article_394_locator": "PDF p. 250; printed page 233 per contents. Page image visually inspected; folio not visible on leaf.",
+        "article_21_text": "21. No person shall be deprived of his life or personal liberty except according to procedure established by law."
+      }
+    },
+    {
+      "source_id": "SRC-86TH-AMENDMENT-LOCAL",
+      "filename": "086_Amendment_2002.pdf",
+      "local_path": "raw/amendments/086_Amendment_2002.pdf",
+      "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+      "document_title": "The Constitution (Eighty-sixth Amendment) Act, 2002",
+      "issuing_authority_or_publisher": "Enacted by Parliament of India; the official online copy is hosted by the Legislative Department, Ministry of Law and Justice, Government of India. The local PDF page itself names Subhash C. Jain, Secretary to the Government of India.",
+      "date_printed_below_title": "2002-12-12",
+      "assent_date": "The existing amendment metadata labels 2002-12-12 as assent date; the local Act page prints that date but does not label the date field as assent.",
+      "publication_date": "Not stated on the inspected local Act pages; not independently verified here.",
+      "commencement_provision": "Section 1(2): the Central Government may appoint the commencement date by notification in the Official Gazette. The Act does not itself set a commencement date in section 1(2).",
+      "relevant_locator": "PDF p. 1, sections 1(2), 2 and 3. No printed page number is visible on p. 1. Section 2 inserts Article 21A; section 3 substitutes Article 45.",
+      "pdf_page_count": 2,
+      "text_or_image_status": "Text-searchable PDF; no page images embedded. PDF p. 1 was rendered and visually inspected; p. 2 contains the Statement of Objects and Reasons and was also visually inspected.",
+      "sha256": "588aa67f5dc92dba88553ab0348aad7f9eed36b71305997cd21fe5837525f854",
+      "checksum_status": "computed from local PDF bytes",
+      "technical_pdf_metadata": "Creator/producer Microsoft Word for Microsoft 365; PDF creation/modification metadata 2023-03-02. These PDF metadata dates are not legal assent, publication, or commencement dates.",
+      "inspection_status": "local PDF text checked; relevant page visually inspected; official Legislative Department PDF text independently found in the official site index",
+      "evidentiary_limit": "This establishes the Act's insertion/substitution wording and commencement mechanism. The interval still requires the Gazette commencement instrument and interval continuity evidence."
+    },
+    {
+      "source_id": "SRC-SO-427E-GAZETTE",
+      "filename": "rte_goi_2009.pdf",
+      "local_path": null,
+      "source_url": "https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf",
+      "document_title": "Gazette of India, Extraordinary, Part II, Section 3, Sub-section (ii), No. 591; notification S.O. 427(E)",
+      "issuing_authority_or_publisher": "Government of India Gazette; notification ministry/department as previously identified in indexed source metadata: Ministry of Human Resource Development, Department of School Education and Literacy.",
+      "notification_date": "2010-02-16",
+      "gazette_issue_publication_date": "2010-02-19",
+      "appointed_commencement_date": "2010-04-01",
+      "commencement_provision": "Official India Code indexed text for S.O. 427(E), dated 16 February 2010, states that the provisions of the Constitution (Eighty-sixth Amendment) Act, 2002 shall come into force on 1 April 2010.",
+      "relevant_locator": "Official India Code-hosted Gazette PDF, first PDF page (PDF p. 1; printed folio marker (1)): Gazette of India, Extraordinary, Part II, Section 3, Sub-section (ii), No. 591, dated 19 February 2010; S.O. 427(E), notification dated 16 February 2010; appointed commencement date 1 April 2010. Page text was exposed by the PDF text/index viewer; the page image was not visually inspected.",
+      "pdf_page_count": null,
+      "pdf_page_number": 1,
+      "printed_page_number": "1 (folio marker shown as (1))",
+      "text_or_image_status": "Official India Code-hosted PDF source; page 1 text was available through the official PDF/index text viewer. No local copy was obtained and the page image was not visually inspected.",
+      "sha256": null,
+      "checksum_status": "Not computed: correct Gazette PDF is not available locally.",
+      "inspection_status": "The exact official India Code PDF URL was opened through its PDF text/index viewer; page 1 text identifies the Gazette issue, S.O. 427(E), and appointed date. Local download and visual page inspection were unavailable. SHA-256 was not computed. Local candidate raw/sources/SO_427_E_2010.pdf is separately identified as a mismatched issue and was not used.",
+      "evidentiary_limit": "Official PDF text-view evidence supports the page-1 locator and date/issue facts, but no local PDF bytes/hash or visual page inspection is available. Do not represent these as locally inspected or visually verified. The mismatched local weekly issue is not the source.",
+      "local_candidate_sha256": "409429e8fb9eada89f79aa78524dd89f6a0945f56bc0fd5dfb975be1bafbd62d",
+      "local_candidate_file_size_bytes": 8913904,
+      "local_candidate_pdf_page_count": 234,
+      "local_candidate_issue_identification": "Cover page PDF p. 1 visually reads The Gazette of India, Weekly, No. 51, New Delhi, Saturday, December 18, 2010, Part II—Section 3—Sub-section (ii). This is not the Extraordinary No. 591 issue dated 19 February 2010 containing S.O. 427(E).",
+      "act_date_printed_under_title": "2002-12-12 (86th Amendment Act; printed below the Act title, not labeled commencement)",
+      "assent_date": "2002-12-12 (asserted by existing amendment_metadata.json; distinguish from the Act printed date; direct assent evidence not independently checked here)",
+      "issue_number": "591"
+    },
+    {
+      "source_id": "SRC-CURRENT-CONSTITUTION-2026",
+      "filename": "Constitution_of_India_2024.pdf",
+      "local_path": "raw/constitution/Constitution_of_India_2024.pdf",
+      "source_url": null,
+      "document_title": "The Constitution of India [As on 1st May, 2026]",
+      "issuing_authority_or_publisher": "Government of India, Ministry of Law and Justice, Legislative Department (cover and preface).",
+      "edition_date_on_cover": "2026-05-01",
+      "preface_scope": "Sixth pocket-size diglot edition incorporating amendments through the Constitution (One Hundred and Sixth Amendment) Act, 2023.",
+      "pdf_modification_metadata": "2026-06-12T04:57:43Z; technical PDF metadata, not legal publication date.",
+      "commencement_provision": null,
+      "relevant_locator": "Article 21A appears on PDF p. 42. Article 45 appears on PDF p. 54, printed p. 23. Article 45 footnote 2 states it was substituted by section 3 of the 86th Amendment Act, effective 1 April 2010. PDF p. 54 was rendered and visually inspected.",
+      "pdf_page_count": 402,
+      "text_or_image_status": "Predominantly searchable text PDF. PDF p. 54 has an extractable text layer and was visually inspected.",
+      "sha256": "4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+      "checksum_status": "computed from local PDF bytes",
+      "inspection_status": "local cover metadata and relevant current Article 45 page checked; current Article 21A text is extractable from p. 42",
+      "evidentiary_limit": "This is a later consolidated text, not proof of the original Article 45 wording or uninterrupted historical validity. It corroborates the 2026 current text and the printed 86th Amendment footnote only."
+    },
+    {
+      "source_id": "SRC-INDIACODE-CONSOLIDATED-CONSTITUTION",
+      "filename": "constitution_of_india.pdf",
+      "local_path": null,
+      "source_url": "https://upload.indiacode.nic.in/showfile?actid=AC_AN_91_150_00002_00002_1665722041433&filename=constitution_of_india.pdf&type=actfile",
+      "document_title": "The Constitution of India, India Code-hosted consolidated text (edition date not established in this review)",
+      "issuing_authority_or_publisher": "India Code-hosted Government of India Constitution text; exact edition metadata not locally verified.",
+      "publication_or_assent_date": "Unknown",
+      "commencement_provision": null,
+      "relevant_locator": "Official India Code search-index excerpt identifies printed p. 23, displays original Article 45 wording, and annotates the 86th Amendment Act section 3 substitution as not yet in force. Remote PDF fetch timed out; page image and edition date were not locally inspected.",
+      "pdf_page_count": null,
+      "pdf_page_number": null,
+      "printed_page_number": 23,
+      "text_or_image_status": "Referred to by existing pilot provenance; file not locally inspected.",
+      "sha256": null,
+      "checksum_status": "not_computed; source PDF is not present locally",
+      "inspection_status": "Official India Code indexed text reviewed; source PDF not obtained or visually inspected.",
+      "evidentiary_limit": "Official consolidation cross-check only; not an inspected primary Amendment Act page and not an exhaustive act-by-act history. Do not upgrade Article45_pre_86th from this excerpt alone."
+    },
+    {
+      "source_id": "SRC-LOCAL-GAZETTE-CANDIDATE-2010",
+      "filename": "SO_427_E_2010.pdf",
+      "local_path": "raw/sources/SO_427_E_2010.pdf",
+      "document_title": "The Gazette of India, Weekly, No. 51",
+      "issuing_authority_or_publisher": "Government of India Gazette, Published by Authority (as shown on cover)",
+      "gazette_issue_publication_date": "2010-12-18",
+      "issue_number": "51",
+      "part_section": "Part II—Section 3—Sub-section (ii)",
+      "notification_date": null,
+      "appointed_commencement_date": null,
+      "relevant_locator": "PDF p. 1 cover. Cover identifies weekly issue dated 18 December 2010. S.O. 427(E) not identified; this is not Extraordinary Gazette No. 591 dated 19 February 2010.",
+      "pdf_page_count": 234,
+      "pdf_page_number": 1,
+      "printed_page_number": "Cover pagination not applicable; subsequent printed page number visible as 8774 on PDF p. 2.",
+      "text_or_image_status": "Image-only scan; cover rendered and visually inspected.",
+      "sha256": "409429e8fb9eada89f79aa78524dd89f6a0945f56bc0fd5dfb975be1bafbd62d",
+      "file_size_bytes": 8913904,
+      "checksum_status": "SHA-256 computed from local PDF bytes",
+      "technical_pdf_metadata": "Creator/producer OmniPage CSDK 15.5; PDF creation/modification metadata 2012-03-16 are scan processing metadata, not Gazette issue date.",
+      "inspection_status": "Cover visually inspected; source does not match requested S.O. 427(E) Gazette issue.",
+      "evidentiary_limit": "Not evidence for S.O. 427(E), its 16 February 2010 notification date, 19 February 2010 Gazette issue date, or 1 April 2010 commencement."
+    }
+  ],
+  "other_amendment_acts_review": {
+    "benchmark_relevant_amendment_questions": [
+      "Q008",
+      "Q009",
+      "Q010",
+      "Q011",
+      "Q012",
+      "Q013",
+      "Q014"
+    ],
+    "benchmark_relevant_act": "Constitution (Eighty-sixth Amendment) Act, 2002",
+    "amendment_operations_matches": [
+      {
+        "amendment_number": 86,
+        "section": 2,
+        "article": "21A",
+        "operation_in_extraction": "inserted"
+      },
+      {
+        "amendment_number": 86,
+        "section": 3,
+        "article": "45",
+        "operation_in_extraction": "amended"
+      }
+    ],
+    "operation_label_issue": "The extracted operation file labels section 3 for Article 45 as 'amended'; the Act itself labels section 3 'Substitution of new article for article 45'. The source Act's legal operation is substitution. Existing operation data was not modified.",
+    "other_local_act_matches": [],
+    "coverage_limitation": "The repository has 18 selected amendment PDFs and 160 extracted operations, not a complete primary-source collection of every Constitution amendment. No other local extracted operation targets Articles 21A or 45, but that parser result does not establish a complete amendment-history audit for Article 45."
+  },
+  "version_proposals": [
+    {
+      "article_number": "21A",
+      "version_id": "21A_pre_86th",
+      "operation_type": "not_in_force",
+      "proposed_operative_text": null,
+      "provision_state": "not_in_force; null is the legal absence state, not missing wording",
+      "effective_from": "1950-01-26",
+      "effective_to": "2010-04-01",
+      "effective_from_evidence": {
+        "source_ids": [
+          "SRC-ORIGINAL-CONSTITUTION-1949"
+        ],
+        "locator": "Original Constitution Article 394, PDF p. 250; printed p. 233 per contents. Page visually inspected.",
+        "evidence_status": "partially_verified",
+        "finding": "Article 394 in the original scan establishes 26 January 1950 commencement for remaining provisions. The Article 21/22 sequence on PDF p. 29 (printed p. 12) has no Article 21A."
+      },
+      "effective_to_evidence": {
+        "source_ids": [
+          "SRC-86TH-AMENDMENT-LOCAL",
+          "SRC-SO-427E-GAZETTE"
+        ],
+        "locator": "Official India Code indexed S.O. 427(E) text: notification 2010-02-16, Gazette Extraordinary No. 591 published 2010-02-19, appointed date 2010-04-01; PDF page locator unavailable. 86th Amendment Act section 2 is on local PDF p. 1.",
+        "evidence_status": "partially_verified",
+        "finding": "The official indexed text supplies the appointed date and section 2 establishes insertion. The Gazette PDF page has not been visually inspected. An exhaustive review of all earlier amendment Acts for any prior Article 21A change remains incomplete."
+      },
+      "transition_evidence": "Original Constitution PDF p. 29 (printed p. 12) visually shows Article 21 followed immediately by Article 22; the 86th Amendment Act p. 1 expressly inserts new Article 21A. The matching commencement instrument still needs inspection.",
+      "continuation_evidence": "No earlier Article 21A operation appears in the extracted 160-operation file. That file and the selected amendment corpus are not a complete legal-history proof.",
+      "unresolved_gaps": [
+        "Audit full amendment history to confirm no earlier Article 21A state and establish the not-in-force interval.",
+        "Obtain/inspect the actual Gazette page if page-image verification is required; indexed evidence has no PDF/printed page locator. Complete the all-amendment history check for any earlier Article 21A state."
+      ],
+      "verification_decision": "partially_verified"
+    },
+    {
+      "article_number": "21A",
+      "version_id": "21A_v1",
+      "operation_type": "inserted",
+      "proposed_operative_text": "21A. The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.",
+      "provision_state": "in_force",
+      "effective_from": "2010-04-01",
+      "effective_to": null,
+      "effective_from_evidence": {
+        "source_ids": [
+          "SRC-SO-427E-GAZETTE"
+        ],
+        "locator": "Official India Code indexed S.O. 427(E) text: notification 2010-02-16; Gazette Extraordinary No. 591 published 2010-02-19; appointed commencement 2010-04-01. No PDF or printed page locator is supplied.",
+        "evidence_status": "partially_verified",
+        "finding": "The official indexed text states the appointed date. The PDF page is not visually inspected. The local candidate PDF is a separate December 2010 weekly issue."
+      },
+      "effective_to_evidence": {
+        "source_ids": [
+          "SRC-CURRENT-CONSTITUTION-2026"
+        ],
+        "locator": "PDF p. 42 Article 21A; text extractable, current consolidated text",
+        "evidence_status": "partially_verified",
+        "finding": "The as-of-1-May-2026 consolidated text contains Article 21A. A complete post-2010 amendment audit and full interval closure have not been performed."
+      },
+      "transition_evidence": "86th Amendment Act section 2 on local PDF p. 1 was visually inspected. Its operative Article 21A wording matches the proposed text; the official Legislative Department copy is also indexed with the same wording.",
+      "continuation_evidence": "The current consolidated Constitution includes Article 21A, but no complete amendment-history audit establishes the entire open-ended interval.",
+      "unresolved_gaps": [
+        "Confirm all later amendment history through the 1 May 2026 Constitution snapshot.",
+        "Establish endpoint convention before interpreting effective_to null beyond the source snapshot.",
+        "The actual Gazette page locator/image is unavailable; complete the post-2010 Article 21A amendment-history audit through the declared endpoint."
+      ],
+      "verification_decision": "partially_verified"
+    },
+    {
+      "article_number": "45",
+      "version_id": "45_pre_86th",
+      "operation_type": "baseline",
+      "proposed_operative_text": "45. The State shall endeavour to provide, within a period of ten years from the commencement of this Constitution, for free and compulsory education for all children until they complete the age of fourteen years.",
+      "provision_state": "in_force",
+      "effective_from": "1950-01-26",
+      "effective_to": "2010-04-01",
+      "effective_from_evidence": {
+        "source_ids": [
+          "SRC-ORIGINAL-CONSTITUTION-1949"
+        ],
+        "locator": "Original Constitution Article 45, PDF p. 39, printed p. 22; Article 394, PDF p. 250 (printed p. 233 per contents). Both pages visually inspected.",
+        "evidence_status": "partially_verified",
+        "finding": "Original scan directly supports the stated Article 45 wording and Article 394 establishes the original commencement date of 26 January 1950 for remaining provisions."
+      },
+      "effective_to_evidence": {
+        "source_ids": [
+          "SRC-86TH-AMENDMENT-LOCAL",
+          "SRC-SO-427E-GAZETTE"
+        ],
+        "locator": "86th Amendment Act section 3, local PDF p. 1; official India Code indexed S.O. 427(E): appointed date 2010-04-01 (notification 2010-02-16; issue 19 February 2010, No. 591); no Gazette page locator supplied.",
+        "evidence_status": "partially_verified",
+        "finding": "The substitution text is established by the Act and the official indexed text establishes the appointed date at index level. Continuity of the old wording from 1950 until that boundary remains unresolved because the complete intervening Act chain has not been inspected."
+      },
+      "transition_evidence": "Original Constitution PDF p. 39 (printed p. 22) visually establishes the exact old Article 45 wording. Section 3 of the 86th Amendment Act is a substitution. No uninterrupted 1950–2010 continuity claim is made.",
+      "continuation_evidence": "The operation extraction contains no other Article 45 operation, but it represents a selected amendment corpus and cannot prove continuous wording from 1950 to 2010. No exhaustive primary-source audit of intervening amendment Acts was completed.",
+      "unresolved_gaps": [
+        "Audit every intervening primary Amendment Act from 1950 to commencement of the 86th Amendment to prove continuity; the selected operations corpus is not exhaustive.",
+        "Complete the 1st–85th primary Amendment Act audit (or inspect an authoritative pre-commencement consolidation with complete amendment annotations) to establish uninterrupted Article 45 wording; obtain page-level Gazette evidence if required by the verification protocol."
+      ],
+      "verification_decision": "partially_verified"
+    },
+    {
+      "article_number": "45",
+      "version_id": "45_v2",
+      "operation_type": "substituted",
+      "proposed_operative_text": "45. The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.",
+      "provision_state": "in_force",
+      "effective_from": "2010-04-01",
+      "effective_to": null,
+      "effective_from_evidence": {
+        "source_ids": [
+          "SRC-SO-427E-GAZETTE"
+        ],
+        "locator": "Official India Code indexed S.O. 427(E) text: notification 2010-02-16; Gazette Extraordinary No. 591 published 2010-02-19; appointed commencement 2010-04-01. No PDF or printed page locator is supplied.",
+        "evidence_status": "partially_verified",
+        "finding": "The official indexed text states the appointed date and the local current Constitution footnote corroborates it. The notification PDF page is not visually inspected."
+      },
+      "effective_to_evidence": {
+        "source_ids": [
+          "SRC-CURRENT-CONSTITUTION-2026"
+        ],
+        "locator": "PDF p. 54, printed p. 23, Article 45 and footnote 2",
+        "evidence_status": "partially_verified",
+        "finding": "The visually inspected current text matches the replacement wording and its footnote identifies the 86th Amendment section 3 effective 1 April 2010. It does not independently close the interval after the snapshot date or replace the missing Gazette page check."
+      },
+      "transition_evidence": "Local Act p. 1 section 3 was visually inspected and expressly substitutes the proposed wording. Current official consolidated PDF p. 54/printed p. 23 visually shows the wording and footnote: substituted by the 86th Amendment Act, section 3, with effect from 1 April 2010.",
+      "continuation_evidence": "The current 1 May 2026 consolidated edition includes Article 45 with only the 86th Amendment substitution footnote visible on that page. A complete official amendment-history audit through the chosen endpoint has not been completed.",
+      "unresolved_gaps": [
+        "Complete an authoritative post-2010 Article 45 change audit to define interval end as-of date.",
+        "Do not interpret null effective_to as validity beyond the verified source snapshot without an explicit scope rule.",
+        "No inspected Gazette page locator/image; complete the post-2010 Article 45 change audit and define the end-of-snapshot convention for null effective_to."
+      ],
+      "verification_decision": "partially_verified"
+    }
+  ],
+  "data_quality_findings": [
+    {
+      "file": "processed/amendment_metadata.json",
+      "finding": "Amendment 86 is recorded with assent_date 2002-12-12, commencement_date 2002-12-12, and commencement_type same_day. This conflicts with section 1(2) of the local Act and the official S.O. 427(E) indexed text appointing 2010-04-01. The source data was not changed."
+    },
+    {
+      "file": "processed/amendment_operations.json",
+      "finding": "Article 45, section 3 of Amendment 86 is labeled 'amended'; the Act calls section 3 a substitution. The source data was not changed."
+    },
+    {
+      "file": "processed/canonical/article_versions_pilot.json",
+      "finding": "The four existing records remain partially_verified. No pilot record was edited or upgraded in this review."
+    }
+  ],
+  "overall_decision": "The official India Code indexed text now establishes Gazette No. 591, publication 2010-02-19, S.O. 427(E) notification date 2010-02-16, and appointed date 2010-04-01 at the index-text level. No page numbers, local hash, or visual verification are claimed. Article 45 old text is supported by the original scan, but uninterrupted 1950-to-2010 continuity remains unresolved pending exhaustive intervening Act evidence. Article 21A and Article 45 post-2010 histories are also incomplete. All four version proposals remain partially_verified.",
+  "article45_amendment_history_review": {
+    "scope": "Article 45 amendment history, 1950-01-26 through commencement of the 86th Amendment substitution.",
+    "local_primary_amendment_pdfs_available_count": 18,
+    "local_primary_amendment_pdfs_available": [
+      {
+        "amendment_number": 1,
+        "year": 1951,
+        "filename": "001_Amendment_1951.pdf",
+        "local_path": "raw/amendments/001_Amendment_1951.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 24,
+        "year": 1971,
+        "filename": "024_Amendment_1971.pdf",
+        "local_path": "raw/amendments/024_Amendment_1971.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 25,
+        "year": 1971,
+        "filename": "025_Amendment_1971.pdf",
+        "local_path": "raw/amendments/025_Amendment_1971.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 42,
+        "year": 1976,
+        "filename": "042_Amendment_1976.pdf",
+        "local_path": "raw/amendments/042_Amendment_1976.pdf",
+        "finding": "No Article 45 amendment found. The apparent section 45 reference (PDF p. 18) amends Article 312; visually inspected."
+      },
+      {
+        "amendment_number": 44,
+        "year": 1978,
+        "filename": "044_Amendment_1978.pdf",
+        "local_path": "raw/amendments/044_Amendment_1978.pdf",
+        "finding": "No Article 45 amendment found. The apparent section 45 reference (PDF p. 18) amends the 42nd Amendment Act; visually inspected."
+      },
+      {
+        "amendment_number": 52,
+        "year": 1985,
+        "filename": "052_Amendment_1985.pdf",
+        "local_path": "raw/amendments/052_Amendment_1985.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 61,
+        "year": 1988,
+        "filename": "061_Amendment_1988.pdf",
+        "local_path": "raw/amendments/061_Amendment_1988.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 73,
+        "year": 1992,
+        "filename": "073_Amendment_1992.pdf",
+        "local_path": "raw/amendments/073_Amendment_1992.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 74,
+        "year": 1992,
+        "filename": "074_Amendment_1992.pdf",
+        "local_path": "raw/amendments/074_Amendment_1992.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 86,
+        "year": 2002,
+        "filename": "086_Amendment_2002.pdf",
+        "local_path": "raw/amendments/086_Amendment_2002.pdf",
+        "finding": "Direct Article 45 operation found and visually reviewed: section 3 substitutes Article 45 (PDF p. 1)."
+      },
+      {
+        "amendment_number": 91,
+        "year": 2003,
+        "filename": "091_Amendment_2003.pdf",
+        "local_path": "raw/amendments/091_Amendment_2003.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 93,
+        "year": 2005,
+        "filename": "093_Amendment_2005.pdf",
+        "local_path": "raw/amendments/093_Amendment_2005.pdf",
+        "finding": "No Article 45-targeting operation found in searchable PDF text or the extracted operation records."
+      },
+      {
+        "amendment_number": 101,
+        "year": 2016,
+        "filename": "101_Amendment_2016.pdf",
+        "local_path": "raw/amendments/101_Amendment_2016.pdf",
+        "finding": "Outside the 1950–2010 interval; included in local inventory only. Not used to establish the pre-2010 Article 45 amendment history."
+      },
+      {
+        "amendment_number": 102,
+        "year": 2018,
+        "filename": "102_Amendment_2018.pdf",
+        "local_path": "raw/amendments/102_Amendment_2018.pdf",
+        "finding": "Outside the 1950–2010 interval; included in local inventory only. Not used to establish the pre-2010 Article 45 amendment history."
+      },
+      {
+        "amendment_number": 103,
+        "year": 2019,
+        "filename": "103_Amendment_2019.pdf",
+        "local_path": "raw/amendments/103_Amendment_2019.pdf",
+        "finding": "Outside the 1950–2010 interval; included in local inventory only. Not used to establish the pre-2010 Article 45 amendment history."
+      },
+      {
+        "amendment_number": 104,
+        "year": 2019,
+        "filename": "104_Amendment_2019.pdf",
+        "local_path": "raw/amendments/104_Amendment_2019.pdf",
+        "finding": "Outside the 1950–2010 interval; included in local inventory only. Not used to establish the pre-2010 Article 45 amendment history."
+      },
+      {
+        "amendment_number": 105,
+        "year": 2021,
+        "filename": "105_Amendment_2021.pdf",
+        "local_path": "raw/amendments/105_Amendment_2021.pdf",
+        "finding": "Outside the 1950–2010 interval; included in local inventory only. Not used to establish the pre-2010 Article 45 amendment history."
+      },
+      {
+        "amendment_number": 106,
+        "year": 2023,
+        "filename": "106_Amendment_2023.pdf",
+        "local_path": "raw/amendments/106_Amendment_2023.pdf",
+        "finding": "Outside the 1950–2010 interval; included in local inventory only. Not used to establish the pre-2010 Article 45 amendment history."
+      }
+    ],
+    "local_operation_record_findings": [
+      {
+        "file": "processed/amendment_operations.json",
+        "record_count": 160,
+        "finding": "Exactly one operation record targets Article 45: Amendment 86, section 3, parser label amended. The Act itself calls this substitution. The file covers selected Acts only."
+      },
+      {
+        "file": "processed/amendments.json",
+        "record_count": 18,
+        "finding": "The 18 selected amendment records list Article 45 only for Amendment 86; not an exhaustive Act list."
+      },
+      {
+        "file": "processed/amendment_metadata.json",
+        "record_count": 18,
+        "finding": "Amendment 86 entry assigns 2002-12-12 to assent and same-day commencement. This conflicts with Act section 1(2) and official consolidated annotation of 2010-04-01; the metadata is not accepted as commencement evidence."
+      },
+      {
+        "file": "processed/amendment_notes.json",
+        "record_count": 855,
+        "finding": "No reliable Article 45-targeting history entry found. One note attached to article=48 contains the tail “art. 45 (w.e.f. 1-4-2010). 3.” This is a parser association/continuation artifact, not evidence of an Article 48 or Article 45 operation."
+      }
+    ],
+    "false_positive_primary_act_mentions_inspected": [
+      {
+        "amendment_number": 42,
+        "filename": "raw/amendments/042_Amendment_1976.pdf",
+        "locator": "PDF p. 18, section 45",
+        "finding": "Section 45 amends Constitution Article 312; it does not amend Constitution Article 45. Page visually inspected."
+      },
+      {
+        "amendment_number": 44,
+        "filename": "raw/amendments/044_Amendment_1978.pdf",
+        "locator": "PDF p. 5 contents; PDF p. 18, section 45",
+        "finding": "Section 45 amends the 42nd Amendment Act by omitting its sections 18, 19, 21, 22, 31, 32, 34, 35, 58 and 59. It does not amend Constitution Article 45. Pages visually inspected."
+      }
+    ],
+    "complete_relevant_act_list_evidence": {
+      "candidate_list": [
+        {
+          "amendment_number": 86,
+          "year": 2002,
+          "act_title": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "relevant_provision": "section 3; substitution of new Article 45",
+          "primary_source": "raw/amendments/086_Amendment_2002.pdf",
+          "primary_locator": "PDF p. 1, section 3; visually inspected"
+        }
+      ],
+      "basis": "Official consolidated Constitution annotations identify Article 45 as substituted by the 86th Amendment Act, section 3, and the inspected current official edition has that sole Article 45 amendment footnote. The official India Code pre-commencement consolidated text search-index excerpt shows the original wording and says the 86th substitution was not yet in force. Local operations independently identify only the 86th Act, but are selected data.",
+      "qualification": "The repository lacks all 1st-85th Amendment Act PDFs, and the remote pre-commencement India Code PDF could not be obtained or visually inspected. The single-Act list is corroborated by official consolidation, but not established by exhaustive primary-Act page review."
+    },
+    "commencement_date_evidence": {
+      "act_printed_date": "2002-12-12; shown below the title in the 86th Amendment Act PDF. This is a printed Act date, not the commencement date.",
+      "assent_date": "processed/amendment_metadata.json asserts 2002-12-12 as assent date; preserve as a distinct metadata assertion. The Act PDF page itself does not label the printed date as assent.",
+      "act_commencement_rule": "86th Amendment Act section 1(2), PDF p. 1: commencement is on a date appointed by Central Government notification in the Official Gazette.",
+      "official_consolidated_annotation": "Local Constitution_of_India_2024.pdf, PDF p. 54, Article 45 footnote 2: section 3 substitution effective 1-4-2010.",
+      "gazette_instrument": "Official India Code indexed text at https://www.indiacode.nic.in/bitstream/123456789/4322/1/rte_goi_2009.pdf identifies the notification and dates above. The PDF itself was not opened or visually inspected. The local raw/sources/SO_427_E_2010.pdf is a mismatched Gazette Weekly No. 51 dated 2010-12-18.",
+      "determination": "The four dates are distinct: printed Act date 2002-12-12; metadata-assigned assent date 2002-12-12 (not labeled on the page); notification 2010-02-16; Gazette publication 2010-02-19; appointed commencement 2010-04-01. The latter three are established from official indexed text, not from a locally inspected PDF page.",
+      "notification_date": "2010-02-16, stated in the official India Code indexed text for S.O. 427(E).",
+      "gazette_issue_publication_date": "2010-02-19, Gazette of India Extraordinary No. 591, stated in the official India Code indexed text.",
+      "appointed_commencement_date": "2010-04-01, stated in the official India Code indexed text and corroborated by the local 2026 official consolidated Constitution footnote."
+    },
+    "continuity_determination": "The original Article 45 wording is visually established in the 1949 Constitution scan (PDF p. 39, printed p. 22). An official India Code search-index excerpt for a pre-commencement consolidated text also presents that wording and states that the 86th substitution was not yet in force. However, that remote PDF was not locally obtained/visually checked, all 1st-85th primary Acts are not in the repository, and the actual Gazette commencement instrument is missing. Thus strict continuous validity from 1950-01-26 through immediately before 2010-04-01 is NOT established to the project primary-source standard; the interval remains unresolved.",
+    "verification_status_effect": "No version verification_decision or evidence_status changed. Article 45 pre-86th remains partially_verified."
+  }
+}
