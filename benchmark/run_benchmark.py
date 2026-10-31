@@ -197,9 +197,23 @@ def _mock_executor(system: str, question: dict, temporal_corpus=None) -> dict:
         temporal_corpus = load_temporal_corpus()
     from systems.system_c import identify_article_numbers
     requested = identify_article_numbers(question["question"])
-    eligible = temporal_corpus.select(question["reference_date"], requested or None)
+    eligible, excluded = temporal_corpus.select_with_exclusions(question["reference_date"], requested or None)
     if not eligible:
-        reason = "no_verified_version_for_requested_article_and_date" if requested else "no_verified_version_for_reference_date"
+        verified = [row for row in excluded if row.get("verification_status") == "verified"]
+        if not verified:
+            reason = "no_verified_legal_version"
+        else:
+            legal_candidates = [row for row in verified if row.get("exclusion_reason") != "legal_interval_mismatch"]
+            if not legal_candidates:
+                reason = "legal_interval_mismatch"
+            else:
+                exclusion_reasons = {row.get("exclusion_reason") for row in legal_candidates}
+                if "missing_evidence_coverage" in exclusion_reasons:
+                    reason = "missing_evidence_coverage"
+                elif "beyond_evidence_coverage" in exclusion_reasons:
+                    reason = "beyond_evidence_coverage"
+                else:
+                    reason = "no_verified_legal_version"
         return {"status": "abstained", "abstention_reason": reason, "raw_answer": None, "mock_note": "Actual verified-version eligibility checked; no generation call was made."}
     return {"status": "mocked", "raw_answer": None, "mock_note": "Eligible version exists; retrieval/generation were not run."}
 

@@ -1,0 +1,185 @@
+{
+  "evaluation_scope": "one live benchmark execution only",
+  "execution_id": "20261031T073135193342Z-58165fa8",
+  "manifest_id": "e6546e0d74b90e3e05a0581954ea0163fcab80033552d23bcec9b16c54ad3f6d",
+  "benchmark_id": "indian-constitution-temporal-qa-article174-v2",
+  "benchmark_sha256": "da991b43f616bbe9c48c56f7335ea09c5773d9a60e0fd02e362331202865ee1a",
+  "static_index_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+  "static_index_chunk_count": 1123,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "eligible_question_ids": [
+    "Q001",
+    "Q002",
+    "Q003",
+    "Q004",
+    "Q005",
+    "Q006",
+    "Q007",
+    "Q008",
+    "Q009",
+    "Q010",
+    "Q011",
+    "Q019",
+    "Q020",
+    "Q021",
+    "Q022",
+    "Q023",
+    "Q024",
+    "Q025",
+    "Q026",
+    "Q027",
+    "Q028",
+    "Q029",
+    "Q030",
+    "Q031",
+    "Q032"
+  ],
+  "eligible_count": 25,
+  "pending_skipped_question_ids": [
+    "Q012",
+    "Q013",
+    "Q014",
+    "Q015",
+    "Q016",
+    "Q017",
+    "Q018"
+  ],
+  "pending_skipped_count": 7,
+  "system_metrics": {
+    "system_a": {
+      "eligible": 25,
+      "strict_correct": 16,
+      "strict_accuracy": 0.64,
+      "incorrect_substantive": 8,
+      "answer_content_abstentions": 1,
+      "answered_substantive": 24,
+      "answered_only_correct": 16,
+      "answered_only_accuracy": 0.6666666666666666,
+      "mean_wrapper_execution_seconds": 5.74982884,
+      "median_wrapper_execution_seconds": 4.496825,
+      "min_wrapper_execution_seconds": 3.652163,
+      "max_wrapper_execution_seconds": 28.710671
+    },
+    "system_b": {
+      "eligible": 25,
+      "strict_correct": 15,
+      "strict_accuracy": 0.6,
+      "incorrect_substantive": 3,
+      "answer_content_abstentions": 7,
+      "answered_substantive": 18,
+      "answered_only_correct": 15,
+      "answered_only_accuracy": 0.8333333333333334,
+      "mean_wrapper_execution_seconds": 6.81148796,
+      "median_wrapper_execution_seconds": 6.846675,
+      "min_wrapper_execution_seconds": 5.553016,
+      "max_wrapper_execution_seconds": 8.829656
+    },
+    "system_c": {
+      "eligible": 25,
+      "strict_correct": 9,
+      "strict_accuracy": 0.36,
+      "incorrect_substantive": 2,
+      "answer_content_abstentions": 14,
+      "answered_substantive": 11,
+      "answered_only_correct": 9,
+      "answered_only_accuracy": 0.8181818181818182,
+      "mean_wrapper_execution_seconds": 3.302234,
+      "median_wrapper_execution_seconds": 4.992925,
+      "min_wrapper_execution_seconds": 0.342154,
+      "max_wrapper_execution_seconds": 5.67264
+    }
+  },
+  "run_counts_verified_against_raw_jsonl": {
+    "A_completed": 25,
+    "A_failed": 0,
+    "B_completed": 25,
+    "B_failed": 0,
+    "C_completed": 15,
+    "C_run_level_abstentions": 10,
+    "C_failures": 0,
+    "wrapper_rows_per_system_including_skips": 32,
+    "total_completed": 65,
+    "total_run_level_abstentions": 10,
+    "total_failed": 0,
+    "total_skipped_system_rows": 21
+  },
+  "system_c_run_level_abstentions": {
+    "Q001": "no_verified_legal_version",
+    "Q002": "no_verified_legal_version",
+    "Q003": "no_verified_legal_version",
+    "Q004": "no_verified_legal_version",
+    "Q005": "no_verified_legal_version",
+    "Q006": "no_verified_legal_version",
+    "Q007": "no_verified_legal_version",
+    "Q008": "no_verified_legal_version",
+    "Q009": "no_verified_legal_version",
+    "Q032": "beyond_evidence_coverage"
+  },
+  "system_c_semantic_refusal_answers": {
+    "Q010": "Based on the verified temporal evidence provided, there is no mention of the 86th Amendment Act or section 1(2) of that Act. Therefore, the available verified temporal evidence is insufficient to answer the question.",
+    "Q011": "Based on the available verified temporal evidence, there is no information or text provided regarding the Constitution (Eighty-sixth Amendment) Act, 2002, or the date printed immediately below its title. Therefore, the available verified temporal evidence is insufficient to answer the question.",
+    "Q019": "Based on the provided verified temporal evidence, there is no text or evidence related to Articles 21A or 45. Therefore, the available verified temporal evidence is insufficient to answer the question.",
+    "Q020": "Based on the provided verified temporal evidence, there is no text or version of Article 14 or Article 21 included in the evidence. Therefore, the available verified temporal evidence is insufficient to answer the question."
+  },
+  "system_c_answer_content_abstentions_total": 14,
+  "system_c_answered_article174_questions": 11,
+  "system_c_correct_version_selection_count": "11/11 substantive Article 174 questions Q021-Q031",
+  "system_c_Q032_expected_coverage_abstention": true,
+  "system_b_citation_audit": {
+    "citation_bearing_answer_count": 18,
+    "citation_ids_resolved_to_same_run_retrieved_chunks": "18/18",
+    "fully_supported": 14,
+    "partially_supported": 4,
+    "unsupported": 0,
+    "partial_cases": {
+      "Q022": "citation does not support original version requested; shows replacement/current text",
+      "Q026": "relevant chunk, but extracted/indexed punctuation has replacement glyph corruption",
+      "Q028": "Section 8 citation supports substitution but not the effective date asked",
+      "Q032": "chunk supports quoted current wording but not applicability on 2026-05-02 or coverage cutoff"
+    }
+  },
+  "latency_scope": "runner execution_time_seconds (includes wrapper/orchestration; not isolated model latency)",
+  "api_usage": "Token and cost usage not recorded in raw run records; unavailable",
+  "scoring_method": "Manual/rule-assisted strict comparison against benchmark expected_answer/key facts and source evidence; no LLM-as-judge. Abstentions are not correct in strict accuracy; answered-only denominator excludes answer-content abstentions. Exact operative-text questions require faithful wording.",
+  "system_c_selected_versions_for_Q021_Q031": {
+    "Q021": [
+      "174_original_1949"
+    ],
+    "Q022": [
+      "174_original_1949"
+    ],
+    "Q023": [
+      "174_original_1949"
+    ],
+    "Q024": [
+      "174_first_amendment_s8"
+    ],
+    "Q025": [
+      "174_first_amendment_s8"
+    ],
+    "Q026": [
+      "174_first_amendment_s8"
+    ],
+    "Q027": [
+      "174_first_amendment_s8"
+    ],
+    "Q028": [
+      "174_first_amendment_s8"
+    ],
+    "Q029": [
+      "174_original_1949"
+    ],
+    "Q030": [
+      "174_first_amendment_s8"
+    ],
+    "Q031": [
+      "174_first_amendment_s8"
+    ]
+  },
+  "system_c_semantic_refusal_ids_additional_to_run_level_abstentions": [
+    "Q010",
+    "Q011",
+    "Q019",
+    "Q020"
+  ]
+}

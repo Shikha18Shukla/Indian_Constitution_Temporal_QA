@@ -91,6 +91,30 @@ def validate_schema(instance, schema, schema_path, at="$", errors=None):
     return errors
 
 
+
+def _verified_canonical_evidence(source, evidence, schema_path):
+    """Confirm canonical evidence points to a verified record and exact stored cutoff/text."""
+    rel_path = source.get("source_path")
+    version_id = evidence.get("version_id")
+    excerpt = evidence.get("evidence_text")
+    if not isinstance(rel_path, str) or not isinstance(version_id, str) or not isinstance(excerpt, str):
+        return False
+    root = Path(schema_path).resolve().parent.parent
+    try:
+        payload = json.loads((root / rel_path).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    for record in payload.get("records", []):
+        if record.get("version_id") != version_id or record.get("verification_status") != "verified":
+            continue
+        coverage = record.get("evidence_coverage")
+        if not isinstance(coverage, dict):
+            return False
+        cutoff = coverage.get("verified_through")
+        return isinstance(cutoff, str) and excerpt == f"verified_through: {cutoff}"
+    return False
+
+
 def validate_benchmark(dataset, schema_path=SCHEMA_PATH):
     """Return schema and cross-field errors. A claim of gold requires verified sources."""
     try:
@@ -132,8 +156,15 @@ def validate_benchmark(dataset, schema_path=SCHEMA_PATH):
         )
         if question.get("evaluation_status") != expected_evaluation_status:
             errors.append(f"{at}: evaluation_status conflicts with verification_status")
+        expected_abstention = question.get("expected_temporal_status") == "evidence_coverage_exceeded"
         if verified_claim:
-            if not isinstance(question.get("expected_answer"), str) or not question["expected_answer"].strip():
+            answer = question.get("expected_answer")
+            if expected_abstention:
+                if answer is not None:
+                    errors.append(f"{at}: evidence-coverage abstention must have null expected_answer")
+                if question.get("expected_version_id") is not None:
+                    errors.append(f"{at}: evidence-coverage abstention must not claim an eligible expected_version_id")
+            elif not isinstance(answer, str) or not answer.strip():
                 errors.append(f"{at}: verified question requires a non-empty expected_answer")
             if not evidence:
                 errors.append(f"{at}: verified question requires gold_evidence")
@@ -148,6 +179,9 @@ def validate_benchmark(dataset, schema_path=SCHEMA_PATH):
                     errors.append(f"{ev_at}: gold evidence points to a non-verified source")
                 elif source.get("source_type") == "canonical_pilot":
                     errors.append(f"{ev_at}: canonical pilot records cannot be gold evidence")
+                elif source.get("source_type") == "verified_canonical_record":
+                    if not _verified_canonical_evidence(source, item, schema_path):
+                        errors.append(f"{ev_at}: verified canonical record source does not support this evidence")
                 if item.get("verification_status") != "verified":
                     errors.append(f"{ev_at}: gold evidence itself is not verified")
                 evidence_text = item.get("evidence_text")

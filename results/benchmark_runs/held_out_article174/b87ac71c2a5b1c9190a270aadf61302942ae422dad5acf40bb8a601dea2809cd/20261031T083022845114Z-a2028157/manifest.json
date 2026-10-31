@@ -1,0 +1,74 @@
+{
+  "benchmark_id": "indian-constitution-temporal-qa-article174-prospective-heldout-v1",
+  "benchmark_sha256": "b02f76053afb96ec56477c3097e683eac0b4c3af7ad2de97bb3fdca6cdcfd7a9",
+  "corpus_provenance": {
+    "chunk_count": 1123,
+    "corpus_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "corpus_snapshot_source": "SQLite metadata.corpus_snapshot and chunk metadata.corpus_snapshot",
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "index_path": "processed/static_rag/index.sqlite3"
+  },
+  "eligible_questions": [
+    {
+      "question": "Under original Article 174 on 1 May 1950, which earlier clause qualified the Governor’s powers listed in clause (2)?",
+      "question_id": "Q033",
+      "reference_date": "1950-05-01"
+    },
+    {
+      "question": "In original Article 174(2)(a), what words described the Governor’s discretion over the meeting time and place on 1 November 1950?",
+      "question_id": "Q034",
+      "reference_date": "1950-11-01"
+    },
+    {
+      "question": "Under original Article 174(2)(c), what legislative body could the Governor dissolve on 1 February 1951?",
+      "question_id": "Q035",
+      "reference_date": "1951-02-01"
+    },
+    {
+      "question": "Where did the original Article 174 place both its twice-yearly meeting requirement and its six-month interval rule on 16 June 1951?",
+      "question_id": "Q036",
+      "reference_date": "1951-06-16"
+    },
+    {
+      "question": "On the first day the substituted Article 174 took effect, did clause (1) say the Governor “may” or “shall” summon the House or each House?",
+      "question_id": "Q037",
+      "reference_date": "1951-06-18"
+    },
+    {
+      "question": "As of 1 April 2010, what two textual qualifications governed the Governor’s summons under Article 174(1)?",
+      "question_id": "Q038",
+      "reference_date": "2010-04-01"
+    },
+    {
+      "question": "Under substituted Article 174(2)(b), applicable on 26 January 1960, which body is expressly named as the one the Governor may dissolve?",
+      "question_id": "Q039",
+      "reference_date": "1960-01-26"
+    },
+    {
+      "question": "Compare original Article 174 with the replacement in force on 26 January 2020: where was the Governor’s summoning authority placed, and how did its operative verb change?",
+      "question_id": "Q040",
+      "reference_date": "2020-01-26"
+    },
+    {
+      "question": "Comparing the original Article 174 with the substituted text applicable on 26 January 2000, which express yearly-frequency phrase was removed, and which inter-session safeguard remained?",
+      "question_id": "Q041",
+      "reference_date": "2000-01-26"
+    },
+    {
+      "question": "In the original and substituted versions of Article 174, how did the stated object of the Governor’s prorogation power change?",
+      "question_id": "Q042",
+      "reference_date": "2026-05-01"
+    }
+  ],
+  "manifest_id": "b87ac71c2a5b1c9190a270aadf61302942ae422dad5acf40bb8a601dea2809cd",
+  "manifest_schema_version": "1",
+  "mode": "live",
+  "runner_version": "1.0",
+  "selection_rule": "evaluation_status == 'suitable_for_evaluation'",
+  "skipped_questions": [],
+  "systems": [
+    "system_a",
+    "system_b",
+    "system_c"
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "run_manifest_schema_version": "1",
+  "plan_manifest_file": "manifest.json",
+  "summary_file": "summary.json",
+  "manifest_id": "02a57176dd4cb2e64be47fcdc98979cf76b5b7c7855a4e2b27640612f058fd91",
+  "execution_id": "20261030T171712517974Z-f9e959ff",
+  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "benchmark_version": "indian-constitution-temporal-qa-initial-v1",
+  "benchmark_sha256": "0b312358cad107446245e12fd01ada11b6cd7a396f8c3d47866d5c8c9c667fd9",
+  "eligible_question_ids": [
+    "Q001",
+    "Q002",
+    "Q003",
+    "Q004",
+    "Q005",
+    "Q006",
+    "Q007",
+    "Q008",
+    "Q009",
+    "Q010",
+    "Q011",
+    "Q019",
+    "Q020"
+  ],
+  "eligible_question_count": 13,
+  "pending_question_ids": [
+    "Q012",
+    "Q013",
+    "Q014",
+    "Q015",
+    "Q016",
+    "Q017",
+    "Q018"
+  ],
+  "execution_mode": "live",
+  "command": "C:\\Users\\shikh\\AppData\\Local\\Programs\\Python\\Python310\\python.exe benchmark/run_benchmark.py --live --timeout-seconds 300",
+  "started_at": "2026-10-30T17:17:12.517Z",
+  "finished_at": "2026-10-30T17:19:03.509Z",
+  "python_executable": "C:\\Users\\shikh\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "python_version": "3.10.9",
+  "generation_settings": {
+    "model_name": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "max_output_tokens": 1024,
+    "request_timeout_seconds": 45,
+    "max_retries": 2,
+    "retry_backoff_seconds": 1.0
+  },
+  "static_index": {
+    "path": "processed/static_rag/index.sqlite3",
+    "corpus_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "chunk_count": 1123,
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "rebuilt_for_this_run": false,
+    "snapshot_matches_benchmark": true
+  },
+  "system_raw_run_files": {
+    "system_a": {
+      "path": "system_a_raw.jsonl",
+      "records": 13,
+      "source": "native results/system_a/runs.jsonl records appended during this run"
+    },
+    "system_b": {
+      "path": "system_b_raw.jsonl",
+      "records": 13,
+      "source": "benchmark runner failure records; System B did not emit native records because FastEmbed was unavailable"
+    },
+    "system_c": {
+      "path": "system_c_raw.jsonl",
+      "records": 13,
+      "source": "native results/system_c/runs.jsonl records appended during this run"
+    }
+  },
+  "runner_output_files": [
+    "system_a.jsonl",
+    "system_b.jsonl",
+    "system_c.jsonl",
+    "skipped_questions.json",
+    "summary.json",
+    "manifest.json",
+    "preliminary_comparison.json",
+    "system_c_abstentions.json"
+  ],
+  "summary_counts": {
+    "abstained": 13,
+    "completed": 0,
+    "failed": 26,
+    "mocked": 0,
+    "planned": 0,
+    "skipped": 21
+  },
+  "per_system_counts": {
+    "system_a": {
+      "abstained": 0,
+      "completed": 0,
+      "failed": 13,
+      "mocked": 0,
+      "planned": 0,
+      "skipped": 7
+    },
+    "system_b": {
+      "abstained": 0,
+      "completed": 0,
+      "failed": 13,
+      "mocked": 0,
+      "planned": 0,
+      "skipped": 7
+    },
+    "system_c": {
+      "abstained": 13,
+      "completed": 0,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 0,
+      "skipped": 7
+    }
+  },
+  "latency_seconds_including_process_overhead": {
+    "system_a": {
+      "count": 13,
+      "mean_seconds": 7.0629,
+      "median_seconds": 6.7677,
+      "min_seconds": 6.0714,
+      "max_seconds": 9.2192
+    },
+    "system_b": {
+      "count": 13,
+      "mean_seconds": 0.763,
+      "median_seconds": 0.7651,
+      "min_seconds": 0.5903,
+      "max_seconds": 1.0773
+    },
+    "system_c": {
+      "count": 13,
+      "mean_seconds": 0.7058,
+      "median_seconds": 0.6748,
+      "min_seconds": 0.6162,
+      "max_seconds": 0.9824
+    }
+  },
+  "api_telemetry": {
+    "system_a_request_attempts": 39,
+    "system_a_attempts_per_question": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "system_b_request_attempts": 0,
+    "system_c_request_attempts": 0,
+    "successful_api_responses": 0,
+    "token_usage": "unavailable; no successful Gemini response returned usage metadata",
+    "system_a_failure": "DNS/network resolution failure (getaddrinfo failed) on all three attempts per question",
+    "system_b_failure": "FastEmbed dependency unavailable; failure occurred before retrieval/generation",
+    "system_c": "No API request because verified-only selection returned no eligible versions"
+  },
+  "evaluation_note": "Exploratory run only. No A/B substantive answer was produced. System C abstentions are expected under the verified-only rule and are not performance evidence."
+}

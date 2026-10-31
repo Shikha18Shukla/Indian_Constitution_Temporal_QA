@@ -1,0 +1,423 @@
+{
+  "explanation": "System C enforces a verified-only temporal selector. All four canonical pilot records are partially_verified, so none reaches the eligible temporal corpus. No version is selected, no chunk is retrieved, and generation is not called. These are abstentions under the configured rule, not failed or substantive answers; they do not demonstrate Temporal RAG performance.",
+  "verified_threshold": "verified",
+  "pilot_records_total": 4,
+  "pilot_records_verified": 0,
+  "eligible_question_count": 13,
+  "abstained_question_count": 13,
+  "abstentions": [
+    {
+      "question_id": "Q001",
+      "question": "What guarantee does Article 14 state?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "14"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q002",
+      "question": "List the freedoms stated in Article 19(1).",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "19"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q003",
+      "question": "What does Article 21 say about deprivation of life or personal liberty?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "21"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q004",
+      "question": "What does Article 21A provide?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "21A"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "21A_pre_86th",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "21A_v1",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q005",
+      "question": "What does the current Article 45 direct the State to endeavour to provide?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "45"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "45_pre_86th",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_v2",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q006",
+      "question": "Does Article 14 phrase its equality guarantee only for citizens, or for any person?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "14"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q007",
+      "question": "According to Article 21's text, is deprivation of life or personal liberty stated without qualification?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "21"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q008",
+      "question": "Which section of the Constitution (Eighty-sixth Amendment) Act, 2002 inserts Article 21A?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "21A"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "21A_pre_86th",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "21A_v1",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q009",
+      "question": "Which section of the 86th Amendment Act substitutes Article 45?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [
+        "45"
+      ],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "45_pre_86th",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_v2",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_requested_article_and_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q010",
+      "question": "Under section 1(2) of the 86th Amendment Act, how was its commencement date to be appointed?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "21A_pre_86th",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "21A_v1",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_pre_86th",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_v2",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_reference_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q011",
+      "question": "What date is printed immediately below the title of the Constitution (Eighty-sixth Amendment) Act, 2002?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "21A_pre_86th",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "21A_v1",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_pre_86th",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_v2",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_reference_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q019",
+      "question": "As stated in the current text, what age ranges are addressed by Articles 21A and 45?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "21A_pre_86th",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "21A_v1",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_pre_86th",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_v2",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_reference_date",
+      "run_status": "abstained"
+    },
+    {
+      "question_id": "Q020",
+      "question": "What wording difference in the beneficiary phrase can be observed between Articles 14 and 21?",
+      "reference_date": "2026-05-01",
+      "requested_article_identifiers": [],
+      "selected_version_ids": [],
+      "effective_intervals": [],
+      "verification_statuses": [],
+      "excluded_candidate_versions": [
+        {
+          "version_id": "21A_pre_86th",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "21A_v1",
+          "article_number": "21A",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_pre_86th",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "1950-01-26",
+          "effective_to": "2010-04-01",
+          "exclusion_reason": "verification_status_below_threshold"
+        },
+        {
+          "version_id": "45_v2",
+          "article_number": "45",
+          "verification_status": "partially_verified",
+          "effective_from": "2010-04-01",
+          "effective_to": null,
+          "exclusion_reason": "verification_status_below_threshold"
+        }
+      ],
+      "retrieved_chunk_ids": [],
+      "generation_called": false,
+      "abstention_status": true,
+      "abstention_reason": "no_verified_version_for_reference_date",
+      "run_status": "abstained"
+    }
+  ]
+}

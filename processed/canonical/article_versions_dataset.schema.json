@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Indian Constitution Historical Article Version Dataset",
+  "type": "object",
+  "required": ["dataset_id", "schema_file", "interval_convention", "coverage_note", "records"],
+  "properties": {
+    "dataset_id": {"type": "string", "minLength": 1},
+    "schema_file": {"type": "string", "const": "article_version.schema.json"},
+    "interval_convention": {"type": "string", "minLength": 1},
+    "coverage_note": {"type": "string", "minLength": 1},
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "article_version.schema.json"}
+    }
+  },
+  "additionalProperties": false
+}

@@ -145,10 +145,68 @@ class SystemCTests(unittest.TestCase):
 
     def test_partially_verified_pilot_records_are_never_eligible(self):
         real_pilot = load_temporal_corpus()
-        self.assertTrue(all(row["verification_status"] == "partially_verified" for row in real_pilot.records))
+        legacy_pilot_records = [row for row in real_pilot.records if row["article_number"] in {"21A", "45"}]
+        self.assertEqual(len(legacy_pilot_records), 4)
+        self.assertTrue(all(row["verification_status"] == "partially_verified"
+                            for row in legacy_pilot_records))
         self.assertEqual(real_pilot.select("2020-01-01", ["21A"]), [])
         synthetic_partial = corpus(version(article="21A", version_id="partial", status="partially_verified"))
         self.assertEqual(synthetic_partial.select("2020-01-01", ["21A"]), [])
+
+    def test_real_article_174_records_are_eligible_only_within_verified_coverage(self):
+        real_pilot = load_temporal_corpus()
+        article_174 = [row for row in real_pilot.records if row["article_number"] == "174"]
+        self.assertEqual({row["version_id"] for row in article_174}, {
+            "174_original_1949", "174_first_amendment_s8",
+        })
+        self.assertTrue(all(row["verification_status"] == "verified" for row in article_174))
+        self.assertEqual({row["evidence_coverage"]["verified_through"] for row in article_174}, {
+            "1951-06-17", "2026-05-01",
+        })
+        before = real_pilot.select("1951-06-17", ["174"])
+        self.assertEqual([row["version_id"] for row in before], ["174_original_1949"])
+        boundary = real_pilot.select("1951-06-18", ["174"])
+        self.assertEqual([row["version_id"] for row in boundary], ["174_first_amendment_s8"])
+        at_cutoff = real_pilot.select("2026-05-01", ["174"])
+        self.assertEqual([row["version_id"] for row in at_cutoff], ["174_first_amendment_s8"])
+
+        # Exercise the real temporal index on both sides of the amendment boundary
+        # and at the replacement version's finite evidence cutoff; no generator/API.
+        for reference_date, selected_id in (
+            ("1951-06-17", "174_original_1949"),
+            ("1951-06-18", "174_first_amendment_s8"),
+            ("2026-05-01", "174_first_amendment_s8"),
+        ):
+            with self.subTest(reference_date=reference_date):
+                eligible = real_pilot.select(reference_date, ["174"])
+                index = TemporalArticleIndex(eligible, reference_date)
+                hits = index.search("What does Article 174 provide?", article_numbers=["174"])
+                self.assertTrue(hits)
+                self.assertEqual({hit.metadata["version_id"] for hit in hits}, {selected_id})
+                self.assertTrue(all(hit.metadata["verification_status"] == "verified" for hit in hits))
+
+        calls = []
+        beyond = run_experiment(
+            "Q-ARTICLE-174-BEYOND-COVERAGE", "What does Article 174 provide?", "2026-05-02",
+            GenerationSettings(), "test-key", real_pilot,
+            generate=lambda *args: calls.append(args) or "must not run",
+            output_path=self.output_dir / "article-174-beyond-coverage.jsonl",
+        )
+        self.assertEqual(calls, [])
+        self.assertEqual(beyond["selected_version_ids"], [])
+        self.assertEqual(beyond["retrieved_chunk_ids"], [])
+        self.assertEqual(beyond["abstention_reason"], "beyond_evidence_coverage")
+        self.assertEqual(beyond["run_status"], "abstained")
+
+    def test_article_21a_and_45_records_keep_existing_temporal_exclusion(self):
+        real_pilot = load_temporal_corpus()
+        for article, reference_date in (("21A", "2026-05-01"), ("45", "2020-01-01")):
+            with self.subTest(article=article):
+                rows = [row for row in real_pilot.records if row["article_number"] == article]
+                self.assertTrue(rows)
+                self.assertTrue(all(row["verification_status"] == "partially_verified" for row in rows))
+                self.assertTrue(all("evidence_coverage" not in row for row in rows))
+                self.assertEqual(real_pilot.select(reference_date, [article]), [])
 
     def test_coverage_does_not_override_partially_verified_status(self):
         partial = version("21A", "partial-with-coverage", status="partially_verified")

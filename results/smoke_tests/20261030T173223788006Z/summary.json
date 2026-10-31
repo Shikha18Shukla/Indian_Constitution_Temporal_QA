@@ -1,0 +1,16 @@
+{
+  "run_directory": "C:\\Users\\shikh\\Desktop\\Indian_Constitution_Temporal_QA\\results\\smoke_tests\\20261030T173223788006Z",
+  "eligible_question": "Q005",
+  "same_question_and_date_for_all_systems": true,
+  "statuses": {
+    "system_a": "not_run_blocked",
+    "system_b": "not_run_blocked",
+    "system_c": "abstained"
+  },
+  "files": [
+    "manifest.json",
+    "system_a.jsonl",
+    "system_b.jsonl",
+    "system_c.jsonl"
+  ]
+}

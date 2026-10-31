@@ -44,6 +44,79 @@ class ArticleVersionTests(unittest.TestCase):
         self.assertTrue(after["text"])
         self.assertEqual(before["effective_to"], after["effective_from"])
 
+    def test_article_174_has_exact_adjacent_provisional_intervals(self):
+        original = record(self.data, "174_original_1949")
+        replacement = record(self.data, "174_first_amendment_s8")
+        self.assertEqual(original["effective_from"], "1950-01-26")
+        self.assertEqual(original["effective_to"], "1951-06-18")
+        self.assertEqual(original["operation_type"], "baseline")
+        self.assertEqual(original["text"], (
+            "174. (1) The House or Houses of the Legislature of the State shall be summoned "
+            "to meet twice at least in every year, and six months shall not intervene between "
+            "their last sitting in one session and the date appointed for their first sitting "
+            "in the next session. (2) Subject to the provisions of clause (1), the Governor "
+            "may from time to time— (a) summon the House or either House to meet at such time "
+            "and place as he thinks fit; (b) prorogue the House or Houses; (c) dissolve the "
+            "Legislative Assembly."
+        ))
+        self.assertEqual(replacement["effective_from"], "1951-06-18")
+        self.assertIsNone(replacement["effective_to"])
+        self.assertEqual(replacement["operation_type"], "substituted")
+        self.assertEqual(replacement["text"], (
+            "174. Sessions of the State Legislature, prorogation and dissolution.-(1) The "
+            "Governor shall from time to time summon the House or each House of the Legislature "
+            "of the State to meet at such time and place as he thinks fit, but six months shall "
+            "not intervene between its last sitting in one session and the date appointed for "
+            "its first sitting in the next session. (2) The Governor may from time to time- "
+            "(a) prorogue the House or either House; (b) dissolve the Legislative Assembly."
+        ))
+        self.assertEqual(original["effective_to"], replacement["effective_from"])
+        self.assertEqual(original["verification_status"], "verified")
+        self.assertEqual(replacement["verification_status"], "verified")
+        self.assertEqual(original["evidence_coverage"]["verified_through"], "1951-06-17")
+        self.assertEqual(replacement["evidence_coverage"]["verified_through"], "2026-05-01")
+        self.assertTrue(original["evidence_coverage"]["source_references"])
+        self.assertTrue(replacement["evidence_coverage"]["source_references"])
+
+    def test_article_174_exact_boundary_and_primary_source_provenance(self):
+        original = record(self.data, "174_original_1949")
+        replacement = record(self.data, "174_first_amendment_s8")
+        # Half-open intervals: the old text ends exclusively when the substitute begins.
+        boundary = "1951-06-18"
+        self.assertFalse(original["effective_from"] <= boundary < original["effective_to"])
+        self.assertTrue(replacement["effective_from"] <= boundary)
+        self.assertEqual(
+            original["source_reference"]["commencement_evidence"]["effective_date"],
+            "1950-01-26",
+        )
+        self.assertEqual(
+            original["source_reference"]["end_boundary_evidence"]["effective_date"],
+            boundary,
+        )
+        self.assertIn("PDF p. 106", original["source_reference"]["page_or_locator"])
+        self.assertIn("printed p. 89", original["source_reference"]["page_or_locator"])
+        self.assertIn("316dae4a42e11ccab825e47b495a8bf2ff0bebbb8877cfe61ba0756c19d1e9c9",
+                      replacement["source_reference"]["source_document"])
+        self.assertIn("Section 8, PDF p. 4", replacement["source_reference"]["page_or_locator"])
+        self.assertEqual(
+            replacement["source_reference"]["commencement_evidence"]["effective_date"],
+            boundary,
+        )
+        self.assertEqual(
+            replacement["source_reference"]["supporting_current_text_evidence"]["snapshot_date"],
+            "2026-05-01",
+        )
+        self.assertEqual(original["evidence_coverage"]["source_references"][-1]["page_or_locator"],
+                         "Article 174 footnote 1, PDF p. 111.")
+        replacement_claims = " ".join(ref["claim"] for ref in replacement["evidence_coverage"]["source_references"])
+        self.assertIn("all constitutional amendments through the 106th Amendment Act", replacement_claims)
+        self.assertIn("Section 8 directs substitution", replacement_claims)
+        self.assertIn("2026-05-01", replacement_claims)
+        self.assertIn("Gazette facsimile", replacement["verification_notes"])
+        self.assertIn("assent record", replacement["verification_notes"])
+        self.assertIn("Gazette facsimile", original["verification_notes"])
+        self.assertIn("assent record", original["verification_notes"])
+
     def test_rejects_invalid_calendar_date(self):
         record(self.data, "21A_v1")["effective_from"] = "2010-02-30"
         self.assert_error(self.data, "invalid date")

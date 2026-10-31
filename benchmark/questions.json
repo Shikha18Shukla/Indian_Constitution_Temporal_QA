@@ -1,5 +1,5 @@
 {
-  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "benchmark_id": "indian-constitution-temporal-qa-article174-v2",
   "planning_goal": 209,
   "systems": [
     "System A — Base LLM",
@@ -722,6 +722,625 @@
         }
       ],
       "evaluation_status": "suitable_for_evaluation"
+    },
+    {
+      "question_id": "Q021",
+      "question": "What exact operative text did Article 174 contain on 17 June 1951?",
+      "reference_date": "1951-06-17",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "174. (1) The House or Houses of the Legislature of the State shall be summoned to meet twice at least in every year, and six months shall not intervene between their last sitting in one session and the date appointed for their first sitting in the next session. (2) Subject to the provisions of clause (1), the Governor may from time to time— (a) summon the House or either House to meet at such time and place as he thinks fit; (b) prorogue the House or Houses; (c) dissolve the Legislative Assembly.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q021-E1",
+          "source_reference_id": "article174-original-1949",
+          "evidence_text": "174. (1) The House or Houses of the Legislature of the State shall be summoned to meet twice at least in every year, and six months shall not intervene between their last sitting in one session and the date appointed for their first sitting in the next session. (2) Subject to the provisions of clause (1), the Governor may from time to time— (a) summon the House or either House to meet at such time and place as he thinks fit; (b) prorogue the House or Houses; (c) dissolve the Legislative Assembly.",
+          "chunk_id": null,
+          "version_id": "174_original_1949",
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q021-E2",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "Subs. by the Constitution (First Amendment) Act, 1951, s. 8, for art. 174 (w.e.f. 18-6-1951).",
+          "chunk_id": null,
+          "version_id": "174_original_1949",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_original_1949",
+      "expected_temporal_status": "verified_historical_version",
+      "difficulty": "hard",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-original-1949",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India (1949), image-based local scan",
+          "source_path": "raw/sources/Constitution_of_India_English_1949.pdf",
+          "source_url": null,
+          "source_locator": "Article 174, PDF p. 106 (1-based), printed p. 89; visually inspected; SHA-256 9d907654a9f8000c0629000b6011e8b112a2d2b7f599a3130c618235b2b38f007",
+          "verification_status": "verified",
+          "notes": "Exact operative text visually transcribed in results/evaluation/article_174_original_text_verification.md; marginal heading excluded."
+        },
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "This is the original Article 174 wording, before the 18 June 1951 substitution.",
+        "Preserve clause numbering and the original em dash."
+      ],
+      "evaluation_criteria": [
+        "Reproduce the original operative text; do not import replacement wording.",
+        "The marginal heading is not part of the operative text."
+      ]
+    },
+    {
+      "question_id": "Q022",
+      "question": "Under the original Article 174, how often had the State Legislature to meet, and what maximum gap was specified?",
+      "reference_date": "1951-06-17",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "It was to be summoned to meet at least twice in every year, and six months were not to intervene between the last sitting in one session and the appointed first sitting in the next session.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q022-E1",
+          "source_reference_id": "article174-original-1949",
+          "evidence_text": "shall be summoned to meet twice at least in every year, and six months shall not intervene between their last sitting in one session and the date appointed for their first sitting in the next session.",
+          "chunk_id": null,
+          "version_id": "174_original_1949",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_original_1949",
+      "expected_temporal_status": "verified_historical_version",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-original-1949",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India (1949), image-based local scan",
+          "source_path": "raw/sources/Constitution_of_India_English_1949.pdf",
+          "source_url": null,
+          "source_locator": "Article 174, PDF p. 106 (1-based), printed p. 89; visually inspected; SHA-256 9d907654a9f8000c0629000b6011e8b112a2d2b7f599a3130c618235b2b38f007",
+          "verification_status": "verified",
+          "notes": "Exact operative text visually transcribed in results/evaluation/article_174_original_text_verification.md; marginal heading excluded."
+        }
+      ],
+      "expected_key_facts": [
+        "At least twice in every year.",
+        "Six months shall not intervene between the specified sittings."
+      ],
+      "evaluation_criteria": [
+        "Include both the annual minimum and the inter-session limit."
+      ]
+    },
+    {
+      "question_id": "Q023",
+      "question": "What powers did clause (2) give the Governor under Article 174 on 17 June 1951?",
+      "reference_date": "1951-06-17",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "Subject to clause (1), the Governor could summon the House or either House at a time and place he thought fit, prorogue the House or Houses, and dissolve the Legislative Assembly.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q023-E1",
+          "source_reference_id": "article174-original-1949",
+          "evidence_text": "Subject to the provisions of clause (1), the Governor may from time to time— (a) summon the House or either House to meet at such time and place as he thinks fit; (b) prorogue the House or Houses; (c) dissolve the Legislative Assembly.",
+          "chunk_id": null,
+          "version_id": "174_original_1949",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_original_1949",
+      "expected_temporal_status": "verified_historical_version",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-original-1949",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India (1949), image-based local scan",
+          "source_path": "raw/sources/Constitution_of_India_English_1949.pdf",
+          "source_url": null,
+          "source_locator": "Article 174, PDF p. 106 (1-based), printed p. 89; visually inspected; SHA-256 9d907654a9f8000c0629000b6011e8b112a2d2b7f599a3130c618235b2b38f007",
+          "verification_status": "verified",
+          "notes": "Exact operative text visually transcribed in results/evaluation/article_174_original_text_verification.md; marginal heading excluded."
+        }
+      ],
+      "expected_key_facts": [
+        "Summon the House or either House at a chosen time and place.",
+        "Prorogue the House or Houses.",
+        "Dissolve the Legislative Assembly."
+      ],
+      "evaluation_criteria": [
+        "Include all three clause (2) powers and the clause (1) qualification."
+      ]
+    },
+    {
+      "question_id": "Q024",
+      "question": "What inter-session interval rule appears in the replacement Article 174 as of 1 May 2026?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "Six months shall not intervene between the last sitting in one session and the date appointed for the first sitting in the next session.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q024-E1",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "but six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session.",
+          "chunk_id": "chunk-b7bfe1824bde4311da347023",
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Six months shall not intervene between the specified sittings.",
+        "The endpoints are the last sitting of one session and appointed first sitting of the next."
+      ],
+      "evaluation_criteria": [
+        "Identify both endpoint sittings; do not replace this with a fixed number of sessions each year."
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "question": "Under Article 174 as of 1 May 2026, what may the Governor do under clause (2)?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "The Governor may prorogue the House or either House and dissolve the Legislative Assembly.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q025-E1",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "(2) The Governor may from time to time— (a) prorogue the House or either House; (b) dissolve the Legislative Assembly.",
+          "chunk_id": "chunk-b7bfe1824bde4311da347023",
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Prorogue the House or either House.",
+        "Dissolve the Legislative Assembly."
+      ],
+      "evaluation_criteria": [
+        "List both clause (2) powers; do not misstate clause (1) summoning as a clause (2) power."
+      ]
+    },
+    {
+      "question_id": "Q026",
+      "question": "What is the complete operative wording of the substituted Article 174 shown in the official Constitution edition as on 1 May 2026?",
+      "reference_date": "2026-05-01",
+      "question_category": "direct_article_lookup",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "174. Sessions of the State Legislature, prorogation and dissolution.—(1) The Governor shall from time to time summon the House or each House of the Legislature of the State to meet at such time and place as he thinks fit, but six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session. (2) The Governor may from time to time—(a) prorogue the House or either House; (b) dissolve the Legislative Assembly.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q026-E1",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "174. Sessions of the State Legislature, prorogation and dissolution.—(1) The Governor shall from time to time summon the House or each House of the Legislature of the State to meet at such time and place as he thinks fit, but six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session. (2) The Governor may from time to time—(a) prorogue the House or either House; (b) dissolve the Legislative Assembly.",
+          "chunk_id": "chunk-b7bfe1824bde4311da347023",
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "current_snapshot",
+      "difficulty": "hard",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Governor summons each House at such time and place as he thinks fit.",
+        "Six-month inter-session rule.",
+        "Governor may prorogue and dissolve as clause (2) specifies."
+      ],
+      "evaluation_criteria": [
+        "Cover clauses (1) and (2).",
+        "Use 2026 consolidation typography; the 1951 Act scan uses hyphen-minus separators."
+      ]
+    },
+    {
+      "question_id": "Q027",
+      "question": "What operation did Section 8 of the Constitution (First Amendment) Act, 1951 perform on Article 174?",
+      "reference_date": "2026-05-01",
+      "question_category": "amendment_related",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "Section 8 substituted Article 174 with a replacement text.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q027-E1",
+          "source_reference_id": "article174-first-amendment-1951",
+          "evidence_text": "8. Amendment of article 174.-For article 174 of the Constitution, the following article shall be substituted, namely:",
+          "chunk_id": "chunk-a8006a35aacce04c0f993b14",
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "act_text",
+      "difficulty": "easy",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-first-amendment-1951",
+          "source_type": "primary_source",
+          "source_document": "The Constitution (First Amendment) Act, 1951, local scan",
+          "source_path": "raw/amendments/001_Amendment_1951.pdf",
+          "source_url": null,
+          "source_locator": "Section 8, PDF p. 4 (1-based); visually inspected; SHA-256 316dae4a42e11ccab825e47b495a8bf2ff0bebbb8877cfe61ba0756c19d1e9c9",
+          "verification_status": "verified",
+          "notes": "Section 8 expressly substitutes Article 174; exact Act typography retains hyphen-minus separators."
+        }
+      ],
+      "expected_key_facts": [
+        "Section 8 directs that the following Article 174 shall be substituted.",
+        "The operation is substitution/replacement."
+      ],
+      "evaluation_criteria": [
+        "Identify Section 8 and substitution, not only a generic amendment."
+      ]
+    },
+    {
+      "question_id": "Q028",
+      "question": "From what date did the Section 8 substitution of Article 174 take effect?",
+      "reference_date": "2026-05-01",
+      "question_category": "effective_date",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "The official consolidated Article 174 annotation states that the Section 8 substitution took effect on 18 June 1951 (1951-06-18). The Act’s printed title date is not being substituted for the effective-date evidence.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q028-E1",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "Subs. by the Constitution (First Amendment) Act, 1951, s. 8, for art. 174 (w.e.f. 18-6-1951).",
+          "chunk_id": null,
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "commencement_date",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Effective date 1951-06-18.",
+        "The official annotation says “w.e.f. 18-6-1951.”"
+      ],
+      "evaluation_criteria": [
+        "Distinguish the annotated effective date from assent and Gazette-publication dates."
+      ]
+    },
+    {
+      "question_id": "Q029",
+      "question": "Which Article 174 version was in force on 17 June 1951, and what annual-meeting rule did it state?",
+      "reference_date": "1951-06-17",
+      "question_category": "historical_version",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "The original version, 174_original_1949, was in force. It required the House or Houses to be summoned to meet at least twice in every year.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q029-E1",
+          "source_reference_id": "article174-original-1949",
+          "evidence_text": "shall be summoned to meet twice at least in every year",
+          "chunk_id": null,
+          "version_id": "174_original_1949",
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q029-E2",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "(w.e.f. 18-6-1951)",
+          "chunk_id": null,
+          "version_id": "174_original_1949",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_original_1949",
+      "expected_temporal_status": "verified_historical_version",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-original-1949",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India (1949), image-based local scan",
+          "source_path": "raw/sources/Constitution_of_India_English_1949.pdf",
+          "source_url": null,
+          "source_locator": "Article 174, PDF p. 106 (1-based), printed p. 89; visually inspected; SHA-256 9d907654a9f8000c0629000b6011e8b112a2d2b7f599a3130c618235b2b38f007",
+          "verification_status": "verified",
+          "notes": "Exact operative text visually transcribed in results/evaluation/article_174_original_text_verification.md; marginal heading excluded."
+        },
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Version ID 174_original_1949.",
+        "At least two meetings in every year."
+      ],
+      "evaluation_criteria": [
+        "17 June precedes the exclusive 18 June transition boundary.",
+        "Do not use the replacement wording."
+      ]
+    },
+    {
+      "question_id": "Q030",
+      "question": "Which wording of Article 174 applied beginning on 18 June 1951?",
+      "reference_date": "1951-06-18",
+      "question_category": "historical_version",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "The First Amendment replacement, version 174_first_amendment_s8, applied from 18 June 1951. Clause (1) provides that the Governor summons the House or each House at a time and place he thinks fit, subject to the six-month inter-session limit; clause (2) permits prorogation or dissolution as stated there.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q030-E1",
+          "source_reference_id": "article174-first-amendment-1951",
+          "evidence_text": "174. Sessions of the State Legislature, prorogation and dissolution.-(1) The Governor shall from time to time summon the House or each House of the Legislature of the State",
+          "chunk_id": null,
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q030-E2",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "(w.e.f. 18-6-1951)",
+          "chunk_id": null,
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "verified_historical_version",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-first-amendment-1951",
+          "source_type": "primary_source",
+          "source_document": "The Constitution (First Amendment) Act, 1951, local scan",
+          "source_path": "raw/amendments/001_Amendment_1951.pdf",
+          "source_url": null,
+          "source_locator": "Section 8, PDF p. 4 (1-based); visually inspected; SHA-256 316dae4a42e11ccab825e47b495a8bf2ff0bebbb8877cfe61ba0756c19d1e9c9",
+          "verification_status": "verified",
+          "notes": "Section 8 expressly substitutes Article 174; exact Act typography retains hyphen-minus separators."
+        },
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Version ID 174_first_amendment_s8.",
+        "Effective from 1951-06-18 inclusive.",
+        "Section 8 substituted Article 174."
+      ],
+      "evaluation_criteria": [
+        "Apply the half-open boundary: replacement applies on effective_from.",
+        "Do not select original wording on 18 June."
+      ]
+    },
+    {
+      "question_id": "Q031",
+      "question": "As of 1 May 2026, which verified Article 174 version and operative rule does the documented record support?",
+      "reference_date": "2026-05-01",
+      "question_category": "historical_version",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": "The documented version is 174_first_amendment_s8. It requires that six months shall not intervene between the last sitting in one session and the appointed first sitting in the next session.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q031-E1",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "The Constitution of India [As on 1st May, 2026]",
+          "chunk_id": null,
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q031-E2",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "but six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session.",
+          "chunk_id": "chunk-b7bfe1824bde4311da347023",
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": "174_first_amendment_s8",
+      "expected_temporal_status": "verified_historical_version",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        }
+      ],
+      "expected_key_facts": [
+        "Version ID 174_first_amendment_s8.",
+        "Evidence is supported through 2026-05-01 inclusive.",
+        "The six-month inter-session rule applies."
+      ],
+      "evaluation_criteria": [
+        "State the version and one operative rule.",
+        "Do not claim support after 2026-05-01."
+      ]
+    },
+    {
+      "question_id": "Q032",
+      "question": "What Article 174 wording can System C substantiate for 2 May 2026 from its verified Article-version evidence?",
+      "reference_date": "2026-05-02",
+      "question_category": "historical_version",
+      "target_articles": [
+        "174"
+      ],
+      "expected_answer": null,
+      "gold_evidence": [
+        {
+          "evidence_id": "Q032-E1",
+          "source_reference_id": "article174-consolidated-2026",
+          "evidence_text": "The Constitution of India [As on 1st May, 2026]",
+          "chunk_id": null,
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q032-E2",
+          "source_reference_id": "article174-verified-record",
+          "evidence_text": "verified_through: 2026-05-01",
+          "chunk_id": null,
+          "version_id": "174_first_amendment_s8",
+          "verification_status": "verified"
+        }
+      ],
+      "expected_version_id": null,
+      "expected_temporal_status": "evidence_coverage_exceeded",
+      "difficulty": "medium",
+      "verification_status": "verified",
+      "evaluation_status": "suitable_for_evaluation",
+      "source_references": [
+        {
+          "reference_id": "article174-consolidated-2026",
+          "source_type": "primary_source",
+          "source_document": "The Constitution of India, Government of India official consolidated edition as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "Article 174 and footnote 1, PDF p. 111; Preface, PDF p. 2; SHA-256 4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
+          "verification_status": "verified",
+          "notes": "Article page image inspected. Footnote states Section 8 substitution w.e.f. 18-6-1951; Preface and cover identify the 1 May 2026 snapshot. No claim is made after that date."
+        },
+        {
+          "reference_id": "article174-verified-record",
+          "source_type": "verified_canonical_record",
+          "source_document": "Verified canonical Article 174 version record",
+          "source_path": "processed/canonical/article_versions_pilot.json",
+          "source_url": null,
+          "source_locator": "record version_id=174_first_amendment_s8, evidence_coverage.verified_through",
+          "verification_status": "verified",
+          "notes": "This record is verified only through 2026-05-01; this reference is used solely to test System C evidence-coverage abstention."
+        }
+      ],
+      "expected_key_facts": [
+        "Expected behavior: abstain because the verified Article 174 evidence cutoff is 2026-05-01 inclusive.",
+        "An open legal effective_to does not prove coverage beyond that date."
+      ],
+      "evaluation_criteria": [
+        "Expected outcome is abstention rather than a substantive legal answer.",
+        "Abstention reason must identify evidence coverage ending 2026-05-01.",
+        "Do not claim Article 174 legally ceased to be in force."
+      ]
     }
   ],
   "corpus_provenance": {

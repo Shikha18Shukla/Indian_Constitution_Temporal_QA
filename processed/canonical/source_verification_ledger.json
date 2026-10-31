@@ -26,24 +26,26 @@
       "issuing_authority_or_publisher": "The scan itself identifies the Constitution and shows the Constituent Assembly adoption statement. No publisher/imprint or exact publication date is visible on the inspected cover/title pages; catalog metadata identifies the item as 1949.",
       "publication_or_assent_date": "The Preamble page (PDF p. 18) states adoption on 26 November 1949. This is adoption, not evidence of publication date. The inspected cover (PDF p. 1) has title only; no publication imprint/date was visible.",
       "commencement_provision": "Article 394, PDF p. 250 (printed p. 233 per contents, not visibly foliated on the Article 394 page): Article 394 and listed provisions came into force at once; remaining provisions came into force on 26 January 1950.",
-      "relevant_locator": "Cover/title: PDF p. 1. Preamble/adoption statement: PDF p. 18. Article 21: PDF p. 29, printed p. 12; Article 22 follows immediately on the same page and no Article 21A appears in the original sequence. Article 45: PDF p. 39, printed p. 22. Article 394: PDF p. 250, printed p. 233 according to the contents locator; folio not visible on the inspected leaf.",
+      "relevant_locator": "Cover/title: PDF p. 1. Preamble/adoption statement: PDF p. 18. Article 21: PDF p. 29, printed p. 12; Article 22 follows immediately on the same page and no Article 21A appears in the original sequence. Article 45: PDF p. 39, printed p. 22. Article 174: PDF p. 106, printed p. 89; complete provision visually inspected. Article 394: PDF p. 250, printed p. 233 according to the contents locator; folio not visible on the inspected leaf.",
       "pdf_page_count": 342,
       "pdf_page_number": {
         "cover": 1,
         "preamble": 18,
         "article_21": 29,
         "article_45": 39,
+        "article_174": 106,
         "article_394": 250
       },
       "printed_page_number": {
         "article_21": 12,
         "article_45": 22,
+        "article_174": 89,
         "article_394": "233 per contents; not visible on inspected leaf"
       },
       "text_or_image_status": "Image-only scanned PDF; embedded page images, no extractable text layer. Relevant pages rendered and visually inspected.",
       "sha256": "9d907654a9f800c0629000b6011e8b112a2d2b7f599a3130c618235b2b38f007",
       "checksum_status": "SHA-256 computed from local PDF bytes",
-      "inspection_status": "Local PDF title/cover and relevant Article 21, Article 45, and Article 394 page images visually inspected.",
+      "inspection_status": "Local PDF title/cover and relevant Article 21, Article 45, Article 174, and Article 394 page images visually inspected.",
       "evidentiary_limit": "Article 45 original wording is established as text appearing in this original Constitution scan, but continuity to 1 April 2010 remains unverified pending full intervening amendment-history audit. Article 21A absence is directly observed in the original Article 21/22 sequence, but interval use still depends on commencement evidence and scope/history checks.",
       "file_size_bytes": 213220509,
       "technical_pdf_metadata": "Creator/producer Adobe Acrobat 9.0 Image Conversion Plug-in; creation 2017-02-16 and modification 2017-02-20 metadata are scan processing metadata, not legal publication dates.",
@@ -55,7 +57,10 @@
         "article_45_locator": "PDF p. 39, printed p. 22.",
         "article_394_text": "394. This article and articles 5, 6, 7, 8, 9, 60, 324, 366, 367, 379, 380, 388, 391, 392 and 393 shall come into force at once, and the remaining provisions of this Constitution shall come into force on the twenty-sixth day of January, 1950, which day is referred to in this Constitution as the commencement of this Constitution.",
         "article_394_locator": "PDF p. 250; printed page 233 per contents. Page image visually inspected; folio not visible on leaf.",
-        "article_21_text": "21. No person shall be deprived of his life or personal liberty except according to procedure established by law."
+        "article_21_text": "21. No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+        "article_174_heading": "Sessions of the State Legislature, prorogation and dissolution.",
+        "article_174_text": "174. (1) The House or Houses of the Legislature of the State shall be summoned to meet twice at least in every year, and six months shall not intervene between their last sitting in one session and the date appointed for their first sitting in the next session. (2) Subject to the provisions of clause (1), the Governor may from time to time— (a) summon the House or either House to meet at such time and place as he thinks fit; (b) prorogue the House or Houses; (c) dissolve the Legislative Assembly.",
+        "article_174_locator": "PDF p. 106, printed p. 89; exact operative wording visually transcribed from the page image. Marginal heading is recorded separately and is not included in the operative text. Line breaks are joined; wording, capitalization, clause numbering, punctuation, and spelling are retained."
       }
     },
     {
@@ -117,13 +122,21 @@
       "preface_scope": "Sixth pocket-size diglot edition incorporating amendments through the Constitution (One Hundred and Sixth Amendment) Act, 2023.",
       "pdf_modification_metadata": "2026-06-12T04:57:43Z; technical PDF metadata, not legal publication date.",
       "commencement_provision": null,
-      "relevant_locator": "Article 21A appears on PDF p. 42. Article 45 appears on PDF p. 54, printed p. 23. Article 45 footnote 2 states it was substituted by section 3 of the 86th Amendment Act, effective 1 April 2010. PDF p. 54 was rendered and visually inspected.",
+      "relevant_locator": "Article 21A appears on PDF p. 42. Article 45 appears on PDF p. 54, printed p. 23. Article 45 footnote 2 states it was substituted by section 3 of the 86th Amendment Act, effective 1 April 2010. PDF p. 54 was rendered and visually inspected. Article 174: PDF p. 111; the page image was rendered and visually inspected. Footnote 1 states substitution by the First Amendment Act, section 8, w.e.f. 18-6-1951; printed page number not visible on the inspected leaf. Preface: PDF p. 2 states all constitutional amendments through the 106th Amendment Act, 2023 are incorporated and footnotes identify the Acts making changes.",
       "pdf_page_count": 402,
       "text_or_image_status": "Predominantly searchable text PDF. PDF p. 54 has an extractable text layer and was visually inspected.",
       "sha256": "4c8e93689ec245e26db08e22b5ff3ad645c98736f0e5b7c8b6638acd7861f85b",
       "checksum_status": "computed from local PDF bytes",
-      "inspection_status": "local cover metadata and relevant current Article 45 page checked; current Article 21A text is extractable from p. 42",
-      "evidentiary_limit": "This is a later consolidated text, not proof of the original Article 45 wording or uninterrupted historical validity. It corroborates the 2026 current text and the printed 86th Amendment footnote only."
+      "inspection_status": "Local cover, Article 174 page (PDF p. 111), and Preface amendment-scope statement (PDF p. 2) checked; Article 174 page image visually inspected and text locator verified.",
+      "evidentiary_limit": "This is an official consolidated snapshot dated 2026-05-01. Its Preface states that amendments through the 106th Amendment Act, 2023 are incorporated and that amendment footnotes identify Acts making changes; the Article 174 page supports text/history through that cutoff only. It does not establish legal validity or subsequent history after 2026-05-01. For Articles 21A and 45 it remains corroborative and does not independently establish their full historical intervals.",
+      "page_level_findings": {
+        "article_174_text": "The current consolidated text is reproduced on PDF p. 111 and visually inspected. It has the same operative words and clause structure as the section 8 replacement; its typography uses em dashes where the 1951 Act scan prints hyphen-minus separators.",
+        "article_174_footnote": "PDF p. 111, footnote 1: Subs. by the Constitution (First Amendment) Act, 1951, s. 8, for art. 174 (w.e.f. 18-6-1951). This is direct official consolidated evidence of the substitution and effective date.",
+        "amendment_scope_preface": "PDF p. 2 states that the Constitution text incorporates all amendments through the Constitution (One Hundred and Sixth Amendment) Act, 2023, and that footnotes indicate the Amendment Acts by which changes have been made; signed New Delhi, 1st May, 2026."
+      },
+      "pdf_page_number": {
+        "article_174": 111
+      }
     },
     {
       "source_id": "SRC-INDIACODE-CONSOLIDATED-CONSTITUTION",
@@ -166,6 +179,36 @@
       "technical_pdf_metadata": "Creator/producer OmniPage CSDK 15.5; PDF creation/modification metadata 2012-03-16 are scan processing metadata, not Gazette issue date.",
       "inspection_status": "Cover visually inspected; source does not match requested S.O. 427(E) Gazette issue.",
       "evidentiary_limit": "Not evidence for S.O. 427(E), its 16 February 2010 notification date, 19 February 2010 Gazette issue date, or 1 April 2010 commencement."
+    },
+    {
+      "source_id": "SRC-FIRST-AMENDMENT-1951",
+      "filename": "001_Amendment_1951.pdf",
+      "local_path": "raw/amendments/001_Amendment_1951.pdf",
+      "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/f3789482ad0dfee795e54fb88c0401e6.pdf",
+      "document_title": "The Constitution (First Amendment) Act, 1951",
+      "issuing_authority_or_publisher": "Parliament of India; official copy hosted by the Legislative Department, Ministry of Law and Justice, Government of India.",
+      "date_printed_below_title": "18 June 1951 (the local Act scan’s title date; the page does not label it as assent).",
+      "assent_date": "18 June 1951 according to the Parliamentary compilation; not separately labelled as assent in the visually inspected local Act pages.",
+      "publication_date": "18 June 1951 is reported as Gazette notification date in the Parliamentary compilation and as Gazette of India Extraordinary, Part II, Section 1, Issue No. 21 by the Bombay High Court library table. The actual Gazette page was not locally inspected.",
+      "commencement_provision": "Section 1 (PDF p. 2) is only a short-title clause and contains no commencement clause or delegation. The current official consolidated Constitution annotates Article 174 as substituted by section 8 with effect from 18 June 1951. The Parliamentary compilation separately reports commencement on that date.",
+      "relevant_locator": "Section 1: PDF p. 2. Section 8: PDF p. 4. Printed folio/page number is not visible on either inspected local page. Article 174 substitution is visually legible on PDF p. 4.",
+      "pdf_page_count": 6,
+      "pdf_page_number": {
+        "section_1": 2,
+        "section_8": 4
+      },
+      "printed_page_number": "Not visible on inspected PDF pages 2 and 4.",
+      "text_or_image_status": "Image-based local scan; PDF pages 2 and 4 rendered and visually inspected.",
+      "sha256": "316dae4a42e11ccab825e47b495a8bf2ff0bebbb8877cfe61ba0756c19d1e9c9",
+      "file_size_bytes": 176266,
+      "checksum_status": "SHA-256 computed from local PDF bytes.",
+      "inspection_status": "Section 1 and section 8 visually inspected on the local scan. Official Legislative Department Act copy and current official consolidation were also inspected as text sources.",
+      "page_level_findings": {
+        "section_1": "1. Short title.-This Act may be called the Constitution (First Amendment) Act, 1951. No commencement term or notification delegation appears in section 1.",
+        "section_8": "Section 8 directs: For article 174 of the Constitution, the following article shall be substituted, namely:- The quoted Article 174 replacement text is transcribed in results/evaluation/article_174_timeline_verification.md.",
+        "operation": "Substitution/replacement, as the enacted direction expressly says shall be substituted; the parser label amended is generic and less precise."
+      },
+      "evidentiary_limit": "The local Act scan establishes section 8’s substitution wording and absence of a commencement clause in section 1. No First Amendment Gazette facsimile was inspected. Assent/publication labels are corroborated by a Parliamentary compilation, while the official consolidated Constitution’s Article 174 footnote directly states the effective date."
     }
   ],
   "other_amendment_acts_review": {
@@ -540,5 +583,71 @@
     },
     "continuity_determination": "The original Article 45 wording is visually established in the 1949 Constitution scan (PDF p. 39, printed p. 22). An official India Code search-index excerpt for a pre-commencement consolidated text also presents that wording and states that the 86th substitution was not yet in force. However, that remote PDF was not locally obtained/visually checked, all 1st-85th primary Acts are not in the repository, and the actual Gazette commencement instrument is missing. Thus strict continuous validity from 1950-01-26 through immediately before 2010-04-01 is NOT established to the project primary-source standard; the interval remains unresolved.",
     "verification_status_effect": "No version verification_decision or evidence_status changed. Article 45 pre-86th remains partially_verified."
+  },
+  "article174_timeline_review": {
+    "scope": "Article 174 timeline from commencement of the Constitution through the local official consolidated edition dated 2026-05-01.",
+    "original_constitution": {
+      "source_id": "SRC-ORIGINAL-CONSTITUTION-1949",
+      "locator": "PDF p. 250, Article 394; visually inspected. Article 394 says listed provisions came into force at once and remaining provisions on 1950-01-26. Article 174 is not in the at-once list; its initial effective date is therefore 1950-01-26.",
+      "article_174_text_locator": "PDF p. 106, printed p. 89; exact text recorded in SRC-ORIGINAL-CONSTITUTION-1949.page_level_findings.article_174_text.",
+      "determination": "Primary source supports Article 174’s initial effective date as 1950-01-26."
+    },
+    "first_amendment": {
+      "source_id": "SRC-FIRST-AMENDMENT-1951",
+      "section_1_locator": "PDF p. 2. Section 1 is a short-title clause only; it contains no commencement provision and does not delegate commencement to a notification.",
+      "section_8_locator": "PDF p. 4. Enacted instruction expressly substitutes Article 174; operation is substitution/replacement.",
+      "replacement_text": "174. Sessions of the State Legislature, prorogation and dissolution.-(1) The Governor shall from time to time summon the House or each House of the Legislature of the State to meet at such time and place as he thinks fit, but six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session. (2) The Governor may from time to time- (a) prorogue the House or either House; (b) dissolve the Legislative Assembly.",
+      "text_comparison": "The operative words, clauses, and clause numbering match the text on current consolidated PDF p. 111. Typography differs: the 1951 scan uses hyphen-minus separators after dissolution and time to time; the consolidated edition uses em dash separators. No lexical difference was observed. The amendment Act’s quotation and enactment-ending punctuation are not part of the Article text.",
+      "act_printed_date": "1951-06-18, printed below the Act title in the official Act copy; the date line itself is not labelled assent.",
+      "assent_date": "1951-06-18 is reported as President’s assent by the Parliamentary compilation (corroborative, not the Act page itself).",
+      "publication_date": "1951-06-18 is reported by the Parliamentary compilation as Gazette notification date; Bombay High Court library table identifies Gazette of India Extraordinary, Part II, Section 1, Issue No. 21, dated 18 June 1951. The Gazette facsimile/pages 203–206 were not inspected; primary publication-page verification remains outstanding.",
+      "effective_from": "1951-06-18, stated in the current official consolidated Constitution Article 174 footnote on PDF p. 111: section 8 substitution w.e.f. 18-6-1951. The official Legislative Department full Act title date and the Parliamentary compilation corroborate the date."
+    },
+    "later_history": {
+      "current_text_source_id": "SRC-CURRENT-CONSTITUTION-2026",
+      "locator": "raw/constitution/Constitution_of_India_2024.pdf, PDF p. 111; visual inspection. Edition cover says as on 2026-05-01. Article 174 footnote 1 identifies the First Amendment Act, section 8, w.e.f. 18-6-1951.",
+      "finding": "The official consolidated edition’s Preface states that all constitutional amendments through the 106th Amendment Act, 2023 are incorporated and that footnotes identify the Amendment Acts making changes. The Article 174 page (PDF p. 111) shows the current text and identifies the First Amendment Act, section 8, w.e.f. 18-6-1951, with no later Article 174 amendment annotation. Together these official pages establish the Article-specific history and current wording through the edition date 2026-05-01. The local 160-operation data and 18 selected Act PDFs are not exhaustive and are not relied on as the sole completeness evidence.",
+      "coverage_limit": "The verified history and evidence coverage end at 2026-05-01. No conclusion is made about legal changes or validity after that cutoff. An Act-by-Act review of all 106 Acts was not conducted; completeness through the stated cutoff relies on the official consolidated edition’s express preface and footnote convention."
+    },
+    "timeline": [
+      {
+        "version": "Original Article 174",
+        "effective_from": "1950-01-26",
+        "effective_to": "1951-06-18",
+        "operation": "Initial provision; replaced under First Amendment Act section 8 at the exclusive boundary",
+        "evidence_status": "Verified for [1950-01-26, 1951-06-18): original text and commencement are established by the original Constitution; the official Article 174 footnote establishes the exclusive transition boundary. Evidence coverage ends 1951-06-17 inclusive."
+      },
+      {
+        "version": "Article 174 as substituted by First Amendment Act section 8",
+        "effective_from": "1951-06-18",
+        "effective_to": null,
+        "operation": "Substitution/replacement",
+        "evidence_status": "Verified from 1951-06-18 through the evidence cutoff 2026-05-01: Section 8 establishes replacement wording; the official consolidation establishes the transition date, current text, and amendment-history snapshot. effective_to remains null because no cessation date is established; no post-cutoff validity is claimed."
+      }
+    ],
+    "unresolved_evidence_gaps": [
+      "The First Amendment Gazette facsimile has not been inspected; Gazette issue/page-level publication provenance remains outstanding. This does not block the Article-specific effective date established by the official consolidated Article 174 annotation.",
+      "An explicit primary record of the First Amendment President’s assent has not been inspected. The bracketed Act title date is not treated as an assent label; this remains a provenance limitation and is not used as an effective boundary.",
+      "No legal cessation date is established for the substituted text. Evidence coverage ends 2026-05-01; no claim is made after that date."
+    ],
+    "canonical_readiness": "Both Article 174 records meet the project’s Article-specific text, interval, and bounded evidence-coverage requirements and are verified only through their stated cutoffs. The Gazette facsimile and explicit assent record remain provenance limitations and are preserved as such; neither is used to derive an Article-specific effective boundary. The replacement record has no established legal cessation date, and the verification does not extend beyond 2026-05-01.",
+    "record_verification_decisions": [
+      {
+        "version_id": "174_original_1949",
+        "verification_status": "verified",
+        "legal_interval": "[1950-01-26, 1951-06-18)",
+        "evidence_coverage_through": "1951-06-17",
+        "basis": "Original text visually verified at original Constitution PDF p. 106/printed p. 89; Article 394 PDF p. 250 supports effective_from; official consolidated Article 174 footnote PDF p. 111 supports the effective_to transition.",
+        "limitations": "First Amendment Gazette facsimile and explicit primary assent record are unavailable locally; these are publication/assent provenance limitations. No claim beyond the finite legal interval."
+      },
+      {
+        "version_id": "174_first_amendment_s8",
+        "verification_status": "verified",
+        "legal_interval": "[1951-06-18, null)",
+        "evidence_coverage_through": "2026-05-01",
+        "basis": "Section 8 replacement wording visually verified in First Amendment Act PDF p. 4; official consolidated Article 174 footnote PDF p. 111 supports effective_from and current wording; official Preface PDF p. 2 states complete incorporation through the 106th Amendment Act and that footnotes identify amending Acts.",
+        "limitations": "First Amendment Gazette facsimile and explicit primary assent record are unavailable locally; these are publication/assent provenance limitations. effective_to is unknown and null does not prove perpetual validity; no post-2026-05-01 claim."
+      }
+    ]
   }
 }

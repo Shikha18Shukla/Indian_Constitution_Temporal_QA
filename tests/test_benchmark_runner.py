@@ -57,7 +57,7 @@ class BenchmarkRunnerTests(unittest.TestCase):
             path = run_dir / f"{system}.jsonl"
             self.assertTrue(path.is_file())
             rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
-            self.assertEqual(len(rows), 20)
+            self.assertEqual(len(rows), 32)
             self.assertEqual({row["system"] for row in rows}, {system})
             self.assertEqual({row["question_id"] for row in rows}, {q["question_id"] for q in _load_data()["questions"]})
 
@@ -68,12 +68,20 @@ class BenchmarkRunnerTests(unittest.TestCase):
             return {"status": "completed", "raw_answer": "mock"}
 
         summary = run_benchmark(output_root=self.output_root, mode="mocked", executor=executor)
-        self.assertEqual(summary["per_system_counts"]["system_c"]["abstained"], 13)
+        self.assertEqual(summary["per_system_counts"]["system_c"]["abstained"], 25)
         self.assertEqual(summary["per_system_counts"]["system_c"]["completed"], 0)
         rows = [json.loads(line) for line in (Path(summary["run_directory"]) / "system_c.jsonl").read_text(encoding="utf-8").splitlines()]
         eligible = [row for row in rows if row["status"] == "abstained"]
-        self.assertEqual(len(eligible), 13)
+        self.assertEqual(len(eligible), 25)
         self.assertTrue(all(row["abstention_reason"] == "no verified version" for row in eligible))
+
+    def test_article_174_cutoff_mock_abstention_has_specific_reason(self):
+        summary = self.run_mock()
+        rows = [json.loads(line) for line in (Path(summary["run_directory"]) / "system_c.jsonl").read_text(encoding="utf-8").splitlines()]
+        row = next(item for item in rows if item["question_id"] == "Q032")
+        self.assertEqual(row["status"], "abstained")
+        self.assertEqual(row["abstention_reason"], "beyond_evidence_coverage")
+        self.assertEqual(row["reference_date"], "2026-05-02")
 
     def test_failed_run_is_recorded_and_other_runs_continue(self):
         def executor(system, question):
@@ -101,7 +109,7 @@ class BenchmarkRunnerTests(unittest.TestCase):
             raise AssertionError("dry-run called an executor")
 
         summary = run_benchmark(output_root=self.output_root, mode="dry-run", executor=forbidden)
-        self.assertEqual(summary["counts"]["planned"], 39)
+        self.assertEqual(summary["counts"]["planned"], 75)
         self.assertEqual(summary["counts"]["skipped"], 21)
         self.assertEqual(summary["counts"]["completed"], 0)
         self.assertEqual(summary["counts"]["failed"], 0)
@@ -120,3 +128,4 @@ class BenchmarkRunnerTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

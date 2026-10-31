@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "abstained": 0,
+    "completed": 30,
+    "failed": 0,
+    "mocked": 0,
+    "planned": 0,
+    "skipped": 0
+  },
+  "execution_id": "20261031T084946583103Z-5efff8b3",
+  "execution_mode": "live",
+  "finished_at": "2026-10-31T08:52:30.134Z",
+  "manifest_id": "b87ac71c2a5b1c9190a270aadf61302942ae422dad5acf40bb8a601dea2809cd",
+  "per_system_counts": {
+    "system_a": {
+      "abstained": 0,
+      "completed": 10,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 0,
+      "skipped": 0
+    },
+    "system_b": {
+      "abstained": 0,
+      "completed": 10,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 0,
+      "skipped": 0
+    },
+    "system_c": {
+      "abstained": 0,
+      "completed": 10,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 0,
+      "skipped": 0
+    }
+  },
+  "run_directory": "C:\\Users\\shikh\\Desktop\\Indian_Constitution_Temporal_QA\\results\\benchmark_runs\\held_out_article174\\b87ac71c2a5b1c9190a270aadf61302942ae422dad5acf40bb8a601dea2809cd\\20261031T084946583103Z-5efff8b3",
+  "skipped_question_count": 0,
+  "skipped_question_ids_and_reasons": [],
+  "started_at": "2026-10-31T08:49:46.583Z"
+}

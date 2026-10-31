@@ -219,6 +219,8 @@ The same eligible question wording and reference date are used across the three 
 
 Pending questions that lack sufficient source verification are excluded from evaluation until their evidence requirements are satisfied.
 
+The **development benchmark** is `benchmark/questions.json` (Q001–Q032); these questions have been used during system development, prior pilots, or failure analysis and are not a held-out test set. The separate `benchmark/held_out_article174_questions.json` contains prospective cases Q033–Q042 and is frozen for later evaluation. Article 174 systems and evidence were already developed before these questions were authored, so this set is prospective but not fully independent or blinded. The existing benchmark runner continues to read `questions.json`; it will not execute the held-out file.
+
 ---
 
 ## Project Structure
@@ -227,7 +229,8 @@ Pending questions that lack sufficient source verification are excluded from eva
 Indian_Constitution_Temporal_QA/
 │
 ├── benchmark/
-│   ├── questions.json
+│   ├── questions.json                 # development benchmark Q001–Q032
+│   ├── held_out_article174_questions.json # prospective cases Q033–Q042; separate
 │   ├── schema.json
 │   ├── run_benchmark.py
 │   └── validate_benchmark.py

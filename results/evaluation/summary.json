@@ -1,0 +1,148 @@
+{
+  "evaluation_label": "PRELIMINARY exploratory live pilot; not final research evaluation",
+  "run_directory": "results/benchmark_runs/02a57176dd4cb2e64be47fcdc98979cf76b5b7c7855a4e2b27640612f058fd91/20261030T173545036179Z-5d548d32",
+  "run_id": "20261030T173545036179Z-5d548d32",
+  "run_started_at": "2026-10-30T17:35:45.036Z",
+  "run_finished_at": "2026-10-30T17:38:16.999Z",
+  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "benchmark_sha256": "0b312358cad107446245e12fd01ada11b6cd7a396f8c3d47866d5c8c9c667fd9",
+  "static_index_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+  "static_index_chunk_count": 1123,
+  "generation_model": "gemini-3.5-flash-lite",
+  "question_reference_date": "2026-05-01",
+  "counts": {
+    "eligible_questions": 13,
+    "pending_questions_excluded": 7,
+    "skipped_system_runs": 21,
+    "system_a_completed": 13,
+    "system_b_completed": 13,
+    "system_c_abstained": 13,
+    "system_run_failures": 0
+  },
+  "scoring_rubric": {
+    "accuracy": "strict core gold propositions correct; abstention counts as not correct in task accuracy and is separately reported",
+    "completeness": "manual 0–1 score of required gold propositions covered; abstentions score 0",
+    "system_b_citation_correctness": "each cited chunk ID resolves to a chunk retrieved in the same run",
+    "system_b_citation_support": "cited chunk text supports the claim attached to that citation",
+    "system_a_citations": "not applicable by design",
+    "system_c": "abstentions excluded from answer accuracy/completeness; temporal answer quality not measurable"
+  },
+  "system_metrics": {
+    "system_a": {
+      "eligible_denominator": 13,
+      "correct": 11,
+      "incorrect": 1,
+      "abstained": 1,
+      "task_accuracy_correct_over_all_eligible": 0.8461538461538461,
+      "substantive_accuracy_correct_over_nonabstained": 0.9166666666666666,
+      "completeness_mean_including_abstentions": 0.8461538461538461,
+      "completeness_total_points": 11.0,
+      "completeness_max_points": 13,
+      "citation_metrics": "not applicable; Base LLM condition intentionally has no retrieval/citations"
+    },
+    "system_b": {
+      "eligible_denominator": 13,
+      "correct": 11,
+      "incorrect": 0,
+      "abstained": 2,
+      "task_accuracy_correct_over_all_eligible": 0.8461538461538461,
+      "substantive_accuracy_correct_over_nonabstained": 1.0,
+      "completeness_mean_including_abstentions": 0.8461538461538461,
+      "completeness_total_points": 11.0,
+      "completeness_max_points": 13,
+      "citation_bearing_answers": 11,
+      "citation_ids_resolving_to_retrieved_chunks": true,
+      "citation_supporting_answer_claims": 11,
+      "citation_support_denominator": 11,
+      "citation_correctness_rate_among_citation_bearing_answers": 1.0,
+      "citation_support_rate_among_citation_bearing_answers": 1.0,
+      "citation_coverage_over_all_eligible_questions": 0.8461538461538461
+    }
+  },
+  "latency_seconds": {
+    "system_a": {
+      "n": 13,
+      "mean_seconds": 4.597646615384615,
+      "median_seconds": 4.317657,
+      "min_seconds": 3.936741,
+      "max_seconds": 6.874824
+    },
+    "system_b": {
+      "n": 13,
+      "mean_seconds": 6.700029384615385,
+      "median_seconds": 6.383366,
+      "min_seconds": 5.422934,
+      "max_seconds": 8.942101
+    },
+    "system_c": {
+      "n": 13,
+      "mean_seconds": 0.38630661538461536,
+      "median_seconds": 0.390157,
+      "min_seconds": 0.333724,
+      "max_seconds": 0.475473
+    }
+  },
+  "api_usage": "Token/request usage metadata was not recorded in run JSONL; latency is available from benchmark runner execution_time_seconds.",
+  "system_c": {
+    "abstentions": 13,
+    "substantive_answer_accuracy": "not measurable",
+    "reason": "No verified Article version was eligible. The four Article 21A/45 pilot records all remain partially_verified; Articles 14, 19 and 21 have no canonical historical-version records in the pilot. No System C evidence reached generation."
+  },
+  "notable_findings": [
+    {
+      "question_id": "Q010",
+      "system": "system_b",
+      "finding": "Abstained although the eligible gold answer is in 86th Amendment Act section 1(2). The top-five retrieved chunks did not include that Act section, so this is a retrieval/context miss followed by conservative abstention."
+    },
+    {
+      "question_id": "Q020",
+      "system": "system_a",
+      "finding": "Incorrect comparison: Article 14 says “any person”; Article 21 begins “No person”. The response quotes Article 21 correctly but then says both use “any person” and claims identical wording."
+    },
+    {
+      "question_id": "Q020",
+      "system": "system_b",
+      "finding": "Abstained; its top-five retrieved chunks did not contain Article 14 or Article 21 operative text."
+    },
+    {
+      "question_id": "Q007",
+      "system": "system_a",
+      "finding": "Correct yes/no result (“No”) but omits the procedure-established-by-law qualification; completeness partial."
+    },
+    {
+      "question_id": "Q011",
+      "system": "system_a",
+      "finding": "Abstained on the printed Act date; System B answered correctly and its cited chunk contains [12th December, 2002.]."
+    }
+  ],
+  "pending_exclusions": [
+    {
+      "question_id": "Q012",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    },
+    {
+      "question_id": "Q013",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    },
+    {
+      "question_id": "Q014",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    },
+    {
+      "question_id": "Q015",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    },
+    {
+      "question_id": "Q016",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    },
+    {
+      "question_id": "Q017",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    },
+    {
+      "question_id": "Q018",
+      "reason": "pending_source_verification; no gold answer/evidence; excluded from scoring"
+    }
+  ]
+}

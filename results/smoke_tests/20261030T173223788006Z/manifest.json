@@ -1,0 +1,43 @@
+{
+  "smoke_run_id": "20261030T173223788006Z",
+  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "benchmark_version": "indian-constitution-temporal-qa-initial-v1",
+  "question_id": "Q005",
+  "question": "What does the current Article 45 direct the State to endeavour to provide?",
+  "reference_date": "2026-05-01",
+  "python_executable": "C:\\Users\\shikh\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "python_version": "3.10.9",
+  "generation_settings": {
+    "model_name": "gemini-3.5-flash-lite",
+    "temperature": 0.0,
+    "max_output_tokens": 1024,
+    "request_timeout_seconds": 45,
+    "max_retries": 2,
+    "retry_backoff_seconds": 1.0
+  },
+  "api_key_present": false,
+  "gemini_generation_requests_made": {
+    "system_a": 0,
+    "system_b": 0,
+    "system_c": 0
+  },
+  "network_diagnostics": {
+    "python_dns": "failed: gaierror [Errno 11001] getaddrinfo failed",
+    "powershell_resolve_dns": "failed: Access is denied",
+    "powershell_tcp_443": false,
+    "https_head": "failed at DNS resolution; no Gemini generation request sent"
+  },
+  "static_index": {
+    "path": "processed/static_rag/index.sqlite3",
+    "snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "expected_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "chunk_count": 1123,
+    "rebuilt": false
+  },
+  "system_results": {
+    "system_a": "not_run_blocked",
+    "system_b": "not_run_blocked",
+    "system_c": "abstained"
+  },
+  "note": "Only System C was run because its verified-only abstention path does not require Gemini connectivity. System A and B generation smoke calls were not launched."
+}

@@ -1,0 +1,92 @@
+﻿[
+    {
+        "ID":  "Q033",
+        "Date":  "1950-05-01",
+        "ExpectedAnswer":  "The clause (2) powers were subject to the provisions of clause (1).",
+        "ExpectedVersion":  "174_original_1949",
+        "A_Answer":  "Based on the text of the Constitution of India as adopted on 26 January 1950 (and valid as of the reference date of 1 May 1950), Article 174 did not contain numbered clauses (1) and (2). Instead, original Article 174 consisted of a single provision regarding the session, prorogation, and dissolution of the House or Houses of the Legislature of the State. Therefore, there was no clause (2) or qualifying earlier clause within Article 174 at that time. \n\n*(Note: Article 174 was substantially amended and divided into clauses by the Constitution (First Amendment) Act, 1951, which post-dates your reference date).*",
+        "B_Answer":  "Based on the available retrieved context, the provided passages do not contain the text of original Article 174 as it stood on 1 May 1950, nor do they mention any earlier clause qualifying the Governor\u0027s powers listed in clause (2) for that version of the article [chunk-b7bfe1824bde4311da347023, chunk-a8006a35aacce04c0f993b14]. Therefore, the available context is insufficient to answer the question.",
+        "C_Answer":  "Under original Article 174 on 1 May 1950, the powers of the Governor listed in clause (2) are qualified by **clause (1)** [temporal-b866c870df1726976fa0a678]."
+    },
+    {
+        "ID":  "Q034",
+        "Date":  "1950-11-01",
+        "ExpectedAnswer":  "â€œAt such time and place as he thinks fit.â€",
+        "ExpectedVersion":  "174_original_1949",
+        "A_Answer":  "On 1 November 1950, original Article 174(2)(a) of the Constitution of India stated that the Governor may, from time to time, \"summon the House or either House to meet at such time and place as he thinks fit.\" \n\nSpecifically, the words describing the Governor\u0027s discretion regarding the time and place were **\"as he thinks fit\"**.",
+        "B_Answer":  "Based on the retrieved context, original Article 174(2)(a) did not contain provisions regarding the Governor\u0027s discretion over the meeting time and place; rather, the power to summon the House or each House of the Legislature to meet \"at such time and place as he thinks fit\" is found in Article 174(1) [chunk-b7bfe1824bde4311da347023]. Furthermore, the available context does not provide the text of original Article 174(2)(a) as it stood on 1 November 1950 (noting that Article 174 was later substituted by the Constitution (First Amendment) Act, 1951) [chunk-b7bfe1824bde4311da347023, chunk-65f576e658d501619b5ef67a]. Therefore, the available context is insufficient to answer the question about original Article 174(2)(a).",
+        "C_Answer":  "Based on the verified temporal evidence for the reference date of 1 November 1950 (Article 174, clause (2)(a)), the words describing the Governorâ€™s discretion over the time and place are:\n\n**\"at such time and place as he thinks fit\"** [temporal-b866c870df1726976fa0a678]"
+    },
+    {
+        "ID":  "Q035",
+        "Date":  "1951-02-01",
+        "ExpectedAnswer":  "The Legislative Assembly.",
+        "ExpectedVersion":  "174_original_1949",
+        "A_Answer":  "Under original Article 174(2)(c) of the Constitution of India (as enacted in 1950), the Governor could dissolve the **Legislative Assembly** of the State.",
+        "B_Answer":  "Based on the provided context, the available context does not contain the text of original Article 174(2)(c) as it existed on 1 February 1951 (the text provided in Evidence 1 shows Article 174 with clauses (2)(a) and (2)(b), and notes that it was substituted by the Constitution (First Amendment) Act, 1951, with effect from 18-6-1951) [chunk-b7bfe1824bde4311da347023, chunk-65f576e658d501619b5ef67a, chunk-a8006a35aacce04c0f993b14]. Therefore, the available context is insufficient to answer the question regarding original Article 174(2)(c).",
+        "C_Answer":  "Based on the verified temporal evidence for the reference date of 1 February 1951, under original Article 174(2)(c), the Governor could dissolve the **Legislative Assembly** [temporal-b866c870df1726976fa0a678]."
+    },
+    {
+        "ID":  "Q036",
+        "Date":  "1951-06-16",
+        "ExpectedAnswer":  "Both requirements appeared in clause (1).",
+        "ExpectedVersion":  "174_original_1949",
+        "A_Answer":  "Based on the Constitution of India as originally enacted in 1950, the requirements regarding the twice-yearly meeting and the six-month interval between sessions of the House or Houses of the Legislature of a State were placed in **Article 174, clause (1)**.",
+        "B_Answer":  "Based on the provided context, the available context is insufficient to state where the original Article 174 placed its twice-yearly meeting requirement on 16 June 1951, as the retrieved passages do not contain the text of the original Article 174 prior to its amendment by the Constitution (First Amendment) Act, 1951 (which substituted Article 174) [chunk-a8006a35aacce04c0f993b14].",
+        "C_Answer":  "On 16 June 1951, the original Article 174 placed both its twice-yearly meeting requirement and its six-month interval rule in **clause (1)** of Article 174 [temporal-b866c870df1726976fa0a678]."
+    },
+    {
+        "ID":  "Q037",
+        "Date":  "1951-06-18",
+        "ExpectedAnswer":  "It says the Governor â€œshallâ€ from time to time summon the House or each House of the State Legislature.",
+        "ExpectedVersion":  "174_first_amendment_s8",
+        "A_Answer":  "Based on the Constitution (First Amendment) Act, 1951, which substituted Article 174 and took effect on June 18, 1951, clause (1) of Article 174 stated that the Governor **\"shall\"** from time to time summon the House or each House of the Legislature of the State to meet at such time and place as he thinks fit.",
+        "B_Answer":  "On the first day the substituted Article 174 took effect (w.e.f. 18-6-1951), clause (1) stated that the Governor \"shall\" summon the House or each House of the Legislature of the State [chunk-b7bfe1824bde4311da347023, chunk-65f576e658d501619b5ef67a, chunk-a8006a35aacce04c0f993b14].",
+        "C_Answer":  "Based on the verified temporal evidence for the reference date of June 18, 1951, clause (1) of the substituted Article 174 stated that the Governor â€œshallâ€ summon the House or each House [temporal-52328e6b839e4aae3dd6b302]."
+    },
+    {
+        "ID":  "Q038",
+        "Date":  "2010-04-01",
+        "ExpectedAnswer":  "The Governor could summon the House or each House at such time and place as he thinks fit, but six months could not intervene between the last sitting in one session and the appointed first sitting in the next.",
+        "ExpectedVersion":  "174_first_amendment_s8",
+        "A_Answer":  "As of 1 April 2010, the two textual qualifications governing the Governor\u0027s power to summon the House under Article 174(1) of the Constitution of India are:\n\n1. The Governor shall from time to time summon the House to meet at such time and place as he thinks fit.\n2. **The six-month limit:** Six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session. \n\n*(Note: The second qualification was introduced via the 38th Constitutional Amendment Act, 1975, and modified by the 44th Constitutional Amendment Act, 1978, replacing the earlier requirement of holding at least two sessions a year.)*",
+        "B_Answer":  "According to Article 174(1), the two textual qualifications governing the Governor\u0027s summons (the time and place at which the Governor shall summon the House or each House of the Legislature of the State to meet) are:\n\n1. The Governor shall summon the House from time to time as he thinks fit [chunk-b7bfe1824bde4311da347023].\n2. Six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session [chunk-b7bfe1824bde4311da347023].",
+        "C_Answer":  "Based on the verified temporal evidence applicable as of 1 April 2010 (Article 174(1)), the two textual qualifications governing the Governor\u0027s summons to meet at such time and place as he thinks fit are:\n\n1. He shall summon the House or each House of the Legislature of the State **\"from time to time\"** [temporal-52328e6b839e4aae3dd6b302].\n2. **\"six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session\"** [temporal-52328e6b839e4aae3dd6b302]."
+    },
+    {
+        "ID":  "Q039",
+        "Date":  "1960-01-26",
+        "ExpectedAnswer":  "The Legislative Assembly.",
+        "ExpectedVersion":  "174_first_amendment_s8",
+        "A_Answer":  "Based on Article 174(2)(b) of the Constitution of India (as substituted by the Constitution (Seventh Amendment) Act, 1956), the body expressly named is the **Legislative Assembly** of the State.",
+        "B_Answer":  "Under substituted Article 174(2)(b), the body expressly named as the one the Governor may dissolve is the Legislative Assembly [chunk-b7bfe1824bde4311da347023, chunk-a8006a35aacce04c0f993b14].",
+        "C_Answer":  "Under substituted Article 174(2)(b), applicable on 26 January 1960, the body expressly named as the one the Governor may dissolve is the **Legislative Assembly** [temporal-52328e6b839e4aae3dd6b302]."
+    },
+    {
+        "ID":  "Q040",
+        "Date":  "2020-01-26",
+        "ExpectedAnswer":  "Originally, clause (2)(a), subject to clause (1), said the Governor â€œmayâ€ summon the House or either House at a time and place he thinks fit. The replacement places summoning in clause (1) and says the Governor â€œshallâ€ summon the House or each House at a time and place he thinks fit, subject to the six-month interval rule.",
+        "ExpectedVersion":  "174_first_amendment_s8",
+        "A_Answer":  "Based on the text of the Indian Constitution as originally enacted and as it stood on 26 January 2020:\n\n* **Placement of the Governorâ€™s summoning authority:** In the original Article 174 (as enacted in 1950), the Governor\u0027s authority to summon the House or Houses of the Legislature was placed in **clause (1)**. In the replacement Article 174 (substituted by the Constitution (Seventh Amendment) Act, 1956), it remained in **clause (1)**. \n* **Change in the operative verb:** In the original Article 174(1), the operative verb used to empower the Governor was **\"may\"** (along with \"from time to time\"). In the replacement Article 174(1) in force on 26 January 2020, the operative verb remains **\"shall\"** (the provision was amended to state the Governor \"shall from time to time summon...\"). \n\n*(Note: If comparing the shift in phrasing between the original 1950 textâ€”which gave the Governor discretion using \"may\"â€”and the post-1956 textâ€”which uses the mandatory \"shall\"â€”the operative modal verb changed from **\"may\"** to **\"shall\"**).*",
+        "B_Answer":  "Based on the provided context, the available documents do not contain the text of the \"original Article 174\" prior to its substitution by the Constitution (First Amendment) Act, 1951 [chunk-a8006a35aacce04c0f993b14]. Therefore, the available context is insufficient to compare the placement of the Governor\u0027s summoning authority and its operative verb between the original article and its replacement [chunk-a8006a35aacce04c0f993b14].",
+        "C_Answer":  "Based on the provided verified temporal evidence, there is only one version of Article 174 shown (the version substituted by the Constitution (First Amendment) Act, 1951, which is in force for the reference date of 26 January 2020) [temporal-52328e6b839e4aae3dd6b302]. Because the evidence does not provide the text of the original Article 174 (prior to the First Amendment), the available verified temporal evidence is insufficient to compare the original Article 174 with its replacement."
+    },
+    {
+        "ID":  "Q041",
+        "Date":  "2000-01-26",
+        "ExpectedAnswer":  "The original clause (1) expressly required the House or Houses to meet â€œtwice at least in every year.â€ The replacement no longer states that yearly frequency formula; it retains the rule that six months shall not intervene between the last sitting in one session and the appointed first sitting in the next.",
+        "ExpectedVersion":  "174_first_amendment_s8",
+        "A_Answer":  "Based on the text of the Constitution of India as of the reference date (26 January 2000):\n\n1. **Express yearly-frequency phrase removed:** The phrase **\"at least twice in every year\"** was removed from the original Article 174(1) by the Constitution (First Amendment) Act, 1951.\n2. **Inter-session safeguard that remained:** The requirement that **\"six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session\"** remained (which ensures that the House meets at least once every six months).",
+        "B_Answer":  "Based on the provided context, the available text does not contain the original text of Article 174 prior to its substitution (so the exact express yearly-frequency phrase originally contained in Article 174 cannot be identified from the text). However, the substituted text of Article 174 (as amended by the Constitution (First Amendment) Act, 1951) includes the inter-session safeguard that \"six months shall not intervene between its last sitting in one session and the date appointed for its first sitting in the next session\" [chunk-a8006a35aacce04c0f993b14].",
+        "C_Answer":  "Based on the provided verified temporal evidence applicable on 26 January 2000, the available verified temporal evidence is insufficient to answer the question, as the evidence only contains the substituted text (Article 174 as amended by the First Amendment Act, 1951) and does not provide the text of the original Article 174 for comparison [temporal-52328e6b839e4aae3dd6b302]."
+    },
+    {
+        "ID":  "Q042",
+        "Date":  "2026-05-01",
+        "ExpectedAnswer":  "The original clause (2)(b) said â€œprorogue the House or Housesâ€; the replacement clause (2)(a) says â€œprorogue the House or either House.â€",
+        "ExpectedVersion":  "174_first_amendment_s8",
+        "A_Answer":  "I am uncertain about the specific distinction between the \"original\" and \"substituted\" versions of Article 174 regarding the stated object of the Governor\u0027s prorogation power, as Article 174 was substituted by the Constitution (First Amendment) Act, 1951, but the core object of proroguing the Houseâ€”to end a session of the State Legislatureâ€”remained conceptually consistent, and detailed records regarding a shifting \"stated object\" in the constitutional debates for that specific amendment are not definitively tracked as a change in purpose. Therefore, I cannot provide a precise answer.",
+        "B_Answer":  "Based on the provided context, the available text does not state or explain the object or the change in the object of the Governor\u0027s prorogation power in the original and substituted versions of Article 174. The context only provides the text of Article 174 as substituted (which states that the Governor may from time to time prorogue the House or either House and dissolve the Legislative Assembly) [chunk-b7bfe1824bde4311da347023, chunk-a8006a35aacce04c0f993b14], but it contains no information regarding the *object* of the power or how it changed. Therefore, the available context is insufficient to answer the question.",
+        "C_Answer":  "Based on the available verified temporal evidence, only one version of Article 174 (as substituted by the Constitution (First Amendment) Act, 1951) is provided for the reference date of 2026-05-01 [temporal-52328e6b839e4aae3dd6b302]. The evidence does not contain the text of the original pre-amendment version of Article 174. Therefore, the available verified temporal evidence is insufficient to answer how the stated object of the Governor\u0027s prorogation power changed between the original and substituted versions."
+    }
+]

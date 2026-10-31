@@ -1,0 +1,73 @@
+{
+  "counts": {
+    "abstained": 0,
+    "completed": 0,
+    "failed": 0,
+    "mocked": 0,
+    "planned": 39,
+    "skipped": 21
+  },
+  "execution_id": "20261030T154321867917Z-baedfcc7",
+  "execution_mode": "dry-run",
+  "finished_at": "2026-10-30T15:43:21.923Z",
+  "manifest_id": "66931b83d3d6f8d22ad075ad5f8c2af06715b6bad1fd17c260bc4ffb778eea4b",
+  "per_system_counts": {
+    "system_a": {
+      "abstained": 0,
+      "completed": 0,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 13,
+      "skipped": 7
+    },
+    "system_b": {
+      "abstained": 0,
+      "completed": 0,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 13,
+      "skipped": 7
+    },
+    "system_c": {
+      "abstained": 0,
+      "completed": 0,
+      "failed": 0,
+      "mocked": 0,
+      "planned": 13,
+      "skipped": 7
+    }
+  },
+  "run_directory": "C:\\Users\\shikh\\Desktop\\Indian_Constitution_Temporal_QA\\results\\benchmark_runs\\66931b83d3d6f8d22ad075ad5f8c2af06715b6bad1fd17c260bc4ffb778eea4b\\20261030T154321867917Z-baedfcc7",
+  "skipped_question_count": 7,
+  "skipped_question_ids_and_reasons": [
+    {
+      "question_id": "Q012",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q013",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q014",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q015",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q016",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q017",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q018",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    }
+  ],
+  "started_at": "2026-10-30T15:43:21.867Z"
+}

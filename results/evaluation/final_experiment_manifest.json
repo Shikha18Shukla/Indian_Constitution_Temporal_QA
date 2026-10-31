@@ -1,0 +1,205 @@
+{
+  "manifest_version": "1.0",
+  "experiment_name": "Indian Constitution Temporal QA final experimental phase readiness",
+  "created_at_utc": "2026-10-31T07:29:19Z",
+  "readiness_status": "READY_FOR_EXPLICIT_LIVE_RUN; live run not performed",
+  "systems": [
+    {
+      "name": "System A",
+      "condition": "Base LLM",
+      "retrieval": false,
+      "web_search": false
+    },
+    {
+      "name": "System B",
+      "condition": "Static RAG",
+      "retrieval": true,
+      "temporal_filtering": false,
+      "top_k_default": 5,
+      "max_context_tokens": 4000
+    },
+    {
+      "name": "System C",
+      "condition": "Temporal RAG",
+      "retrieval": true,
+      "verified_only": true,
+      "legal_interval": "effective_from <= date < effective_to (null means no recorded legal end)",
+      "coverage_cutoff": "reference_date <= evidence_coverage.verified_through",
+      "top_k_default": 5
+    }
+  ],
+  "generation_configuration": {
+    "shared_default_model": "gemini-3.5-flash-lite",
+    "model_override_variable": "GEMINI_MODEL_NAME",
+    "temperature_configured": 0.0,
+    "temperature_sent_to_gemini": "omitted for Gemini 3.x; run field is null",
+    "max_output_tokens": 1024,
+    "request_timeout_seconds_per_attempt": 45,
+    "max_transient_retries_after_initial": 2,
+    "retry_backoff_base_seconds": 1.0,
+    "retry_policy": "exponential backoff with jitter; transient 503/504/network errors only",
+    "sdk_retries": "disabled"
+  },
+  "embedding_configuration": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "use": "System B fixed index and System C temporal retrieval",
+    "cpu_based": true
+  },
+  "static_index": {
+    "path": "processed/static_rag/index.sqlite3",
+    "snapshot_id": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "chunk_count": 1123,
+    "file_sha256": "42502e3cc66fa72bd4c288c440098b2a1e617e291a96cf9aad22acd4f2587adb",
+    "rebuilt_for_this_task": false
+  },
+  "canonical_dataset": {
+    "path": "processed/canonical/article_versions_pilot.json",
+    "dataset_id": "indian-constitution-article-version-pilot-86th-amendment",
+    "sha256": "c15a559cd91bd364a7408983ff86f3fbbfa75ba72d151828fedd7497df596611",
+    "record_count": 6,
+    "article_174_versions": [
+      {
+        "version_id": "174_original_1949",
+        "status": "verified",
+        "effective_from": "1950-01-26",
+        "effective_to": "1951-06-18",
+        "verified_through": "1951-06-17"
+      },
+      {
+        "version_id": "174_first_amendment_s8",
+        "status": "verified",
+        "effective_from": "1951-06-18",
+        "effective_to": null,
+        "verified_through": "2026-05-01"
+      }
+    ],
+    "other_records_status": "Article 21A and Article 45 records remain partially_verified and ineligible"
+  },
+  "benchmark": {
+    "path": "benchmark/questions.json",
+    "benchmark_id": "indian-constitution-temporal-qa-article174-v2",
+    "sha256": "da991b43f616bbe9c48c56f7335ea09c5773d9a60e0fd02e362331202865ee1a",
+    "question_count": 32,
+    "eligible_count": 25,
+    "eligible_question_ids": [
+      "Q001",
+      "Q002",
+      "Q003",
+      "Q004",
+      "Q005",
+      "Q006",
+      "Q007",
+      "Q008",
+      "Q009",
+      "Q010",
+      "Q011",
+      "Q019",
+      "Q020",
+      "Q021",
+      "Q022",
+      "Q023",
+      "Q024",
+      "Q025",
+      "Q026",
+      "Q027",
+      "Q028",
+      "Q029",
+      "Q030",
+      "Q031",
+      "Q032"
+    ],
+    "pending_count": 7,
+    "pending_question_ids": [
+      "Q012",
+      "Q013",
+      "Q014",
+      "Q015",
+      "Q016",
+      "Q017",
+      "Q018"
+    ],
+    "pending_reasons": {
+      "Q012": "Official Gazette PDF identified but not yet inspected as a complete primary document for benchmark gold. Leave answer pending until notification date is checked.",
+      "Q013": "Official Gazette PDF identified but not yet inspected as a complete primary document for benchmark gold. Leave issue date pending until checked.",
+      "Q014": "Official Gazette PDF identified but not yet inspected as a complete primary document for benchmark gold. Leave commencement date pending until checked.",
+      "Q015": "Pilot record is not gold evidence. It is excluded because its status is partially_verified.",
+      "Q016": "Pilot record is not gold evidence and cannot support a historical answer until verified.",
+      "Q017": "Pilot record is not gold evidence; no expected wording is supplied.",
+      "Q018": "Pilot record is not gold evidence and cannot support a historical answer until verified."
+    },
+    "original_Q001_Q020_unchanged": true,
+    "Q032_expected_outcome": {
+      "reference_date": "2026-05-02",
+      "status": "abstained",
+      "reason": "beyond_evidence_coverage",
+      "expected_temporal_status": "evidence_coverage_exceeded"
+    }
+  },
+  "evaluation_settings": {
+    "selection_rule": "evaluation_status == 'suitable_for_evaluation'",
+    "same_question_and_reference_date_for_all_systems": true,
+    "input_consistency_preflight": "All 32 output rows match benchmark question text and reference_date across A/B/C; only 25 are dispatched as suitable, 7 are explicitly skipped.",
+    "primary_metrics": [
+      "answer correctness",
+      "completeness",
+      "unsupported claims",
+      "temporal validity where assessable"
+    ],
+    "system_b_citation_review": "Check citation correctness and verify cited chunk text supports the associated claim.",
+    "system_a_citations": "not applicable; do not penalize absence of citations in base LLM condition.",
+    "system_c_abstentions": "Report separately; expected abstentions are not substantive correct answers; temporal answer quality remains separately reported.",
+    "denominator": "25 suitable questions per system; report counts and denominator; keep failures, answer abstentions, expected temporal abstentions, and skips distinct.",
+    "pending_question_policy": "Exclude Q012-Q018 from scoring; preserve skipped IDs and source-verification reasons."
+  },
+  "mocked_preflight": {
+    "execution_mode": "mocked",
+    "execution_id": "20261031T072752560263Z-387a0f8b",
+    "runner_manifest_id": "87405932c0e89fb3d41bb0b3bb04df07288e271b32f266da83d5e75b3146ac02",
+    "run_directory": "results\\benchmark_runs\\87405932c0e89fb3d41bb0b3bb04df07288e271b32f266da83d5e75b3146ac02\\20261031T072752560263Z-387a0f8b",
+    "summary_path": "results\\benchmark_runs\\87405932c0e89fb3d41bb0b3bb04df07288e271b32f266da83d5e75b3146ac02\\20261031T072752560263Z-387a0f8b\\summary.json",
+    "counts": {
+      "abstained": 10,
+      "completed": 0,
+      "failed": 0,
+      "mocked": 65,
+      "planned": 0,
+      "skipped": 21
+    },
+    "per_system_counts": {
+      "system_a": {
+        "abstained": 0,
+        "completed": 0,
+        "failed": 0,
+        "mocked": 25,
+        "planned": 0,
+        "skipped": 7
+      },
+      "system_b": {
+        "abstained": 0,
+        "completed": 0,
+        "failed": 0,
+        "mocked": 25,
+        "planned": 0,
+        "skipped": 7
+      },
+      "system_c": {
+        "abstained": 10,
+        "completed": 0,
+        "failed": 0,
+        "mocked": 15,
+        "planned": 0,
+        "skipped": 7
+      }
+    },
+    "q032_system_c_status": "abstained",
+    "q032_system_c_reason": "beyond_evidence_coverage",
+    "gemini_calls": 0
+  },
+  "validation": {
+    "benchmark_validator": "passed: 32 questions, 25 suitable, 7 pending",
+    "canonical_validator": "passed: 6 records",
+    "full_tests": "passed: 83 tests under tests/",
+    "canonical_tests": "passed: 19 tests under processed/canonical/"
+  },
+  "live_execution_command": "C:\\Users\\shikh\\AppData\\Local\\Programs\\Python\\Python310\\python.exe benchmark/run_benchmark.py --live"
+}

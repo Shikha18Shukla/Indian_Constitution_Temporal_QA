@@ -3,3 +3,10 @@ __pycache__/
 .vscode/
 .env
 *.log
+results/web_interface/comparison_history.jsonl
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Large original source PDF (kept locally, not committed)
+/raw/sources/Constitution_of_India_English_1949.pdf

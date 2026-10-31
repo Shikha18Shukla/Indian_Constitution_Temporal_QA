@@ -1,0 +1,118 @@
+{
+  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "benchmark_sha256": "0b312358cad107446245e12fd01ada11b6cd7a396f8c3d47866d5c8c9c667fd9",
+  "corpus_provenance": {
+    "chunk_count": 1123,
+    "corpus_snapshot": "6bb6c11f1d96dba6041ed6657a0306bc0c67c7b0095b7fa80407b3cf2add1424",
+    "corpus_snapshot_source": "SQLite metadata.corpus_snapshot and chunk metadata.corpus_snapshot",
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "index_path": "processed/static_rag/index.sqlite3"
+  },
+  "eligible_questions": [
+    {
+      "question": "What guarantee does Article 14 state?",
+      "question_id": "Q001",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "List the freedoms stated in Article 19(1).",
+      "question_id": "Q002",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "What does Article 21 say about deprivation of life or personal liberty?",
+      "question_id": "Q003",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "What does Article 21A provide?",
+      "question_id": "Q004",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "What does the current Article 45 direct the State to endeavour to provide?",
+      "question_id": "Q005",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "Does Article 14 phrase its equality guarantee only for citizens, or for any person?",
+      "question_id": "Q006",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "According to Article 21's text, is deprivation of life or personal liberty stated without qualification?",
+      "question_id": "Q007",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "Which section of the Constitution (Eighty-sixth Amendment) Act, 2002 inserts Article 21A?",
+      "question_id": "Q008",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "Which section of the 86th Amendment Act substitutes Article 45?",
+      "question_id": "Q009",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "Under section 1(2) of the 86th Amendment Act, how was its commencement date to be appointed?",
+      "question_id": "Q010",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "What date is printed immediately below the title of the Constitution (Eighty-sixth Amendment) Act, 2002?",
+      "question_id": "Q011",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "As stated in the current text, what age ranges are addressed by Articles 21A and 45?",
+      "question_id": "Q019",
+      "reference_date": "2026-05-01"
+    },
+    {
+      "question": "What wording difference in the beneficiary phrase can be observed between Articles 14 and 21?",
+      "question_id": "Q020",
+      "reference_date": "2026-05-01"
+    }
+  ],
+  "manifest_id": "02a57176dd4cb2e64be47fcdc98979cf76b5b7c7855a4e2b27640612f058fd91",
+  "manifest_schema_version": "1",
+  "mode": "live",
+  "runner_version": "1.0",
+  "selection_rule": "evaluation_status == 'suitable_for_evaluation'",
+  "skipped_questions": [
+    {
+      "question_id": "Q012",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q013",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q014",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q015",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q016",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q017",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    },
+    {
+      "question_id": "Q018",
+      "reason": "evaluation_status=pending_source_verification; verification_status=pending_source_verification"
+    }
+  ],
+  "systems": [
+    "system_a",
+    "system_b",
+    "system_c"
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "report_type": "focused preliminary failure analysis; read-only",
+  "run_id": "20261030T173545036179Z-5d548d32",
+  "benchmark_id": "indian-constitution-temporal-qa-initial-v1",
+  "reference_date": "2026-05-01",
+  "no_live_api_calls": true,
+  "questions": {
+    "Q010": {
+      "question_id": "Q010",
+      "question": "Under section 1(2) of the 86th Amendment Act, how was its commencement date to be appointed?",
+      "reference_date": "2026-05-01",
+      "question_category": "amendment_related",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": "The Central Government may appoint the date by notification in the Official Gazette.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q010-E1",
+          "source_reference_id": "amendment-86-official",
+          "evidence_text": "Section 1(2): the Act shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.",
+          "chunk_id": null,
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "source_references": [
+        {
+          "reference_id": "amendment-86-official",
+          "source_type": "primary_source",
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "source_path": "raw/amendments/086_Amendment_2002.pdf",
+          "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+          "source_locator": "Section 1(2), page 1 of the local PDF",
+          "verification_status": "verified",
+          "notes": "This identifies the mechanism, not the appointed date."
+        }
+      ],
+      "system_a": {
+        "run_status": "completed",
+        "actual_answer": "Under Section 1(2) of the Constitution (Eighty-Sixth Amendment) Act, 2002, the Central Government was to appoint the commencement date by notification in the Official Gazette.",
+        "abstention_reason": null,
+        "failure_analysis": "The answer is correct; no failure."
+      },
+      "system_b": {
+        "run_status": "completed",
+        "actual_answer": "The available context is insufficient to answer how the commencement date of the 86th Amendment Act was to be appointed under section 1(2).",
+        "citations_in_answer": [],
+        "top_five_retrieved_chunks": [
+          {
+            "chunk_id": "chunk-ce820add9f351a61e2157bff",
+            "source_document": "raw/amendments/042_Amendment_1976.pdf",
+            "source_type": "amendment_act",
+            "page_number": 26,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 26 (1-based), extracted character offsets 0:1799",
+            "retrieval_score": 0.07889344262295082,
+            "dense_score": 0.7163918614387512,
+            "dense_rank": 1,
+            "lexical_rank": 4,
+            "hybrid_score": 0.07889344262295082,
+            "article_match": false,
+            "chunk_text": "interim order had been furnished to the party against whom such interim order was made and an opportunity had been given to such party to be heard in the matter, cease to have effect (if not vacated earlier),- (a) on the expiry of a period of one month from the appointed day, if the copies of such pending petition and the documents in support of the plea for the interim order are not furnished to such party before the expiry of the said period of one month; or (b) on the expiry of a period of four months from the appointed day, if the copies referred to in clause (a) have been furnished to such party within the period of one month referred to in that clause but such party has not been given an opportunity to be heard in the matter before the expiry of the said period of four months. (4) Notwithstanding anything contained in sub-section (3), every interim order (whether by way of injunction or stay or in any other manner) which was made before the appointed day, on, or in any proceedings relating to, a pending petition [not being a pending petition which has abated under sub-section (2)], and which is in force on that day, shall, if such order has the effect of delaying any inquiry into a matter of public importance or any investigation or inquiry into an offence punishable with imprisonment or any action for the execution of any work or project of public utility, or the acquisition of any property for such execution, by the Government or any corporation owned or controlled by the Government, stand vacated. Explanation.-In this section, \"appointed day\" means the date on which section 38 comes into force. 59. Power of the President to remove difficulties.-(1) If any difficulty arises in giving effect to the provisions of the Constitution as amended by this Act (including"
+          },
+          {
+            "chunk_id": "chunk-ee4c4ae4bb314ecea899fe96",
+            "source_document": "raw/amendments/044_Amendment_1978.pdf",
+            "source_type": "amendment_act",
+            "page_number": 10,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 10 (1-based), extracted character offsets 0:1796",
+            "retrieval_score": 0.07762196326288762,
+            "dense_score": 0.6700663566589355,
+            "dense_rank": 23,
+            "lexical_rank": 1,
+            "hybrid_score": 0.07762196326288762,
+            "article_match": false,
+            "chunk_text": "has been withdrawn, and the High Court shall on receipt thereof, proceed to dispose of the case in conformity with such judgment.\". 22. Amendment of article 150.-In article 150 of the Constitution, for the words \"after consultation with\", the words \"on the advice of\" shall be substituted. 23. Amendment of article 166.-In article 166 of the Constitution, clause (4) shall be omitted. 24. Amendment of article 172.-(1) In article 172 of the Constitution, in clause (1), for the words \"six years\" in both the places where they occur, the words \"five years\" shall be substituted. (2) The amendments made by sub-section (1) to clause (1) of article 172- (a) shall not apply to any existing State Legislative Assembly the period of existence whereof as computed from the date appointed for its first meeting to the date of coming into force of this section (both dates inclusive) is more than four years and eight months but every such Assembly shall, unless sooner dissolved, stand dissolved on the expiry of- (i) a period of four months from the date of coming into force of this section; or (ii) a period of six years from the date appointed for its first meeting, whichever period expires earlier; (b) shall apply to every other existing State Legislative Assembly without prejudice to the power of Parliament with respect to the extension of duration of such Assembly under the proviso to the said clause (1). Explanation I.-In its application to the Legislative Assembly of the State of Sikkim referred to in clause (b) of article 371F of the Constitution, this sub-section shall have effect as if- (i) the date appointed for the first meeting of that Assembly were the 26th day of April, 1975; and (ii) the references in clause (a) of this sub-section to \"four years and eight months\" and \"six"
+          },
+          {
+            "chunk_id": "chunk-0a6d3719a7d1c3bb0fb2273b",
+            "source_document": "raw/amendments/044_Amendment_1978.pdf",
+            "source_type": "amendment_act",
+            "page_number": 8,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 8 (1-based), extracted character offsets 0:1793",
+            "retrieval_score": 0.07339305359107338,
+            "dense_score": 0.6638764142990112,
+            "dense_rank": 41,
+            "lexical_rank": 3,
+            "hybrid_score": 0.07339305359107338,
+            "article_match": false,
+            "chunk_text": "President shall act in accordance with the advice tendered after such reconsideration.\". 12. Amendment of article 77.-In article 77 of the Constitution, clause (4) shall be omitted. 13. Amendment of article 83.-(1) In article 83 of the Constitution, in clause (2), for the words \"six years\" in both the places where they occur, the words \"five years\" shall be substituted. (2) The amendments made by sub-section (1) to clause (2) of article 83 shall apply also to the House of the People in existence on the date of coming into force of this section without prejudice to the power of Parliament with respect to the extension of the duration of that House under the proviso to that clause. 14. Substitution of new article for article 103.- For article 103 of the Constitution, the following article shall be substituted, namely:- \"103. Decision on questions as to disqualifications of members.-(1) If any question arises as to whether a member of either House of Parliament has become subject to any of the disqualifications mentioned in clause (1) of article 102, the question shall be referred for the decision of the President and his decision shall be final. (2) Before giving any decision on any such question, the President shall obtain the opinion of the Election Commission and shall act according to such opinion.\". 15. Amendment of article 105.-In article 105 of the Constitution, in clause (3), for the words \"shall be those of the House of Commons of the Parliament of the United Kingdom, and of its members and committees, at the commencement of this Constitution\", the words, figures and brackets \"shall be those of that House and of its members and committees immediately before the coming into force of section 15 of the Constitution (Forty-fourth Amendment) Act, 1978\" shall be"
+          },
+          {
+            "chunk_id": "chunk-255295494983409df8a52851",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 126,
+            "article_number": "208",
+            "section_or_heading": "Rules of procedure",
+            "source_locator": "PDF page 126 (1-based), extracted character offsets 1323:2397",
+            "retrieval_score": 0.06709401709401709,
+            "dense_score": 0.6463730931282043,
+            "dense_rank": 120,
+            "lexical_rank": 5,
+            "hybrid_score": 0.06709401709401709,
+            "article_match": false,
+            "chunk_text": "208. Rules of procedure.—(1) A House of the Legislature of a State may make rules for regulating, subject to the provisions of this Constitution, its procedure and the conduct of its business. (2) Until rules are made under clause (1), the rules of procedure and standing orders in force immediately before the commencement of this Constitution with respect to the Legislature for the corresponding Province shall have effect in relation to the Legislature of the State subject to such modifications and adaptations as may be made therein by the Speaker of the Legislative Assembly, or the Chairman of the Legislative Council, as the case may be. (3) In a State having a Legislative Council the Governor, after consultation with the Speaker of the Legislative Assembly and the Chairman of  The brackets and words \"(including the quorum to constitute a meeting of the House)\" ins. by the Constitution (Forty-second Amendment) Act, 1976, s. 35 (date not notified). This amendment was omitted by the Constitution (Forty-fourth Amendment) Act, 1978, s. 45 (w.e.f. 20-6-1979)."
+          },
+          {
+            "chunk_id": "chunk-b10fc4cdb60d4b618a6e5e90",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 290,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 290 (1-based), extracted character offsets 0:1799",
+            "retrieval_score": 0.06642452597882295,
+            "dense_score": 0.603785514831543,
+            "dense_rank": 464,
+            "lexical_rank": 2,
+            "hybrid_score": 0.06642452597882295,
+            "article_match": false,
+            "chunk_text": "Name Territories 1[19.] Tripura The territory which immediately before the commencement of this Constitution was being administered as if it were a Chief Commissioner’s Province under the name of Tripura 2[and the territories referred to in Part II of the First Schedule to the Constitution (One Hundredth Amendment) Act, 2015, notwithstanding anything contained in clause (d) of section 3 of the Constitution (Ninth Amendment) Act, 1960, so far as it relates to the territories referred to in Part II of the First Schedule to the Constitution (One Hundredth Amendment) Act, 2015.] 1[20.] Meghalaya The territories specified in section 5 of the North-Eastern Areas (Reorganisation) Act, 1971] 2[and the territories referred to in Part I of the First Schedule but excluding the territories referred to in Part II of the Second Schedule to the Constitution (One Hundredth Amendment) Act, 2015.] 1[3[21.] Sikkim The territories which immediately before the commencement of the Constitution (Thirty-sixth Amendment) Act, 1975, were comprised in Sikkim.] 1[4[22.] Mizoram The territories specified in section 6 of the North-Eastern Areas (Reorganisation) Act, 1971.] 1[5[23.] Arunachal Pradesh The territories specified in section 7 of the North-Eastern Areas (Reorganisation) Act, 1971.] 1[6[24.] Goa The territories specified in section 3 of the Goa, Daman and Diu Reorganisation Act, 1987.] 1. Entries 16 to 29 renumbered as entries 15 to 28 by the Jammu and Kashmir Reorganisation Act, 2019 (34 of 2019), s. 6 (w.e.f. 31-10-2019). 2. Added by the Constitution (One Hundredth Amendment) Act, 2015, s. 3 (w.e.f. 31-7-2015). For the text of the Act, see Appendix I. 3. Ins. by the Constitution (Thirty-sixth Amendment) Act, 1975, s. 2 (w.e.f. 26-4-1975). 4. Ins. by the State of Mizoram Act, 1986 (34 of"
+          }
+        ],
+        "failure_analysis": "Retrieval miss followed by context-constrained abstention."
+      },
+      "system_c": {
+        "status": "abstained",
+        "abstention_reason": "no_verified_version_for_reference_date",
+        "scope_note": "No verified Article version is eligible; no substantive answer."
+      },
+      "corpus_search": {
+        "query_terms": [
+          "such date as the Central Government may",
+          "12th December, 2002"
+        ],
+        "matching_relevant_chunks": [
+          {
+            "chunk_id": "chunk-eb75d49aac3dff04f65a838a",
+            "source_document": "raw/amendments/086_Amendment_2002.pdf",
+            "source_type": "amendment_act",
+            "page_number": 1,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 1 (1-based), extracted character offsets 0:1794",
+            "matched_terms": [
+              "such date as the Central Government may",
+              "12th December, 2002"
+            ],
+            "lexical_rank_for_question": 139,
+            "chunk_text": "THE CONSTITUTION (EIGHTY-SIXTH AMENDMENT) ACT, 2002 THE CONSTITUTION (EIGHTY-SIXTH AMENDMENT) ACT, 2002 [12th December, 2002.] An Act further to amend the Constitution of India. BE it enacted by Parliament in the Fifty-third Year of the Republic of India as follows:- 1. Short title and commencement.- (1) This Act may be called the Constitution (Eighty-sixth Amendment) Act, 2002. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint. 2. Insertion of new article 21A.- After article 21 of the Constitution, the following article shall be inserted, namely:- Right to education.- \"21A. The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.\". 3. Substitution of new article for article 45.- For article 45 of the Constitution, the following article shall be substituted, namely:- . Provision for early childhood care and education to children below the age of six years. \"45. The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.\". 4. Amendment of article 51A.- In article 51A of the Constitution, after clause (J), the following clause shall be added, namely:- \"(k) who is a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years.\". SUBHASH C. JAIN, Secy.to the Govt. of India. STATEMENT OF OBJECTS AND REASONS The Constitution of India in a Directive Principle contained in article 45, has 'made a provision for free and compulsory education for all children up to the age of fourteen years within ten years of promulgation of the Constitution. We could not"
+          }
+        ]
+      }
+    },
+    "Q011": {
+      "question_id": "Q011",
+      "question": "What date is printed immediately below the title of the Constitution (Eighty-sixth Amendment) Act, 2002?",
+      "reference_date": "2026-05-01",
+      "question_category": "effective_date",
+      "target_articles": [
+        "21A",
+        "45"
+      ],
+      "expected_answer": "12 December 2002 is printed below the Act title. This is the Act's stated date and must not be treated as its commencement date.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q011-E1",
+          "source_reference_id": "amendment-86-official",
+          "evidence_text": "[12th December, 2002.]",
+          "chunk_id": null,
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "source_references": [
+        {
+          "reference_id": "amendment-86-official",
+          "source_type": "primary_source",
+          "source_document": "Constitution (Eighty-sixth Amendment) Act, 2002",
+          "source_path": "raw/amendments/086_Amendment_2002.pdf",
+          "source_url": "https://www.legislative.gov.in/static/uploads/2025/07/16970eb1a68d4fe46ac40acd783a6c34.pdf",
+          "source_locator": "Title page, date printed below Act title",
+          "verification_status": "verified",
+          "notes": "Stored as the Act's printed date; not labelled commencement or Gazette publication date."
+        }
+      ],
+      "system_a": {
+        "run_status": "completed",
+        "actual_answer": "I am uncertain, as I do not have access to the exact text layout and printing details of the Gazette of India for the Constitution (Eighty-sixth Amendment) Act, 2002.",
+        "abstention_reason": null,
+        "failure_analysis": "Base LLM abstention: parametric knowledge/confidence limitation."
+      },
+      "system_b": {
+        "run_status": "completed",
+        "actual_answer": "Based on the retrieved context, the date printed immediately below the title of the Constitution (Eighty-sixth Amendment) Act, 2002 is [12th December, 2002.] [chunk-eb75d49aac3dff04f65a838a].",
+        "citations_in_answer": [
+          "chunk-eb75d49aac3dff04f65a838a"
+        ],
+        "top_five_retrieved_chunks": [
+          {
+            "chunk_id": "chunk-eb75d49aac3dff04f65a838a",
+            "source_document": "raw/amendments/086_Amendment_2002.pdf",
+            "source_type": "amendment_act",
+            "page_number": 1,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 1 (1-based), extracted character offsets 0:1794",
+            "retrieval_score": 0.0819672131147541,
+            "dense_score": 0.785926103591919,
+            "dense_rank": 1,
+            "lexical_rank": 1,
+            "hybrid_score": 0.0819672131147541,
+            "article_match": false,
+            "chunk_text": "THE CONSTITUTION (EIGHTY-SIXTH AMENDMENT) ACT, 2002 THE CONSTITUTION (EIGHTY-SIXTH AMENDMENT) ACT, 2002 [12th December, 2002.] An Act further to amend the Constitution of India. BE it enacted by Parliament in the Fifty-third Year of the Republic of India as follows:- 1. Short title and commencement.- (1) This Act may be called the Constitution (Eighty-sixth Amendment) Act, 2002. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint. 2. Insertion of new article 21A.- After article 21 of the Constitution, the following article shall be inserted, namely:- Right to education.- \"21A. The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.\". 3. Substitution of new article for article 45.- For article 45 of the Constitution, the following article shall be substituted, namely:- . Provision for early childhood care and education to children below the age of six years. \"45. The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.\". 4. Amendment of article 51A.- In article 51A of the Constitution, after clause (J), the following clause shall be added, namely:- \"(k) who is a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years.\". SUBHASH C. JAIN, Secy.to the Govt. of India. STATEMENT OF OBJECTS AND REASONS The Constitution of India in a Directive Principle contained in article 45, has 'made a provision for free and compulsory education for all children up to the age of fourteen years within ten years of promulgation of the Constitution. We could not"
+          },
+          {
+            "chunk_id": "chunk-c556dd716bd939f374a83840",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 108,
+            "article_number": "170",
+            "section_or_heading": "Composition of the Legislative Assemblies",
+            "source_locator": "PDF page 108 (1-based), extracted character offsets 1611:2248",
+            "retrieval_score": 0.0721497168185176,
+            "dense_score": 0.6390995979309082,
+            "dense_rank": 71,
+            "lexical_rank": 2,
+            "hybrid_score": 0.0721497168185176,
+            "article_match": false,
+            "chunk_text": "(Forty-second Amendment) Act, 1976, s. 29, for the Explanation (w.e.f. 3-1-1977). 2. Subs. by the Constitution (Eighty-fourth Amendment) Act, 2001, s. 5, for \"2000\" (w.e.f. 21-2-2002). 3. Subs. by the Constitution (Eighty-seventh Amendment) Act, 2003, s. 4, for \"1991\" (w.e.f. 22-6-2003). The figures \"1991\" were substituted for the original figures \"1971\" by the Constitution (Eighty-fourth Amendment) Act, 2001, s. 5 (w.e.f. 21-2-2002). 4. Ins. by the Constitution (Forty-second Amendment) Act, 1976, s. 29 (w.e.f. 3-1-1977). 5. Subs. by the Constitution (Eighty-fourth Amendment) Act, 2001, s. 5, for certain words (w.e.f. 21-2-2002)."
+          },
+          {
+            "chunk_id": "chunk-374640f03df12f5c89535388",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 221,
+            "article_number": "332",
+            "section_or_heading": "Reservation of seats for Scheduled Castes and Scheduled Tribes in the Legislative Assemblies of the States",
+            "source_locator": "PDF page 221 (1-based), extracted character offsets 2504:2790",
+            "retrieval_score": 0.07171717171717172,
+            "dense_score": 0.6610374450683594,
+            "dense_rank": 30,
+            "lexical_rank": 6,
+            "hybrid_score": 0.07171717171717172,
+            "article_match": false,
+            "chunk_text": "omitted by the Constitution (Seventh Amendment) Act, 1956, s. 29 and Sch. (w.e.f. 1-11-1956). 4. Ins. by the Constitution (Fifty-seventh Amendment) Act, 1987, s. 2 (w.e.f. 21-9-1987). 5. Subs. by the Constitution (Eighty-fourth Amendment) Act, 2001, s. 7, for \"2000\" (w.e.f. 21-2-2002)."
+          },
+          {
+            "chunk_id": "chunk-81347b27324512aaa566b2be",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 275,
+            "article_number": "371F",
+            "section_or_heading": "Special provisions with respect to the State of Sikkim",
+            "source_locator": "PDF page 275 (1-based), extracted character offsets 0:656",
+            "retrieval_score": 0.06996336996336996,
+            "dense_score": 0.6690157651901245,
+            "dense_rank": 18,
+            "lexical_rank": 10,
+            "hybrid_score": 0.06996336996336996,
+            "article_match": false,
+            "chunk_text": "Provided that no such order shall be made after the expiry of two years from the appointed day; (p) all things done and all actions taken in or in relation to the State of Sikkim or the territories comprised therein during the period commencing on the appointed day and ending immediately before the date on which the Constitution (Thirty-sixth Amendment) Act, 1975, receives the assent of the President shall, in so far as they are in conformity with the provisions of this Constitution as amended by the Constitution (Thirty-sixth Amendment) Act, 1975, be deemed for all purposes to have been validly done or taken under this Constitution as so amended.]"
+          },
+          {
+            "chunk_id": "chunk-32b68fccb78c264909062b83",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 220,
+            "article_number": "330",
+            "section_or_heading": "Reservation of seats for Scheduled Castes and Scheduled Tribes in the House of the People",
+            "source_locator": "PDF page 220 (1-based), extracted character offsets 1653:2452",
+            "retrieval_score": 0.06931687715269805,
+            "dense_score": 0.6477607488632202,
+            "dense_rank": 44,
+            "lexical_rank": 7,
+            "hybrid_score": 0.06931687715269805,
+            "article_match": false,
+            "chunk_text": "of which the relevant figures have been published shall, until the relevant figures for the first census taken after the year 5[2026] have been published, be construed as a reference to the 6[2001] census.] 1. Subs. By the Constitution (Fifty-first Amendment) Act, 1984, s. 2, for sub-clause (b) (w.e.f. 16-6-1986). 2. Ins. by the Constitution (Seventh Amendment) Act, 1956, s. 29 and Sch. (w.e.f. 1-11-1956). 3. Ins. by the Constitution (Thirty-first Amendment) Act, 1973, s. 3 (w.e.f. 17-10-1973). 4. Ins. by the Constitution (Forty-second Amendment) Act, 1976, s. 47 (w.e.f. 3-1-1977). 5. Subs. by the Constitution (Eighty-fourth Amendment) Act, 2001, s. 6, for \"2000\" (w.e.f. 21-2-2002). 6. Subs. by the Constitution (Eighty-seventh Amendment) Act, 2003, s. 5, for \"1991\" (w.e.f. 22-6-2003). 189"
+          }
+        ],
+        "failure_analysis": "No failure; answer is correct."
+      },
+      "system_c": {
+        "status": "abstained",
+        "abstention_reason": "no_verified_version_for_reference_date",
+        "scope_note": "No verified Article version is eligible; no substantive answer."
+      },
+      "corpus_search": {
+        "query_terms": [
+          "12th December, 2002"
+        ],
+        "matching_relevant_chunks": [
+          {
+            "chunk_id": "chunk-eb75d49aac3dff04f65a838a",
+            "source_document": "raw/amendments/086_Amendment_2002.pdf",
+            "source_type": "amendment_act",
+            "page_number": 1,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 1 (1-based), extracted character offsets 0:1794",
+            "matched_terms": [
+              "12th December, 2002"
+            ],
+            "lexical_rank_for_question": 1,
+            "chunk_text": "THE CONSTITUTION (EIGHTY-SIXTH AMENDMENT) ACT, 2002 THE CONSTITUTION (EIGHTY-SIXTH AMENDMENT) ACT, 2002 [12th December, 2002.] An Act further to amend the Constitution of India. BE it enacted by Parliament in the Fifty-third Year of the Republic of India as follows:- 1. Short title and commencement.- (1) This Act may be called the Constitution (Eighty-sixth Amendment) Act, 2002. (2) It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint. 2. Insertion of new article 21A.- After article 21 of the Constitution, the following article shall be inserted, namely:- Right to education.- \"21A. The State shall provide free and compulsory education to all children of the age of six to fourteen years in such manner as the State may, by law, determine.\". 3. Substitution of new article for article 45.- For article 45 of the Constitution, the following article shall be substituted, namely:- . Provision for early childhood care and education to children below the age of six years. \"45. The State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.\". 4. Amendment of article 51A.- In article 51A of the Constitution, after clause (J), the following clause shall be added, namely:- \"(k) who is a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years.\". SUBHASH C. JAIN, Secy.to the Govt. of India. STATEMENT OF OBJECTS AND REASONS The Constitution of India in a Directive Principle contained in article 45, has 'made a provision for free and compulsory education for all children up to the age of fourteen years within ten years of promulgation of the Constitution. We could not"
+          }
+        ]
+      }
+    },
+    "Q020": {
+      "question_id": "Q020",
+      "question": "What wording difference in the beneficiary phrase can be observed between Articles 14 and 21?",
+      "reference_date": "2026-05-01",
+      "question_category": "multi_article",
+      "target_articles": [
+        "14",
+        "21"
+      ],
+      "expected_answer": "Article 14 says 'any person'; Article 21 begins 'No person'. Both use person-based wording in these clauses.",
+      "gold_evidence": [
+        {
+          "evidence_id": "Q020-E1",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+          "chunk_id": "chunk-6100b381e336b62ecb405068",
+          "version_id": null,
+          "verification_status": "verified"
+        },
+        {
+          "evidence_id": "Q020-E2",
+          "source_reference_id": "constitution-2026",
+          "evidence_text": "No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+          "chunk_id": "chunk-d6191916210d8ec466f42f4e",
+          "version_id": null,
+          "verification_status": "verified"
+        }
+      ],
+      "source_references": [
+        {
+          "reference_id": "constitution-2026",
+          "source_type": "indexed_primary_source",
+          "source_document": "Constitution of India, PDF cover states as on 1 May 2026",
+          "source_path": "raw/constitution/Constitution_of_India_2024.pdf",
+          "source_url": null,
+          "source_locator": "PDF p. 37 Article 14 and p. 42 Article 21; indexed chunks cited in evidence",
+          "verification_status": "verified",
+          "notes": "Narrow textual comparison, not a doctrinal comparison."
+        }
+      ],
+      "system_a": {
+        "run_status": "completed",
+        "actual_answer": "Based on Indian constitutional law as of the reference date, the wording difference in the beneficiary phrase between Articles 14 and 21 is as follows:\n\n* **Article 14** uses the beneficiary phrase **\"any person\"** (\"The State shall not deny to *any person* equality before the law...\").\n* **Article 21** uses the beneficiary phrase **\"any person\"** as well (*\"No person* shall be deprived of his life or personal liberty...\"). \n\n*(Note: If the comparison intended is with Article 15, 16, 19, 29, or 30—which use the terms \"citizen\" or \"any section of the citizens\"—please clarify, as both Article 14 and Article 21 actually share the exact same beneficiary phrase: \"any person\".)*",
+        "abstention_reason": null,
+        "failure_analysis": "Generation factual/consistency failure: contradicts its quoted Article 21 wording."
+      },
+      "system_b": {
+        "run_status": "completed",
+        "actual_answer": "Based on the provided retrieved context, there is no mention or text regarding Articles 14 and 21. Therefore, the available context is insufficient to answer the question.",
+        "citations_in_answer": [],
+        "top_five_retrieved_chunks": [
+          {
+            "chunk_id": "chunk-f3a0d14fca678233138f872d",
+            "source_document": "raw/amendments/025_Amendment_1971.pdf",
+            "source_type": "amendment_act",
+            "page_number": 1,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 1 (1-based), extracted character offsets 0:1793",
+            "retrieval_score": 0.07624434389140272,
+            "dense_score": 0.6883100867271423,
+            "dense_rank": 8,
+            "lexical_rank": 5,
+            "hybrid_score": 0.07624434389140272,
+            "article_match": false,
+            "chunk_text": "THE CONSTITUTION (TWENTY-FIFTH AMENDMENT) ACT, 1971 THE CONSTITUTION (TWENTY-FIFTH AMENDMENT) ACT, 1971 Statement of Objects and Reasons appended to the Constitution (Twenty-fifth Amendment) Bill, 1971 which was enacted as the Constitution (Twenty-fifth Amendment) Act, 1971 STATEMENT OF OBJECTS AND REASONS Article 31 of the Constitution as it stands specifically provides that no law providing for the compulsory acquisition or requisitioning of property which either fixes the amount of compensation or specifies the principles on which and the manner in which the compensation is to be determined and given shall be called in question in any court on the ground that the compensation provided by that law is not adequate. In the Bank Nationalization case [1970, 3 S.C.R. 530), the Supreme Court has held that the Constitution guarantees right to compensation, that is, the equivalent in money of the property compulsorily acquired. Thus in effect the adequacy of compensation and the relevancy of the principles laid down by the Legislature for determining the amount of compensation have virtuality become justiciable inasmuch as the Court can go into the question whether the amount paid to the owner of the property is what may be regarded reasonably as compensation for loss of property. In the same case, the Court has also held that a law which seeks to acquire or requisition property for a public purpose should also satisfy the requirements of article 19 (1) (f). 2. The Bill seeks to surmount the difficulties placed in the way of giving effect to the Directive Principles of State Policy by the aforesaid interpretation. The word \"compensation\" is sought to be omitted from article 31(2) and replaced by the word \"amount\". It is being clarified that the said amount may be given"
+          },
+          {
+            "chunk_id": "chunk-82e07463ef08c4a26907faaa",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 298,
+            "article_number": null,
+            "section_or_heading": null,
+            "source_locator": "PDF page 298 (1-based), extracted character offsets 1605:2589",
+            "retrieval_score": 0.07508610792192882,
+            "dense_score": 0.6916640996932983,
+            "dense_rank": 5,
+            "lexical_rank": 7,
+            "hybrid_score": 0.07508610792192882,
+            "article_match": false,
+            "chunk_text": "in the said sub- paragraph as special pay an amount equivalent to the difference between the salary so specified and the salary which he was drawing immediately before such commencement. 1[(3) Any person who, immediately before the commencement of the Constitution (Seventh Amendment) Act, 1956, was holding office as the Chief Justice of the High Court of a State specified in Part B of the First Schedule and has on such commencement become the Chief Justice of the High Court of a State specified in the said Schedule as amended by the said Act, shall, if he was immediately before such commencement drawing any amount as allowance in addition to his salary, be entitled to receive in respect of time spent on actual service as such Chief Justice, the same amount as allowance in addition to the salary specified in sub-paragraph (1) of this paragraph.]. 1. Subs. by the Constitution (Seventh Amendment) Act, 1956, s. 25(c), (ii), for sub-paragraphs (3) and (4) (w.e.f. 1-11-1956)."
+          },
+          {
+            "chunk_id": "chunk-b82b8a15b2e0b751a280983e",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 178,
+            "article_number": "251",
+            "section_or_heading": "Inconsistency between laws made by Parliament under articles 249 and 250 and laws made by the Legislatures of States",
+            "source_locator": "PDF page 178 (1-based), extracted character offsets 824:1592",
+            "retrieval_score": 0.07100855310049893,
+            "dense_score": 0.6298303008079529,
+            "dense_rank": 124,
+            "lexical_rank": 1,
+            "hybrid_score": 0.07100855310049893,
+            "article_match": false,
+            "chunk_text": "251. Inconsistency between laws made by Parliament under articles 249 and 250 and laws made by the Legislatures of States.—Nothing in articles 249 and 250 shall restrict the power of the Legislature of a State to make any law which under this Constitution it has power to make, but if any provision of a law made by the Legislature of a State is repugnant to any provision of a law made by Parliament which Parliament has under either of the said articles power to make, the law made by Parliament, whether passed before or after the law made by the Legislature of the State, shall prevail, and the law made by the Legislature of the State shall to the extent of the repugnancy, but so long only as the law made by Parliament continues to have effect, be inoperative."
+          },
+          {
+            "chunk_id": "chunk-5d58cd27ff406256773f01fc",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 187,
+            "article_number": "271",
+            "section_or_heading": "Surcharge on certain duties and taxes for purposes of the Union",
+            "source_locator": "PDF page 187 (1-based), extracted character offsets 687:1295",
+            "retrieval_score": 0.06925675675675676,
+            "dense_score": 0.6377636790275574,
+            "dense_rank": 88,
+            "lexical_rank": 4,
+            "hybrid_score": 0.06925675675675676,
+            "article_match": false,
+            "chunk_text": "271. Surcharge on certain duties and taxes for purposes of the Union.—Notwithstanding anything in articles 269 and 270, Parliament may at any time increase any of the duties or taxes referred to in those articles 1[except the goods and services tax under article 246A,] by a surcharge for purposes of the Union and the whole proceeds of any such surcharge shall form part of the Consolidated Fund of India. [272. Taxes which are levied and collected by the Union and may be distributed between the Union and the States.].—Omitted by the Constitution (Eightieth Amendment) Act, 2000, s. 4. (w.e.f. 9-6-2000)."
+          },
+          {
+            "chunk_id": "chunk-8411bde1084882f2d0aea512",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 186,
+            "article_number": "270",
+            "section_or_heading": "Taxes levied and distributed between the Union and the States",
+            "source_locator": "PDF page 186 (1-based), extracted character offsets 972:2404",
+            "retrieval_score": 0.06826144738431798,
+            "dense_score": 0.6156030893325806,
+            "dense_rank": 207,
+            "lexical_rank": 2,
+            "hybrid_score": 0.06826144738431798,
+            "article_match": false,
+            "chunk_text": "1[270. Taxes levied and distributed between the Union and the States.—(1) All taxes and duties referred to in the Union List, except the duties and taxes referred to in 2[articles 268, 269 and 269A], respectively, surcharge on taxes and duties referred to in article 271 and any cess levied for specific purposes under any law made by Parliament shall be levied and collected by the Government of India and shall be distributed between the Union and the States in the manner provided in clause (2). 3[(1A) The tax collected by the Union under clause (1) of article 246A shall also be distributed between the Union and the States in the manner provided in clause (2). (1B) The tax levied and collected by the Union under clause (2) of article 246A and article 269A, which has been used for payment of the tax levied by the Union under clause (1) of article 246A, and the amount apportioned to the Union under clause (1) of article 269A, shall also be distributed between the Union and the States in the manner provided in clause (2).] 1. Subs. by the Constitution (Eightieth Amendment) Act, 2000, s. 3, for art. 270 (w.e.f. 1-4-1996). 2. Subs. by the Constitution (Eighty-eighth Amendment) Act, 2003, s. 3, for “articles 268 and 269” (not enforced) and further subs. by the Constitution (One Hundred and First Amendment) Act, 2016, s. 10, for “arts. 268, 268A and 269” (w.e.f. 16-9-2016). 3. Ins. by s. 10, ibid. (w.e.f. 16-9-2016)."
+          }
+        ],
+        "failure_analysis": "Plural Article identifier was not detected; generic hybrid ranking missed both relevant chunks and generation abstained."
+      },
+      "system_c": {
+        "status": "abstained",
+        "abstention_reason": "no_verified_version_for_reference_date",
+        "scope_note": "No verified Article version is eligible; no substantive answer."
+      },
+      "corpus_search": {
+        "query_terms": [
+          "The State shall not deny to any person",
+          "No person shall be deprived of his life"
+        ],
+        "matching_relevant_chunks": [
+          {
+            "chunk_id": "chunk-6100b381e336b62ecb405068",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 37,
+            "article_number": "14",
+            "section_or_heading": "Equality before law",
+            "source_locator": "PDF page 37 (1-based), extracted character offsets 1488:1643",
+            "matched_terms": [
+              "The State shall not deny to any person"
+            ],
+            "lexical_rank_for_question": 46,
+            "chunk_text": "14. Equality before law.—The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India."
+          },
+          {
+            "chunk_id": "chunk-d6191916210d8ec466f42f4e",
+            "source_document": "raw/constitution/Constitution_of_India_2024.pdf",
+            "source_type": "constitution",
+            "page_number": 42,
+            "article_number": "21",
+            "section_or_heading": "Protection of life and personal liberty",
+            "source_locator": "PDF page 42 (1-based), extracted character offsets 1358:1513",
+            "matched_terms": [
+              "No person shall be deprived of his life"
+            ],
+            "lexical_rank_for_question": 41,
+            "chunk_text": "21. Protection of life and personal liberty.—No person shall be deprived of his life or personal liberty except according to procedure established by law."
+          }
+        ]
+      }
+    }
+  },
+  "diagnosis": {
+    "Q010": {
+      "primary_cause": "System B retrieval rank failure. The authoritative section text exists in the local 86th Amendment PDF and frozen static index (chunk-eb75d49aac3dff04f65a838a, PDF page 1), but did not enter top five. BM25-style lexical rank for this exact question is 139. Index text says “Eighty-sixth” and “appoint,” while the question says “86th” and “appointed”; this weakens exact lexical overlap. Generic hybrid RRF therefore surfaced other amendment passages. Generation abstained consistently with the context-only prompt.",
+      "corpus_coverage": "present",
+      "question_ambiguity": "No. It asks the appointment mechanism under a named subsection, distinct from the date actually appointed.",
+      "gold_authoritative_support": "Yes. Local official Act PDF, section 1(2), PDF page 1, has the appointment clause. The gold accurately paraphrases it."
+    },
+    "Q011": {
+      "primary_cause": "System A parametric-generation abstention. The prompt directs it to state uncertainty; no retrieval or document context is permitted in Base LLM.",
+      "corpus_coverage": "The official source is locally available and System B retrieved the Act text, but it is intentionally not passed to A.",
+      "question_ambiguity": "No. The Act PDF title page prints “[12th December, 2002.]” below the Act title.",
+      "abstention_assessment": "Not compelled by question ambiguity or absent evidence. It is prompt-consistent epistemic caution given A has no source access. It is a missed answer for task accuracy, while avoiding a guess.",
+      "gold_authoritative_support": "Yes. Local official Amendment Act text, PDF page 1, title/date line; does not establish commencement."
+    },
+    "Q020": {
+      "primary_cause": "A has a factual/consistency generation error: it quotes “No person” for Article 21, then labels that wording “any person” and asserts identical wording. B failed to apply Article-aware prioritization and abstained after generic retrieval missed both passages.",
+      "retrieval_root_cause": "The explicit Article parser in systems/static_index.py:143-146 recognizes singular “Article”/“Art.” only; “Articles 14 and 21” is not detected. Article-priority logic at lines 233-252 therefore receives no identifiers and falls back to generic dense+lexical RRF. Both correct chunks are in the index with correct metadata; their BM25 lexical ranks for this question are 46 (Article 14) and 41 (Article 21), outside the top five.",
+      "corpus_coverage": "present",
+      "question_ambiguity": "No material ambiguity. It requests a wording comparison and benchmark notes specify a textual, not doctrinal, comparison. “Beneficiary phrase” is mildly technical; “opening words” could be plainer in a future revision.",
+      "gold_authoritative_support": "Yes. Local Constitution PDF (the benchmark source identifies the cover snapshot as of 1 May 2026), PDF p. 37 Article 14 and p. 42 Article 21; extracted text confirms “any person” and “No person”. Both exact passages are indexed."
+    }
+  }
+}
